@@ -21,6 +21,7 @@ def run_bash_script(script_path, options):
 pdb_id = sys.argv[1]
 chain_id = sys.argv[2]
 
+
 # Salva l'ID PDB in un file
 with open("pdb_id.txt", "w") as file_with_id:
     file_with_id.write(pdb_id)
@@ -43,6 +44,9 @@ else:
 complete_pdb_file = open(pdb_id + ".pdb", "r")
 # Inserisci ogni riga del file come elemento della lista lines
 lines = complete_pdb_file.readlines()
+complete_pdb_file.close()
+os.remove(pdb_id + ".pdb")
+
 extracted_lines = []
 
 # Estrai le righe relative alla catena specificata
@@ -56,6 +60,7 @@ for line in lines:
             extracted_lines.append(extracted_line)  # Aggiungi la riga estratta all'elenco
 
 # Scrivi le righe estratte in un nuovo file PDB
-with open("extracted_chain_pdb.pdb", "w") as extracted_chain:
+with open("extracted_chain_" + pdb_id + ".pdb", "w") as extracted_chain:
     for line in extracted_lines:
         extracted_chain.write(line + "\n")
+
