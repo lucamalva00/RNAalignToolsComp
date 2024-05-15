@@ -29,5 +29,5 @@ for line in pdb_list:
     chain_id = split_list[1]
     command = 'python3 extractor_pdb.py ' + pdb_id + ' ' + chain_id
     os.system(command)
-    file_to_move = "extracted_chain_" + pdb_id + ".pdb"
+    file_to_move = pdb_id + '_chain_' + chain_id + '.pdb'
     shutil.move(file_to_move, dataset_dir_name + "/" + file_to_move)

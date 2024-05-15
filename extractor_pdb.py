@@ -1,8 +1,8 @@
 import sys
 import subprocess
 import os
-import gzip
-import string
+from Bio.PDB import PDBParser, PDBIO
+
 
 def remove(string):
     # Funzione per rimuovere gli spazi da una stringa
@@ -40,40 +40,51 @@ if success:
 else:
     print("Error executing bash script.")
 
-# Apri il file PDB completo
-complete_pdb_file = open(pdb_id + ".pdb", "r")
-# Inserisci ogni riga del file come elemento della lista lines
-lines = complete_pdb_file.readlines()
-complete_pdb_file.close()
-os.remove(pdb_id + ".pdb")
+io = PDBIO()
+parser = PDBParser()
+source_pdb = parser.get_structure(pdb_id, pdb_id + '.pdb')
 
-extracted_lines = []
+for chain in source_pdb.get_chains():
+    if chain.get_id() == chain_id:
+        io.set_structure(chain)
+        io.save(source_pdb.get_id() + "_chain_" + chain.get_id() + ".pdb")
 
-# Estrai le righe relative alla catena specificata
-for line in lines:
-    splitted_line = line.split()
-    #In case that atom type is separated by a space
-    if len(splitted_line) > 12:
-        composed_elem = ""
-        if len(splitted_line[3]) == 1:
-            composed_elem = splitted_line[3] + "  " + splitted_line[4]
-        else:
-            composed_elem = splitted_line[3] + " " + splitted_line[4]
-        splitted_line[3] = composed_elem
-        splitted_line.remove(splitted_line[4])
+os.remove(pdb_id + '.pdb')
+
+# # Apri il file PDB completo
+# complete_pdb_file = open(pdb_id + ".pdb", "r")
+# # Inserisci ogni riga del file come elemento della lista lines
+# lines = complete_pdb_file.readlines()
+# complete_pdb_file.close()
+# os.remove(pdb_id + ".pdb")
+
+# extracted_lines = []
+
+# # Estrai le righe relative alla catena specificata
+# for line in lines:
+#     splitted_line = line.split()
+#     #In case that atom type is separated by a space
+#     if len(splitted_line) > 12:
+#         composed_elem = ""
+#         if len(splitted_line[3]) == 1:
+#             composed_elem = splitted_line[3] + "  " + splitted_line[4]
+#         else:
+#             composed_elem = splitted_line[3] + " " + splitted_line[4]
+#         splitted_line[3] = composed_elem
+#         splitted_line.remove(splitted_line[4])
     
-    if splitted_line[0] == "ATOM": # Verifica che sia la parte interessata del file
-        if splitted_line[4] == chain_id:  # Verifica se la riga corrisponde alla catena specificata
-            extracted_line = (
-                '{}   {:>4}  {:<4}  {} {}  {:>2}     {:>7}  {:<7}  {:>7}  {:>3} {:>4}           {}'.format(
-                    splitted_line[0], splitted_line[1], splitted_line[2], splitted_line[3],
-                    splitted_line[4], splitted_line[5], splitted_line[6], splitted_line[7],
-                    splitted_line[8], splitted_line[9], splitted_line[10], splitted_line[11]
-                )
-            )  # Formatta la riga estratta
-            extracted_lines.append(extracted_line)  # Aggiungi la riga estratta all'elenco
+#     if splitted_line[0] == "ATOM": # Verifica che sia la parte interessata del file
+#         if splitted_line[4] == chain_id:  # Verifica se la riga corrisponde alla catena specificata
+#             extracted_line = (
+#                 '{}   {:>4}  {:<4}  {} {}  {:>2}     {:>7}  {:<7}  {:>7}  {:>3} {:>4}           {}'.format(
+#                     splitted_line[0], splitted_line[1], splitted_line[2], splitted_line[3],
+#                     splitted_line[4], splitted_line[5], splitted_line[6], splitted_line[7],
+#                     splitted_line[8], splitted_line[9], splitted_line[10], splitted_line[11]
+#                 )
+#             )  # Formatta la riga estratta
+#             extracted_lines.append(extracted_line)  # Aggiungi la riga estratta all'elenco
 
-# Scrivi le righe estratte in un nuovo file PDB
-with open("extracted_chain_" + pdb_id + ".pdb", "w") as extracted_chain:
-    for line in extracted_lines:
-        extracted_chain.write(line + "\n")
+# # Scrivi le righe estratte in un nuovo file PDB
+# with open("extracted_chain_" + pdb_id + ".pdb", "w") as extracted_chain:
+#     for line in extracted_lines:
+#         extracted_chain.write(line + "\n")
