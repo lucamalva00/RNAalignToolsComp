@@ -56,11 +56,11 @@ for line in lines:
         remove(s)  # Rimuovi gli spazi da ogni elemento della riga
     if splitted_line[0] == "ATOM" or splitted_line[0] == "HETATM": # Verifica che sia la parte interessata del file
         if splitted_line[4] == chain_id:  # Verifica se la riga corrisponde alla catena specificata
-            extracted_line = "  ".join(splitted_line)  # Formatta la riga estratta
+            extracted_line =splitted_line[0]+"   "+ splitted_line[1]+"  "+splitted_line[2]+"   "+splitted_line[3]+" "+splitted_line[4]+" "
+            +splitted_line[5]+"       "+splitted_line[6]+"  "+splitted_line[7]+"  "+splitted_line[8]+"  "+splitted_line[9]+" "+splitted_line[10]+"           "+splitted_line[11]  # Formatta la riga estratta
             extracted_lines.append(extracted_line)  # Aggiungi la riga estratta all'elenco
 
 # Scrivi le righe estratte in un nuovo file PDB
 with open("extracted_chain_" + pdb_id + ".pdb", "w") as extracted_chain:
     for line in extracted_lines:
         extracted_chain.write(line + "\n")
-
