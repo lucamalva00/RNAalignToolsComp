@@ -52,12 +52,25 @@ extracted_lines = []
 # Estrai le righe relative alla catena specificata
 for line in lines:
     splitted_line = line.split()
-    for s in splitted_line:
-        remove(s)  # Rimuovi gli spazi da ogni elemento della riga
-    if splitted_line[0] == "ATOM" or splitted_line[0] == "HETATM": # Verifica che sia la parte interessata del file
+    #In case that atom type is separated by a space
+    if len(splitted_line) > 12:
+        composed_elem = ""
+        if len(splitted_line[3]) == 1:
+            composed_elem = splitted_line[3] + "  " + splitted_line[4]
+        else:
+            composed_elem = splitted_line[3] + " " + splitted_line[4]
+        splitted_line[3] = composed_elem
+        splitted_line.remove(splitted_line[4])
+    
+    if splitted_line[0] == "ATOM": # Verifica che sia la parte interessata del file
         if splitted_line[4] == chain_id:  # Verifica se la riga corrisponde alla catena specificata
-            extracted_line =splitted_line[0]+"   "+ splitted_line[1]+"  "+splitted_line[2]+"   "+splitted_line[3]+" "+splitted_line[4]+" "
-            +splitted_line[5]+"       "+splitted_line[6]+"  "+splitted_line[7]+"  "+splitted_line[8]+"  "+splitted_line[9]+" "+splitted_line[10]+"           "+splitted_line[11]  # Formatta la riga estratta
+            extracted_line = (
+                '{}   {:>4}  {:<4}  {} {}  {:>2}     {:>7}  {:<7}  {:>7}  {:>3} {:>4}           {}'.format(
+                    splitted_line[0], splitted_line[1], splitted_line[2], splitted_line[3],
+                    splitted_line[4], splitted_line[5], splitted_line[6], splitted_line[7],
+                    splitted_line[8], splitted_line[9], splitted_line[10], splitted_line[11]
+                )
+            )  # Formatta la riga estratta
             extracted_lines.append(extracted_line)  # Aggiungi la riga estratta all'elenco
 
 # Scrivi le righe estratte in un nuovo file PDB
