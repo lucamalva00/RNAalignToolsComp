@@ -1,0 +1,153 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A0	global_variable.h	/^char* A0;$/;"	v
+AAmap	basic_fun.h	/^char AAmap(string AA)$/;"	f
+AAmap3	basic_fun.h	/^void AAmap3(char A, char AA[3])$/;"	f
+D0_MIN	global_variable.h	/^double D0_MIN;                             \/\/for d0$/;"	v
+DD	Makefile	/^DD = g++ -fPIE -g -O3 -Wall -Wno-sign-compare -fomit-frame-pointer -ffast-math $/;"	m
+DP_iter	RNAalign.cpp	/^double DP_iter( double **x,$/;"	f
+DeleteArray	RNAalign.h	/^template <class A> void DeleteArray(A ** array, int Narray){$/;"	f
+DeleteArray	basic_fun.h	/^template <class A> void DeleteArray(A *** array, int Narray)$/;"	f
+DeleteArray	read_xyz.cpp	/^template <class A> void DeleteArray(A ** array, int Narray){$/;"	f
+Kabsch	Kabsch.cpp	/^bool Kabsch(double **x, $/;"	f
+Kasch_H_H	Kabsch.h	2;"	d
+Lnorm	global_variable.h	/^double Lnorm;                              \/\/normalization length$/;"	v
+Lnorm_ass	global_variable.h	/^double Lnorm_ass, Lnorm_d0, d0_scale, d0A, d0B, d0u, d0a;$/;"	v
+Lnorm_d0	global_variable.h	/^double Lnorm_ass, Lnorm_d0, d0_scale, d0A, d0B, d0u, d0a;$/;"	v
+MAXLEN	global_variable.h	/^const int MAXLEN = 10000;$/;"	v
+NEEDLE_H_HH	needle.h	2;"	d
+NWDP_TM	RNAalign.cpp	/^void NWDP_TM(double **x, double **y, int len1, int len2, double t[3], double u[3][3], double d02, double gap_open, int j2i[])$/;"	f
+NWDP_TM	RNAalign.cpp	/^void NWDP_TM(int *secx, int *secy, int len1, int len2, double gap_open, int j2i[])$/;"	f
+NWDP_TM	RNAalign.cpp	/^void NWDP_TM(int len1, int len2, double gap_open, int j2i[])$/;"	f
+NewArray	RNAalign.h	/^template <class A> void NewArray(A*** array, int Narray1,int Narray2){$/;"	f
+NewArray	basic_fun.h	/^template <class A> void NewArray(A *** array, int Narray1, int Narray2)$/;"	f
+NewArray	read_xyz.cpp	/^template <class A> void NewArray(A*** array, int Narray1,int Narray2)$/;"	f
+OBJECT	Makefile	/^OBJECT =  RNAalign.o Kabsch.o function.o$/;"	m
+PrintErrorAndQuit	RNAalign.cpp	/^void PrintErrorAndQuit(char* sErrorString)$/;"	f
+PrintErrorAndQuit	basic_fun.h	/^void PrintErrorAndQuit(string sErrorString)$/;"	f
+RNAalign_H_H	RNAalign.h	2;"	d
+SARATMscore_H_HH	SARATMscore.h	2;"	d
+SARA_align	SARATMscore.cpp	/^string SARA_align(string aname,string bname,string achain,string bchain)$/;"	f
+TM3	global_variable.h	/^double TM3, TM4, TM5;$/;"	v
+TM4	global_variable.h	/^double TM3, TM4, TM5;$/;"	v
+TM5	global_variable.h	/^double TM3, TM4, TM5;$/;"	v
+TMSCORE	RNAalign.cpp	/^double TMSCORE(double t[3], double u[3][3], int n_ali, double * &distance){$/;"	f
+TMscore8_search	RNAalign.cpp	/^double TMscore8_search( double **xtm, $/;"	f
+a_opt	global_variable.h	/^bool o_opt, a_opt, u_opt, d_opt, v_opt;$/;"	v
+aname	global_variable.h	/^std::string aname,bname,achain(""),bchain(""); \/\/ for A B PDB file and chain ids$/;"	v
+aseq	global_variable.h	/^std::string aseq,bseq; \/\/  for RNA sequence $/;"	v
+bname	global_variable.h	/^std::string aname,bname,achain(""),bchain(""); \/\/ for A B PDB file and chain ids$/;"	v
+bseq	global_variable.h	/^std::string aseq,bseq; \/\/  for RNA sequence $/;"	v
+chidx	global_variable.h	/^char   *chidx, *chidy;$/;"	v
+chidy	global_variable.h	/^char   *chidx, *chidy;$/;"	v
+d0	global_variable.h	/^double score_d8, d0, d0_search, dcu0;      \/\/for TMscore search$/;"	v
+d0A	global_variable.h	/^double Lnorm_ass, Lnorm_d0, d0_scale, d0A, d0B, d0u, d0a;$/;"	v
+d0B	global_variable.h	/^double Lnorm_ass, Lnorm_d0, d0_scale, d0A, d0B, d0u, d0a;$/;"	v
+d0_scale	global_variable.h	/^double Lnorm_ass, Lnorm_d0, d0_scale, d0A, d0B, d0u, d0a;$/;"	v
+d0_search	global_variable.h	/^double score_d8, d0, d0_search, dcu0;      \/\/for TMscore search$/;"	v
+d0a	global_variable.h	/^double Lnorm_ass, Lnorm_d0, d0_scale, d0A, d0B, d0u, d0a;$/;"	v
+d0u	global_variable.h	/^double Lnorm_ass, Lnorm_d0, d0_scale, d0A, d0B, d0u, d0a;$/;"	v
+d_opt	global_variable.h	/^bool o_opt, a_opt, u_opt, d_opt, v_opt;$/;"	v
+dcu0	global_variable.h	/^double score_d8, d0, d0_search, dcu0;      \/\/for TMscore search$/;"	v
+debug_H_H	debug_function.h	2;"	d
+detailed_search	RNAalign.cpp	/^double detailed_search( double **x,$/;"	f
+dist	basic_fun.h	/^double dist(double x[3], double y[3])$/;"	f
+dist	function.cpp	/^double dist(double x[3], double y[3])$/;"	f
+do_rotation	basic_fun.h	/^void do_rotation(double **x, double **x1, int len, double t[3], double u[3][3])$/;"	f
+do_rotation	function.cpp	/^void do_rotation(double **x, double **x1, int len, double t[3], double u[3][3])$/;"	f
+dot	basic_fun.h	/^double dot(double *a, double *b)$/;"	f
+dot	function.cpp	/^double dot(double *a, double *b)$/;"	f
+find_max_frag	RNAalign.cpp	/^void find_max_frag(double **x, int *resno, int len, int *start_max, int *end_max)$/;"	f
+free_memory	RNAalign.cpp	/^void free_memory()$/;"	f
+free_momery	RNAalign.cpp	/^void free_momery()$/;"	f
+function_H_H	function.h	2;"	d
+get_APDB_length	RNAalign.cpp	/^int get_APDB_length(ifstream& infile, bool c_opt,string& item, string & achain){$/;"	f
+get_BPDB_length	RNAalign.cpp	/^int get_BPDB_length(ifstream& infile, bool c_opt,string &item,string &bchain){$/;"	f
+get_PDB_len	basic_fun.h	/^int get_PDB_len(char *filename)$/;"	f
+get_initial	RNAalign.cpp	/^double get_initial( double **x, $/;"	f
+get_initial_fgt	RNAalign.cpp	/^double get_initial_fgt( double **x, $/;"	f
+get_initial_local	RNAalign.cpp	/^bool get_initial_local(  double **x, $/;"	f
+get_initial_splus	RNAalign.cpp	/^void get_initial_splus(double **x, double **y, int x_len, int y_len, int* y2x0 ,int* y2x)$/;"	f
+get_initial_ssplus	RNAalign.cpp	/^void get_initial_ssplus( double **x, $/;"	f
+get_ligand_len	basic_fun.h	/^int get_ligand_len(char *filename)$/;"	f
+get_score_fast	RNAalign.cpp	/^double get_score_fast(double **x, double **y, int x_len, int y_len, int invmap[])$/;"	f
+get_xyz	RNAalign.cpp	/^void get_xyz(string line,double& x,double& y,double& z)$/;"	f
+get_xyz	RNAalign.cpp	/^void get_xyz(string line,double& x,double& y,double& z,int& no,char& seq)$/;"	f
+get_xyz	basic_fun.h	/^void get_xyz(string line, double *x, double *y, double *z, char *resname, int *no)$/;"	f
+getmax	basic_fun.h	35;"	d
+getmin	RNAalign.cpp	/^int getmin(int alen,int blen){$/;"	f
+getmin	basic_fun.h	36;"	d
+global_variable_H_H	global_variable.h	2;"	d
+load_PDB	RNAalign.cpp	/^void load_PDB(string& aname,string& bname,bool Ac_opt,bool Bc_opt,double ** &acoor,$/;"	f
+locate_memory_temp	RNAalign.cpp	/^bool locate_memory_temp (int alen, int blen){$/;"	f
+main	SARATMscore.cpp	/^int main(int argc,char* argv[])$/;"	f
+main	TMscore.cpp	/^int main(int argc,char* argv[])$/;"	f
+main	main.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	read_xyz.cpp	/^int main(int argc,char* argv[])$/;"	f
+minlen	global_variable.h	/^int    xlen, ylen, minlen;                 \/\/length of proteins$/;"	v
+needle_align	needle.cpp	/^string needle_align(string& name1,string& name2,string chain1,string chain2)$/;"	f
+o_opt	global_variable.h	/^bool o_opt, a_opt, u_opt, d_opt, v_opt;$/;"	v
+out_reg	global_variable.h	/^char out_reg[MAXLEN];$/;"	v
+output_align	basic_fun.h	/^int output_align(int *invmap0, int len)$/;"	f
+output_align1	basic_fun.h	/^void output_align1(int *invmap0, int len)$/;"	f
+output_alignment	RNAalign.cpp	/^void output_alignment(string xname,$/;"	f
+output_fasta	needle.cpp	/^int output_fasta(string& name,string& fasta,string chain)$/;"	f
+parameter_set4final	RNAalign.cpp	/^void parameter_set4final(double len)$/;"	f
+parameter_set4final	RNAalign.cpp	/^void parameter_set4final(double len,double do_min)$/;"	f
+parameter_set4rowsearch	RNAalign.cpp	/^void parameter_set4rowsearch(int xlen, int ylen)$/;"	f
+parameter_set4scale	RNAalign.cpp	/^void parameter_set4scale(int len, double d_s)$/;"	f
+parameter_set4search	RNAalign.cpp	/^void parameter_set4search(int xlen, int ylen)$/;"	f
+path	global_variable.h	/^bool   **path;                             \/\/for dynamic programming  $/;"	v
+print_1Array	RNAalign.cpp	/^void print_1Array(T * arrat, int size)$/;"	f
+print_1Array	RNAalign.cpp	/^void print_1Array(char *array, int size)$/;"	f
+print_1Array	RNAalign.cpp	/^void print_1Array(int *array, int size)$/;"	f
+print_2Array	RNAalign.cpp	/^void print_2Array(double** & array2,int n1,int n2){$/;"	f
+print_help	RNAalign.cpp	/^void print_help(){$/;"	f
+r1	global_variable.h	/^double **r1, **r2;                         \/\/for Kabsch rotation $/;"	v
+r2	global_variable.h	/^double **r1, **r2;                         \/\/for Kabsch rotation $/;"	v
+read_PDB	RNAalign.cpp	/^void read_PDB(ifstream& infile, double** &coor,string achain,int *&resno,string & seq,char* &chid,string item,bool c_opt)$/;"	f
+read_PDB	basic_fun.h	/^int read_PDB(char *filename, double **a, char *seq, int *resno)$/;"	f
+read_SARA_align	SARATMscore.cpp	/^float read_SARA_align(int * alignment,string align_file,string achain,string bchain,float& SARAscore1,float& SARAscore2)$/;"	f
+read_SARA_align	SARATMscore.cpp	/^float read_SARA_align(int * alignment,string align_file,string achain,string bchain,int *areno,int* breno,$/;"	f
+read_a_second_structual	RNAalign.cpp	/^int read_a_second_structual(string name,string chainid)$/;"	f
+read_b_second_structual	RNAalign.cpp	/^int read_b_second_structual(string name,string chainid)$/;"	f
+read_dssra	RNAalign.cpp	/^int read_dssra(string name,string chain_id)$/;"	f
+read_dssrb	RNAalign.cpp	/^int read_dssrb(string name,string chain_id)$/;"	f
+read_ligand	basic_fun.h	/^int read_ligand(char *filename, double **a, char *seq, int *resno)$/;"	f
+read_needle_align	needle.cpp	/^void read_needle_align(int* align,string& result,string& name1,string& name2)$/;"	f
+read_needle_align_return	needle.cpp	/^float read_needle_align_return(int* align,string& result,string& name1,string& name2)$/;"	f
+score	global_variable.h	/^double **score;            			       \/\/Input score table for dynamic programming$/;"	v
+score_d8	global_variable.h	/^double score_d8, d0, d0_search, dcu0;      \/\/for TMscore search$/;"	v
+score_fun8	RNAalign.cpp	/^int score_fun8( double **xa, $/;"	f
+score_matrix_rmsd	RNAalign.cpp	/^void score_matrix_rmsd(  double **x, $/;"	f
+score_matrix_rmsd_sec	RNAalign.cpp	/^void score_matrix_rmsd_sec(  double **x, $/;"	f
+secx	global_variable.h	/^int    *secx, *secy;                       \/\/for the secondary structure $/;"	v
+secy	global_variable.h	/^int    *secx, *secy;                       \/\/for the secondary structure $/;"	v
+seqx	global_variable.h	/^char   *seqx, *seqy;                       \/\/for the RNA sequence $/;"	v
+seqy	global_variable.h	/^char   *seqx, *seqy;                       \/\/for the RNA sequence $/;"	v
+split_whitespace	SARATMscore.cpp	/^void split_whitespace(const string &str, vector<string> &result)$/;"	f
+t	global_variable.h	/^double t[3], u[3][3];                      \/\/Kabsch translation vector and rotation matrix$/;"	v
+transform	basic_fun.h	/^void transform(double t[3], double u[3][3], double *x, double *x1)$/;"	f
+transform	function.cpp	/^void transform(double t[3], double u[3][3], double *x, double *x1)$/;"	f
+u	global_variable.h	/^double t[3], u[3][3];                      \/\/Kabsch translation vector and rotation matrix$/;"	v
+u0	global_variable.h	/^double  u0;$/;"	v
+u_D0	SARATMscore.cpp	/^double u_D0 = 0.0;$/;"	v
+u_D0	TMscore.cpp	/^double u_D0 = 0.0;$/;"	v
+u_D0	main.cpp	/^double u_D0 = 0.0;$/;"	v
+u_opt	global_variable.h	/^bool o_opt, a_opt, u_opt, d_opt, v_opt;$/;"	v
+v_opt	global_variable.h	/^bool o_opt, a_opt, u_opt, d_opt, v_opt;$/;"	v
+val	global_variable.h	/^double **val;                              \/\/for dynamic programming  $/;"	v
+version	RNAalign.h	/^const string version = "20150227";$/;"	v
+xa	global_variable.h	/^double **xa, **ya;                         \/\/for input vectors xa[0...xlen-1][0..2], ya[0...ylen-1][0..2]$/;"	v
+xlen	global_variable.h	/^int    xlen, ylen, minlen;                 \/\/length of proteins$/;"	v
+xresno	global_variable.h	/^int    *xresno, *yresno;                   \/\/residue numbers, used in fragment gapless threading $/;"	v
+xt	global_variable.h	/^double **xt;                               \/\/for saving the superposed version of r_1 or xtm$/;"	v
+xtm	global_variable.h	/^double **xtm, **ytm;                       \/\/for TMscore search engine$/;"	v
+ya	global_variable.h	/^double **xa, **ya;                         \/\/for input vectors xa[0...xlen-1][0..2], ya[0...ylen-1][0..2]$/;"	v
+ylen	global_variable.h	/^int    xlen, ylen, minlen;                 \/\/length of proteins$/;"	v
+yresno	global_variable.h	/^int    *xresno, *yresno;                   \/\/residue numbers, used in fragment gapless threading $/;"	v
+ytm	global_variable.h	/^double **xtm, **ytm;                       \/\/for TMscore search engine$/;"	v

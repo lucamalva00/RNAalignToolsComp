@@ -1,0 +1,33 @@
+==================
+1.ABOUT RMalign
+==================
+RMalign is an RNA structural alignment program based on RMscore which describles
+the similarity of RNA structures. Two RNA structure coordinates in pdb format are
+inputted, RMalign will output the best alignment according RMscore. A transformation
+also reported.
+
+RMalign can be downloaded from
+
+===================
+2.INSTALL AND START
+===================
+
+1.download the source file
+2.untar and unpack the source file
+3.run ./INSTALL.sh
+
+After install RMalign installion no your computer. pleased type "./RMalign " for instruction.
+
+==================
+3.LICENSE
+==================
+Copyright RMalign
+This is free software for non-commercial user. 
+All the files in this directory and sub-directories are part of the RMalign software 
+suite and are made available under license.
+
+Questions about this can be addressed to Dr. Shiyong Liu by Gmail: liushiyong@gmail.com
+
+If you feel it is useful, please cite:
+Jinfang Zheng, Shiyong Liu. 
+Structured-based classsifying RNA fold, function and modeling protein-RNA interaction. Submitted
