@@ -1,13 +1,14 @@
+# The script creates a new pdb file containg the specified sub-chain extracted from
+# the original pdb file downloaded from https://www.rcsb.org/.
+
+# Usage: python3 extractor_pdb.py <pdb_id> <chain_id> 
+# (where <pdb_id> is the 4-digit PDB identifier and <chain_id> is the ID
+# of the sub-chain to extract).
+
 import sys
 import subprocess
 import os
 from Bio.PDB import PDBParser, PDBIO
-
-#
-# Usage: python3 extractor_pdb.py <pdb_id> <chain_id> 
-# (where <pdb_id> is the 4-digit PDB identifier and <chain_id> is the ID
-# of the sub-chain to extract).
-#
 
 def remove(string):
     return string.replace(" ","")

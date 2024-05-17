@@ -1,12 +1,16 @@
-import sys
-import os
-import shutil
-
+# Constructs the dataset from a file containing a list of pdb IDs with the corresponding
+# chain to extract.
+#
+# The script utilizes 'extractor_pdb.py' script to download a pdb file and create
+# from it the pdb files with the extracted chain indicated in the file.
 #
 # Usage: python3 dataset_builder.py <PDB_list_fileName.txt>
 # (where the <PDB_list_fileName.txt> is the file containing the list 
-# of all the PDBs that will be extracted using the "extractor_pdb.py"):
-#
+# of all the PDBs that will be extracted using the "extractor_pdb.py")
+
+import sys
+import os
+import shutil
 
 def remove(string):
     # Function to remove spaces from a string
