@@ -2,6 +2,14 @@ import sys
 import os
 import shutil
 
+#
+# This script is used to automate the process of extracting
+# PDB (Protein Data Bank) files from a list of specified PDB IDs 
+# and chain IDs in an input file.
+#
+# ex. "dataset_builder.py PDB_list_fileName.txt"
+#
+
 def remove(string):
     # Funzione per rimuovere gli spazi da una stringa
     return string.replace(".pdb","")
