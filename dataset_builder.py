@@ -3,15 +3,13 @@ import os
 import shutil
 
 #
-# This script is used to automate the process of extracting
-# PDB (Protein Data Bank) files from a list of specified PDB IDs 
-# and chain IDs in an input file.
-#
-# ex. "dataset_builder.py PDB_list_fileName.txt"
+# Usage: python3 dataset_builder.py <PDB_list_fileName.txt>
+# (where the <PDB_list_fileName.txt> is the file containing the list 
+# of all the PDBs that will be extracted using the "extractor_pdb.py"):
 #
 
 def remove(string):
-    # Funzione per rimuovere gli spazi da una stringa
+    # Function to remove spaces from a string
     return string.replace(".pdb","")
 
 # Authorization command to execute batch_download.sh script 

@@ -4,12 +4,9 @@ import os
 from Bio.PDB import PDBParser, PDBIO
 
 #
-# This script is used to download a PDB (Protein Data Bank) 
-# file using a PDB ID provided as a command-line argument, 
-# extract a specific chain from the downloaded file, and save 
-# this chain in a new PDB file.
-#
-# ex. "extractor_pdb.py 1c0a B"
+# Usage: python3 extractor_pdb.py <pdb_id> <chain_id> 
+# (where <pdb_id> is the 4-digit PDB identifier and <chain_id> is the ID
+# of the sub-chain to extract).
 #
 
 def remove(string):
