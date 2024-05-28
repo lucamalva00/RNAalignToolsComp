@@ -1,0 +1,466 @@
+#!/usr/local/lib/perl-5.8.3/bin/perl -w
+
+##########################################################################
+#
+# GOAL:
+# Create PDB files and RasMol and Pymol scripts for the requested RNA
+# alignment  
+#
+# INPUT:  An output file of the RNAlignment program, a number of an
+#	  alignment as  appears in the output file and an output
+#         directory (optional) 
+#
+# OUTPUT: Output the PDB files of the requested alignment and RasMol and 
+#         Pymol scripts to the given output directory or to the
+#         current directory if an output directory is not supplied.   
+#
+# AUTHOR:
+# Oranit Dror (contact: oranit@post.tau.ac.il)
+#
+##########################################################################
+
+# Find the directory where this perl script is located
+use FindBin;
+
+use strict;
+
+
+sub printUsage {
+  print "Create PDB files, a RasMol script and a Pymol script for the requested RNA alignment \n";
+  print "Contact: oranit\@post.tau.ac.il \n";
+  print "Usage: $FindBin::Script <ARTS output file> <alignment number> [output directory] \n";
+  print "Usage: $FindBin::Script help \n";
+}
+
+
+# Detect the machine type
+my $machineType = `uname -s`;
+my $machineTypeSuffix;
+
+if($machineType =~ /Linux/){
+    $machineTypeSuffix = ".Linux";
+}else{
+    print "$machineType Operating System is not supported.\n";
+    print "The supported OS's are: Linux \n";
+    print "You can check the type of the system by: uname -s\n";
+    exit(0);
+}
+
+my $TRANSFORM_PROGRAM = "$FindBin::Bin/../../pdb_trans_all_atoms$machineTypeSuffix";
+
+
+# Check the arguments
+if ($ARGV[0] =~ "--help") {
+    printUsage();    
+    exit(0);
+}
+
+if( $#ARGV < 1) {
+    printUsage();
+    exit(0);
+}
+
+my $TEMP_FILE_SUFFIX = "tmp";
+
+# Read Parameters
+my $artsOutputFile = $ARGV[0];
+my $alignmentNumber = $ARGV[1];
+my $outputDir = ".";
+if( $#ARGV > 1) {
+    $outputDir = $ARGV[2];
+} 
+
+my %mol2FileMap = ();
+my @moleculeFileNames = ();
+my @coreMatchList = ();
+my @basePairCoreMatchList = ();
+
+
+my $isInCoreMatchList=0;
+my $isInBasePairMatchList=0;
+my @tmp;
+my $tmp;
+
+open (OUT_PYMOL_SCRIPT, ">$outputDir/fullAlignment.pml") or die "Cannot open output file script.pymol";
+
+
+system("dos2unix $artsOutputFile" );    
+open (DATA, "$artsOutputFile") or die "Cannot open input file $artsOutputFile";
+
+my @pymolCorePerMolecule = ();
+my @pymolBasePairCorePerMolecule = ();
+    
+my $isAlignmentFound = 0;
+my $score = 0;
+my $coreSize = 0;
+my $bpCoreSize = 0;
+my $rmsd = 0;
+
+while(<DATA>){
+    chomp $_;
+
+    if (($isAlignmentFound == 0) and (/Molecule[s]?/)) {
+	# read the next lines describing the molecules
+        $_ = <DATA>;
+	while ($_ =~ /([^\s]+) \([\d]+ nucleotides, [\d]+ base pairs\) - ([^\s]+)/) {
+	    my $molName = $1;
+	    my $molFile = $2;
+	    $mol2FileMap{$molName} = $molFile;
+	    $_ = <DATA>;
+	}
+    }
+    
+    if( /^Alignment No. :/){
+	if(/^Alignment No. : $alignmentNumber$/){
+	    $isAlignmentFound = 1;
+	    open (OUT_MATCH, ">$outputDir/match.txt") or die "Cannot open output file match.txt";	    
+	}else {
+	    if ($isAlignmentFound == 1) {
+		last;
+	    }
+	} 
+    }
+    
+    if ($isAlignmentFound == 1) {
+	print OUT_MATCH "$_ \n";
+    }
+
+    if( ($isAlignmentFound == 1) and /^\*\*\* Score =/) {
+	(undef, $score) = split('=',$_);
+	$score += 0; # Remove blanks
+ 	next;
+    }
+
+
+    if( ($isAlignmentFound == 1) and /^\*\*\* Core Size =/) {
+	(undef, $coreSize) = split('=',$_);
+	$coreSize += 0; # Remove blanks
+	next;
+    }
+
+
+    if( ($isAlignmentFound == 1) and /^\*\*\* RMSD =/) {
+	(undef, $rmsd) = split('=',$_);
+	$rmsd += 0; # Remove blanks
+	next;
+    }
+
+    if(($isAlignmentFound == 1) and /^\*\*\* Number of Matched Base Pairs =/) {
+	(undef, $bpCoreSize) = split('=', $_);
+	$bpCoreSize += 0; # Remove blanks
+	next;
+    }
+
+    if( ($isAlignmentFound == 1) and /^\*\*\* Molecules:/) {
+        @tmp = split("Molecules:", $_);
+        my @molecules = split(' ', $tmp[1]);
+
+	
+        for(my $index = 0 ; $index <= $#molecules ; $index++) {	    
+	    my $moleculeName = $molecules[$index];
+	    my $moleculeFile = $mol2FileMap{$moleculeName};
+            `cp $moleculeFile $moleculeName`;  
+	    $moleculeFileNames[$#moleculeFileNames+1] = "$moleculeName"; 
+	    $coreMatchList[$#coreMatchList +1] = {}; #%empty_hash;
+	    
+	    if ($index == 0) {
+		# It is the reference molecule
+		`cp -f $moleculeFile $moleculeFile.$TEMP_FILE_SUFFIX`;
+		`cp -f $moleculeFile model1.$moleculeFile`;
+		print OUT_PYMOL_SCRIPT "load model1.$moleculeFile, model1.$moleculeFile \n";
+		print OUT_PYMOL_SCRIPT "select backbone1, model1.$moleculeFile and name o1p+o2p+o3p+p+c1*+c2*+c3*+c4*+c5*+o2*+o3*+o4*+o5* \n";
+	    }
+        }
+	
+        next;
+    }
+
+
+    if( ($isAlignmentFound == 1) and /^\*\*\* Transformation:/) {
+	# transform the scene molecule	
+        @tmp = split(':', $_);	
+        my $transformation = $tmp[1];	
+
+	chop $transformation;
+
+	`cat $moleculeFileNames[1] | $TRANSFORM_PROGRAM $transformation > $moleculeFileNames[1].$TEMP_FILE_SUFFIX`;
+	`cat $moleculeFileNames[1] | $TRANSFORM_PROGRAM $transformation > model2.$moleculeFileNames[1]`;
+	print OUT_PYMOL_SCRIPT "load model2.$moleculeFileNames[1], model2.$moleculeFileNames[1] \n";
+	print OUT_PYMOL_SCRIPT "select backbone2, model2.$moleculeFileNames[1] and name o1p+o2p+o3p+p+c1*+c2*+c3*+c4*+c5*+o2*+o3*+o4*+o5* \n";
+	next;
+    }
+
+
+    if(($isAlignmentFound == 1) and /^\*\*\* Matched Nucleotides:/){       
+        $isInCoreMatchList = 1;
+
+	$pymolCorePerMolecule[0] = "";
+	$pymolCorePerMolecule[1] = "";
+
+	# skip the molecule list of the match list output
+	$_ = <DATA>;
+
+	next;
+    }
+    
+    if(($isAlignmentFound == 1) and /^\*\*\* Matched Base Pairs:/) {       
+	$isInCoreMatchList = 0;
+	$isInBasePairMatchList = 1;
+
+	$pymolBasePairCorePerMolecule[0] = "";
+	$pymolBasePairCorePerMolecule[1] = "";
+
+	# skip the molecule list of the match list output
+	$_ = <DATA>;
+
+	next;
+    }
+
+
+    if(($isAlignmentFound == 1) and $isInCoreMatchList == 1) {
+        my @matchEntry = split(',', $_);
+
+        for(my $molIndex = 0 ; $molIndex <= $#matchEntry ; $molIndex++){
+	    my $residueEntry = $matchEntry[$molIndex];
+
+#	    my @residueFields = split(' ', $residueEntry);
+#	    $residueEntry =~ /[ ]*([^ ]*)[ ]*\(([^ ]*)\)/;
+
+	    $residueEntry =~ /[ ]*([A-Z0-9]*)\.[A-Z]\.[ ]*([0-9]*[A-Z]*)/;
+#	    my $key = $1;
+
+	    # The key is <chain ID>.<residue number>
+#	    my $key =  $residueFields[0];
+	    my $key = "$1.$2";
+
+	    if ($pymolCorePerMolecule[$molIndex] eq "") {
+		$pymolCorePerMolecule[$molIndex] = "resi $2";
+	    } else {
+		$pymolCorePerMolecule[$molIndex] = "$pymolCorePerMolecule[$molIndex]+$2";
+	    }
+
+	    chomp $key;
+
+	    $coreMatchList[$molIndex]{$key} = 1;
+	}
+
+        next;
+    }
+
+
+    if(($isAlignmentFound == 1) and $isInBasePairMatchList == 1) {
+        my @matchEntry = split(',', $_);
+
+        for(my $molIndex = 0 ; $molIndex <= $#matchEntry ; $molIndex++){
+	    my $basePairEntry = $matchEntry[$molIndex];
+
+	    my ($residueEntry1, $residueEntry2) = split('-', $basePairEntry);
+
+	    $residueEntry1 =~ /[ ]*([A-Z0-9]*)\.[A-Z]\.[ ]*([0-9]*[A-Z]*)/;
+	    # The key is <chain ID>.<residue number>
+	    my $key1 = "$1.$2";
+
+	    if ($pymolBasePairCorePerMolecule[$molIndex] eq "") {
+		$pymolBasePairCorePerMolecule[$molIndex] = "resi $2";
+	    } else {
+		$pymolBasePairCorePerMolecule[$molIndex] = "$pymolBasePairCorePerMolecule[$molIndex]+$2";
+	    }
+
+	    chomp $key1;
+
+	    $basePairCoreMatchList[$molIndex]{$key1} = 1;
+	    
+	    $residueEntry2 =~ /[ ]*([A-Z0-9]*)\.[A-Z]\.[ ]*([0-9]*[A-Z]*)/;
+	    # The key is <chain ID>.<residue number>
+	    my $key2 = "$1.$2";
+
+	    if ($pymolBasePairCorePerMolecule[$molIndex] eq "") {
+		$pymolBasePairCorePerMolecule[$molIndex] = "resi $2";
+	    } else {
+		$pymolBasePairCorePerMolecule[$molIndex] = "$pymolBasePairCorePerMolecule[$molIndex]+$2";
+	    }
+
+	    chomp $key2;
+
+	    $basePairCoreMatchList[$molIndex]{$key2} = 1;
+	}
+
+        next;
+    }
+
+}
+ 
+
+
+if ($isAlignmentFound == 0) {
+    print "alignment no. $alignmentNumber does not exist \n";
+    exit(0);
+}
+
+
+$tmp = $#moleculeFileNames + 1;
+print "Creating PDB files for $tmp molecules.\n";
+
+
+open (OUT_PDB_fullAlignment, ">$outputDir/fullAlignment.pdb") or die "Cannot open output file fullAlignment.pdb";
+
+open (OUT_PDB_referenceAlignment, ">$outputDir/referenceAlignment.pdb") or die "Cannot open output file >referenceAlignment.pdb";
+open (OUT_PDB_coreAlignment, ">$outputDir/coreAlignment.pdb") or die "Cannot open output file coreAlignment.pdb";
+
+open (OUT_PDB_RASMOL_SCRIPT, ">$outputDir/script_fullAlignment.rsm") or die "Cannot open output file script_fullAlignment.rsm";
+print OUT_PDB_RASMOL_SCRIPT "load fullAlignment.pdb\n background white\n define core ";
+
+
+print OUT_PDB_fullAlignment "REMARK   0 ARTS ALIGNMENT: SCORE = $score, CORE SIZE = $coreSize, BP CORE SIZE = $bpCoreSize\n";
+
+print OUT_PDB_referenceAlignment "REMARK   0 ARTS ALIGNMENT: SCORE = $score, CORE SIZE = $coreSize, BP CORE SIZE = $bpCoreSize\n";
+
+print OUT_PDB_coreAlignment "REMARK   0 ARTS ALIGNMENT: SCORE = $score, CORE SIZE = $coreSize, BP CORE SIZE = $bpCoreSize\n";
+
+open (OUT_JMOL_SCRIPT, ">$outputDir/script_fullAlignment.jmol") or die "Cannot open output file script_fullAlignment.jmol";
+print OUT_JMOL_SCRIPT "load fullAlignment.pdb\n background white\n";
+
+my $rasmolCoreCounter = 0;
+my $rasmolBasePairCoreCounter = 0;
+my $key = "";
+my $coreRes = "";
+my $basePairCoreRes = "";
+my $rasmolBasePairCore = "";
+
+my $jmolBasePairCore = "";
+my $jmolCore = "";
+
+for(my $index = 0 ; $index <= $#moleculeFileNames ; $index++) {
+    open (PDB_FILE, "$moleculeFileNames[$index].$TEMP_FILE_SUFFIX") or die "Cannot open PDB file $moleculeFileNames[$index].$TEMP_FILE_SUFFIX";
+    print OUT_PDB_fullAlignment "MODEL     ";
+    printf OUT_PDB_fullAlignment "%4d   $moleculeFileNames[$index]\n", $index+1;
+
+    print OUT_PDB_referenceAlignment "MODEL     ";
+    printf OUT_PDB_referenceAlignment "%4d   $moleculeFileNames[$index]\n", $index+1;
+    
+    print OUT_PDB_coreAlignment "MODEL     ";
+    printf OUT_PDB_coreAlignment "%4d   $moleculeFileNames[$index]\n", $index+1;
+
+    while(<PDB_FILE>){
+#	if(/^ATOM/ or /^SIGATM/ or /^ANISOU/ or /^SIGUIJ/ or /^TER/ or /^HETATM/){
+	if(/^ATOM/ or /^SIGATM/ or /^ANISOU/ or /^SIGUIJ/ or /^HETATM/){
+	    
+	    my $resField = substr($_,22,5);
+	    my $chainid = substr($_,21,1);
+
+	    @tmp = split(' ', $resField);
+	    my $res = $tmp[0];
+
+	    if($chainid =~ / /){
+		$key = ".".$res;
+	    }else{
+		$key=$chainid.".".$res;
+	    }
+
+
+	    if($coreMatchList[$index]{ $key }) {
+		if($index != 0) {
+		    # The molecule is not the reference molecule
+		    print OUT_PDB_referenceAlignment $_;
+		}
+
+		print OUT_PDB_coreAlignment $_;	
+
+
+		if(!($coreRes eq $res)) {
+		    $coreRes = $res;
+
+		    if($rasmolCoreCounter > 11) {
+			$rasmolCoreCounter = 0;
+			print OUT_PDB_RASMOL_SCRIPT "\n define core core or ";
+			$jmolCore = "$jmolCore \ndefine core core ";
+		    }
+
+		    my $molID = $index+1;
+		    my $tmpChainID=($chainid eq ' ')?'':$chainid;
+		    
+		    print OUT_PDB_RASMOL_SCRIPT "(:$tmpChainID:$molID and $res) or ";
+
+		    if ($jmolCore eq "") {
+			$jmolCore = "(\*/$molID and $res:$tmpChainID )";
+		    } else {
+			$jmolCore = "$jmolCore or (\*/$molID and $res:$tmpChainID )";
+		    }
+
+		    $rasmolCoreCounter++;
+		}
+	    }
+
+
+	    if($basePairCoreMatchList[$index]{ $key }) {
+		if(!($basePairCoreRes eq $res)) {
+		    $basePairCoreRes = $res;
+		    
+		    if($rasmolBasePairCoreCounter > 11) {
+			$rasmolBasePairCoreCounter = 0;			
+			$rasmolBasePairCore = "$rasmolBasePairCore \ndefine bpcore bpcore or ";
+			$jmolBasePairCore = "$jmolBasePairCore \ndefine bpcore bpcore ";
+		    }
+
+		    my $tmpChainID=($chainid eq ' ')?'':$chainid;
+		    
+		    my $rasmolMolIndex = $index+1;
+		    $rasmolBasePairCore = "$rasmolBasePairCore (:$tmpChainID:$rasmolMolIndex and $res) or ";
+		    if ($jmolBasePairCore eq "") {
+			$jmolBasePairCore = "(\*/$rasmolMolIndex and $res:$tmpChainID) ";
+		    } else {
+			$jmolBasePairCore = "$jmolBasePairCore or (\*/$rasmolMolIndex and $res:$tmpChainID) ";
+		    }
+
+		    $rasmolBasePairCoreCounter++;
+		}
+	    }
+
+	}
+
+	if($index == 0) { 
+	    print OUT_PDB_referenceAlignment $_;
+	}
+
+	print OUT_PDB_fullAlignment $_;
+    }
+
+
+    print OUT_PDB_fullAlignment "ENDMDL \n";
+    print OUT_PDB_referenceAlignment     "ENDMDL \n";
+    print OUT_PDB_coreAlignment "ENDMDL \n";
+
+    my $modelIndex = $index + 1;
+    print OUT_PYMOL_SCRIPT "select core$modelIndex, backbone$modelIndex and ($pymolCorePerMolecule[$index]) \n";
+    print OUT_PYMOL_SCRIPT "select bpcore$modelIndex, backbone$modelIndex and ($pymolBasePairCorePerMolecule[$index])\n";
+
+    #close OUT_PDB;
+    close PDB_FILE;
+
+    print "",($index + 1),": $moleculeFileNames[$index]\n";
+}
+
+print OUT_JMOL_SCRIPT "\ndefine core $jmolCore \n";
+
+print OUT_PDB_RASMOL_SCRIPT "\ndefine bpcore $rasmolBasePairCore \n";
+print OUT_JMOL_SCRIPT "\ndefine bpcore $jmolBasePairCore \n";
+
+print OUT_PYMOL_SCRIPT "disable all \nenable all \nhide all \n";
+print OUT_PYMOL_SCRIPT "color red, backbone1 \ncolor blue, backbone2 \ncolor yellow, core1 or core2 \ncolor green, bpcore1 or bpcore2 \nshow cartoon, backbone1 or backbone2 \n";
+
+
+close OUT_PDB_RASMOL_SCRIPT;
+close OUT_JMOL_SCRIPT;
+close OUT_PDB_coreAlignment;
+close OUT_PDB_referenceAlignment;
+close OUT_PDB_fullAlignment;
+
+# remove the temporary files
+for(my $index = 0 ; $index <= $#moleculeFileNames ; $index++) {
+`rm -f $moleculeFileNames[$index].$TEMP_FILE_SUFFIX`;
+}    
+
+
+
+
+

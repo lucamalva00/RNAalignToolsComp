@@ -1,0 +1,235 @@
+ARTS (Alignment of RNA Tertiary Structures) program 
+
+Contact: Oranit Dror (oranit@post.tau.ac.il)
+Web Site: http://bioinfo3d.cs.tau.ac.il/ARTS
+
+---------------------------------------------------------------------	
+
+Installation:
+-------------
+
+To install, simply open the archive anywhere.
+
+---------------------------------------------------------------------	
+
+Quick start:
+------------ 
+
+1. Input: 
+	- PDB format files for the two Nucleic Acids you wish to align.
+	- For each PDB file, the user has to supply a file containing
+	the list of all base-pairs. If the name of the PDB file is 
+	x.pdb, then the name of the base-pair file should be x.pairs.
+	The format describing a base-pair is:
+	<chain>:<residue>-<chain>:<residue>.
+  	Here is an example for a base-pair file:
+	# FORMAT: <chain>:<residue>-<chain>:<residue>
+	B:1-B:47
+	B:2-B:46
+	B:3-B:45
+	B:4-B:44
+	B:5-B:43
+	B:6-B:42
+	B:8-B:41
+	B:9-B:40
+	B:11-B:39
+	B:12-B:38
+	
+	Note: The ARTS package contains a script named
+	'parse3DNABasePairs.pl' for parsing a base-pair file generated
+	by the 3DNA program
+	(http://rutchem.rutgers.edu/~xiangjun/3DNA/) to the format
+	required by ARTS.  
+
+2. Running arts
+	* Pairwise Alignment:
+	The command line is 'arts <PDB file path> <PDB file path>'
+	Note that the the base pairs file (the '.pairs' files) for each
+	PDB file should be located under the same path.
+
+	* DB Search
+	The command line is 'arts <PDB file path> -d <DB file>'
+	The DB file contains a line for each DB molecule with its name
+	and the path for its PDB file (separated by a ';'). For
+	example
+	17ra ; 17ra.pdb  
+	1b36:A ; 1b36A.pdb 
+	104d:AB ; 104d_1.pdb
+	 
+        Note that the the base pairs file (the '.pairs' files) for
+	each PDB file should be located under the same path.	
+
+3. Output: 
+	The output is a file named 'arts.out'. This file outlines all
+	the top-ranking alignments found by arts (the format of the file is
+	explained below).  
+
+4. Use arts2pdb to create PDB files of a specific alignment. 
+	The command line is: arts2pdb arts.out <alignment number> 
+	By executing this command, several PDB files decribing the
+	alignment and viewer scripts are created. These files are
+	furhter explained below.  	
+
+5. Use a viewer to view the alignments
+	Note: scripts are available for RasMol and PyMol (described
+	below)  
+
+---------------------------------------------------------------------	
+
+Configuration:
+--------------
+
+The default configuration file is located under the ARTS folder (where
+all the executable files and scripts) and its name is "arts.config". 
+
+In addition, arts can get as an input in the command line a
+configuration file that is specific for the run (by using the "-c" 
+flag in the command line, see below).
+
+---------------------------------------------------------------------	
+
+The rest of this document explains the tools in the ARTS package in depth. 
+
+List of Tools:
+--------------
+
+The tools that would be described are:
+1. arts -      		
+	The main application, which run ARTS algorithm
+2. parse3DNABasePairs.pl - 
+	A script for parsing a base-pair file generated
+	by the 3DNA program
+	(http://rutchem.rutgers.edu/~xiangjun/3DNA/) to 
+	the format required by ARTS.
+3. arts2pdb - 
+	A utility for creating several PDB files where the molecules
+	are aligned.  
+
+1. arts
+--------
+
+A. Command line format:
+
+arts <PDB file path> <PDB file path> <options>
+
+The options in the command line are:
+  -c, --config=configuration file     configuration file. If not
+                                      specified, the default
+                                      parameters are used. 
+
+  -o, --output=output file            output file. If not specified,
+                                      the output will be printed into
+                                      a file named arts.out
+
+
+B. Input:
+
+In other words, arts expects two files for each molecule:
+1. A PDB file. 
+2. A file decribing the list of all base-pairs. 
+   If the name of the PDB file is x.pdb, then the name of the
+   base-pair file should be x.pairs. The format describing a
+   base-pair is: 
+   <chain>:<residue>-<chain>:<residue>.
+   Here is an example for a base-pair file:
+   # FORMAT: <chain>:<residue>-<chain>:<residue>
+   B:1-B:47
+   B:2-B:46
+   B:3-B:45
+   B:4-B:44
+   B:5-B:43
+   B:6-B:42
+   B:8-B:41
+   B:9-B:40
+   B:11-B:39
+   B:12-B:38
+
+C. Output:
+
+By default, arts creates an output file named arts.out in the
+directory from which it has been run. This file summarises the
+top-ranking alignments arts has found. 
+
+Log entries and progress messages go to the standard output. 
+
+The output file has 5 parts: 
+1. The configuration parameters that were used for this run of arts.
+2. General information about the molecules that have been loaded
+   (e.g. names, number of nucleotides).
+3. Runtime in a HH:MM:SS format
+4. A table that lists the top-ranking alignment arts has found. Each
+   alignment has an ID. This ID can be used to find a more detailed
+   information about the alignment down the file.
+5. The rest of the file gives detailed description about each
+   top-ranking alignment:
+   - Score (a weighted sum of the nucleotides and base pairs in the
+     core) 
+   - Core Size (the number of nucleotides in the core)
+   - Number of Conserved Base Pairs (the nuber of base pairs in the core)
+   - RMSD (between the matched nucleotides in the core)
+   - Number Of Identical Core Residues (the number of matched
+     nucleotides with the same base type)
+   - Structural Identity (the core size devided by the size of the
+     smallest input molecules)
+   - Core Sequence Identity (core base identity, that is the number of
+     identicore residues devided by the core size)
+   - Sequential Match Score (a score defined by the number of
+     consecutive nucleotides in the core)
+   - Molecules (the first molecule is the pivot and the second
+     molecule is superimposed on the pivot)  		
+   - The transformations that superimpose the second molecule onto the
+     first one (the pivot)
+   - The match list that describes the core of the alignment. Each
+     entry contains the nucleotides that arts has matched between the
+     molecules. 
+
+D. Customizing
+If a configuration file is supplied in the command line (by using -c
+option), arts uses this file. Otherwise, arts uses the default
+configuration (defined in a file named 'arts.config' and is supposed
+to be located at the same directory as arts).
+
+
+3. arts2pdb
+------------
+
+Use this utility when you wish to view one of the alignments, obtained
+by arts. 
+
+A. Command line format
+
+arts2pdb <arts output file> <alignment number>
+
+B. Output
+
+The utility creates the following PDB files.
+- A PDB file named 'fullAlignment.pdb': When loading this file into a
+viewer, the alignened molecules will be shown completely. 
+- A PDB file named 'referenceAlignment': When loading this file into a
+viewer, the reference molecule will be shown completely. For the
+second molecule, only its core, superimposed on the first molecule,
+will be displayed 
+- A PDB file named 'coreAlignment': When loading this file into a
+viewer, only the core of the alignment will be shown. 
+- A PDB file for each structure after applying the transformation. The
+namese of these PDB files start with 'model1' and 'model2' for the
+first and second molecules repsectively.
+
+In addition, the utility creates:
+- a Rasmol script, named 'script_fullAlignment.rsm'. This script loads
+the 'full_alignment.pdb file' and defines the core of the alignment. 
+To use this script execute: 
+<your rasmol command> -script full_alignment.pdb
+Then, in the prompt of the Rasmol viewer, one can select the core of
+the alignment ('select core') and manipulates it.
+
+- a PyMOL script, named 'script_fullAlignment.pml'. The script loads
+the PDB files of the two molecules after applying the transformation
+(the two model PDB files) and define the common core. Then, in the
+prompt of the PyMOL viewer, one can select the core of the alignment
+and manipulates it. 
+
+- A text file, named 'match.txt' that contains details about the
+alignment.
+
+
