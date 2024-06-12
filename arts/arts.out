@@ -1,0 +1,579 @@
+basis-signature-tolerance	(Str)	0.5
+cluster-bin-size	(Str)	3.5
+cluster-max-dist	(Str)	3.5
+extension-max-atom-distance	(Str)	3.0
+log-file	(Str)	log
+log-level	(Str)	2
+max-num-of-refinements	(Str)	3
+number-of-output-alignments	(Str)	10
+
+Molecules:
+../tRNA_dataset/1b23_chain_R.pdb (74 nucleotides, 24 base pairs) - ../tRNA_dataset/1b23_chain_R.pdb
+../tRNA_dataset/1c0a_chain_B.pdb (77 nucleotides, 24 base pairs) - ../tRNA_dataset/1c0a_chain_B.pdb
+
+Overall Runtime = 0:0:0.12
+
+Summary: 
++-----------+---------+-----------+--------------------+------+ 
+| alignment |  score  | core size | matched base pairs | RMSD | 
++-----------+---------+-----------+--------------------+------+ 
+|         1 |   69.00 |        47 |                 11 | 2.10 | 
+|         2 |   65.00 |        43 |                 11 | 1.67 | 
+|         3 |   49.00 |        29 |                 10 | 1.32 | 
+|         4 |   49.00 |        29 |                 10 | 1.32 | 
+|         5 |   49.00 |        29 |                 10 | 1.32 | 
+|         6 |   49.00 |        37 |                  6 | 1.78 | 
+|         7 |   46.00 |        32 |                  7 | 1.29 | 
+|         8 |   32.00 |        22 |                  5 | 1.30 | 
+|         9 |   31.00 |        19 |                  6 | 1.15 | 
+|        10 |   31.00 |        19 |                  6 | 1.15 | 
++-----------+---------+-----------+--------------------+------+ 
+Alignments:
+
+Alignment No. : 1
+*** Score = 69.00
+*** Core Size = 47
+*** Number of Matched Base Pairs = 11
+*** RMSD = 2.10
+*** Number Of Identical Core Residues = 25
+*** Structural Identity = 0.64
+*** Core Sequence Identity = 0.53
+*** Sequential Match Score = 42
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: -2.66 -0.11 0.93 -20.11 -5.58 29.90
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 1 ,	B.G.601 
+R.G. 2 ,	B.G.602 
+R.C. 3 ,	B.A.603 
+R.G. 4 ,	B.G.604 
+R.C. 5 ,	B.C.605 
+R.G. 6 ,	B.G.606 
+R.U. 7 ,	B.G.607 
+R.U. 8 ,	B.U.608 
+R.A. 9 ,	B.A.609 
+R.A.10 ,	B.G.610 
+R.C.11 ,	B.U.611 
+R.G.18 ,	B.G.619 
+R.G.19 ,	B.U.620 
+R.U.20 ,	B.U.620A
+R.U.21 ,	B.A.621 
+R.C.28 ,	B.C.628 
+R.G.29 ,	B.U.629 
+R.U.39 ,	B.A.641 
+R.C.40 ,	B.G.642 
+R.C.41 ,	B.G.643 
+R.G.42 ,	B.G.644 
+R.U.43 ,	B.G.645 
+R.A.46 ,	B.U.647 
+R.G.48 ,	B.C.648 
+R.U.49 ,	B.G.649 
+R.C.50 ,	B.C.650 
+R.C.51 ,	B.G.651 
+R.G.52 ,	B.G.652 
+R.G.53 ,	B.G.653 
+R.U.54 ,	B.U.654 
+R.U.55 ,	B.U.655 
+R.C.59 ,	B.G.659 
+R.U.60 ,	B.U.660 
+R.C.61 ,	B.C.661 
+R.C.62 ,	B.C.662 
+R.G.63 ,	B.C.663 
+R.G.64 ,	B.G.664 
+R.A.65 ,	B.U.665 
+R.A.66 ,	B.C.666 
+R.C.67 ,	B.C.667 
+R.G.68 ,	B.G.668 
+R.C.69 ,	B.U.669 
+R.G.70 ,	B.U.670 
+R.C.71 ,	B.C.671 
+R.C.72 ,	B.C.672 
+R.U.73 ,	B.G.673 
+R.C.74 ,	B.C.674 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.G. 2 -R.C.71 ,	B.G.602 -B.C.671 
+R.C. 3 -R.G.70 ,	B.A.603 -B.U.670 
+R.G. 4 -R.C.69 ,	B.G.604 -B.U.669 
+R.C. 5 -R.G.68 ,	B.C.605 -B.G.668 
+R.G. 6 -R.C.67 ,	B.G.606 -B.C.667 
+R.U. 7 -R.A.66 ,	B.G.607 -B.C.666 
+R.U.49 -R.A.65 ,	B.G.649 -B.U.665 
+R.C.50 -R.G.64 ,	B.C.650 -B.G.664 
+R.C.51 -R.G.63 ,	B.G.651 -B.C.663 
+R.G.52 -R.C.62 ,	B.G.652 -B.C.662 
+R.G.53 -R.C.61 ,	B.G.653 -B.C.661 
+
+Alignment No. : 2
+*** Score = 65.00
+*** Core Size = 43
+*** Number of Matched Base Pairs = 11
+*** RMSD = 1.67
+*** Number Of Identical Core Residues = 23
+*** Structural Identity = 0.58
+*** Core Sequence Identity = 0.53
+*** Sequential Match Score = 39
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: -2.67 -0.11 0.93 -20.14 -5.41 30.10
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 1 ,	B.G.601 
+R.G. 2 ,	B.G.602 
+R.C. 3 ,	B.A.603 
+R.G. 4 ,	B.G.604 
+R.C. 5 ,	B.C.605 
+R.G. 6 ,	B.G.606 
+R.U. 7 ,	B.G.607 
+R.U. 8 ,	B.U.608 
+R.A. 9 ,	B.A.609 
+R.A.10 ,	B.G.610 
+R.C.11 ,	B.U.611 
+R.C.28 ,	B.C.628 
+R.G.29 ,	B.U.629 
+R.U.39 ,	B.A.641 
+R.C.40 ,	B.G.642 
+R.C.41 ,	B.G.643 
+R.G.42 ,	B.G.644 
+R.U.43 ,	B.G.645 
+R.A.46 ,	B.U.647 
+R.G.48 ,	B.C.648 
+R.U.49 ,	B.G.649 
+R.C.50 ,	B.C.650 
+R.C.51 ,	B.G.651 
+R.G.52 ,	B.G.652 
+R.G.53 ,	B.G.653 
+R.U.54 ,	B.U.654 
+R.U.55 ,	B.U.655 
+R.C.59 ,	B.G.659 
+R.U.60 ,	B.U.660 
+R.C.61 ,	B.C.661 
+R.C.62 ,	B.C.662 
+R.G.63 ,	B.C.663 
+R.G.64 ,	B.G.664 
+R.A.65 ,	B.U.665 
+R.A.66 ,	B.C.666 
+R.C.67 ,	B.C.667 
+R.G.68 ,	B.G.668 
+R.C.69 ,	B.U.669 
+R.G.70 ,	B.U.670 
+R.C.71 ,	B.C.671 
+R.C.72 ,	B.C.672 
+R.U.73 ,	B.G.673 
+R.C.74 ,	B.C.674 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.G. 2 -R.C.71 ,	B.G.602 -B.C.671 
+R.C. 3 -R.G.70 ,	B.A.603 -B.U.670 
+R.G. 4 -R.C.69 ,	B.G.604 -B.U.669 
+R.C. 5 -R.G.68 ,	B.C.605 -B.G.668 
+R.G. 6 -R.C.67 ,	B.G.606 -B.C.667 
+R.U. 7 -R.A.66 ,	B.G.607 -B.C.666 
+R.U.49 -R.A.65 ,	B.G.649 -B.U.665 
+R.C.50 -R.G.64 ,	B.C.650 -B.G.664 
+R.C.51 -R.G.63 ,	B.G.651 -B.C.663 
+R.G.52 -R.C.62 ,	B.G.652 -B.C.662 
+R.G.53 -R.C.61 ,	B.G.653 -B.C.661 
+
+Alignment No. : 3
+*** Score = 49.00
+*** Core Size = 29
+*** Number of Matched Base Pairs = 10
+*** RMSD = 1.32
+*** Number Of Identical Core Residues = 9
+*** Structural Identity = 0.39
+*** Core Sequence Identity = 0.31
+*** Sequential Match Score = 24
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: -2.70 -0.64 0.72 -16.61 15.04 53.27
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 2 ,	B.G.601 
+R.C. 3 ,	B.G.602 
+R.G. 4 ,	B.A.603 
+R.C. 5 ,	B.G.604 
+R.G. 6 ,	B.C.605 
+R.U. 7 ,	B.G.606 
+R.U. 8 ,	B.G.607 
+R.G.29 ,	B.C.640 
+R.G.30 ,	B.A.641 
+R.C.50 ,	B.G.649 
+R.C.51 ,	B.C.650 
+R.G.52 ,	B.G.651 
+R.G.53 ,	B.G.652 
+R.U.54 ,	B.G.653 
+R.C.59 ,	B.G.659 
+R.U.60 ,	B.U.660 
+R.C.61 ,	B.C.662 
+R.C.62 ,	B.C.663 
+R.G.63 ,	B.G.664 
+R.G.64 ,	B.U.665 
+R.A.65 ,	B.C.666 
+R.A.66 ,	B.C.667 
+R.C.67 ,	B.G.668 
+R.G.68 ,	B.U.669 
+R.C.69 ,	B.U.670 
+R.G.70 ,	B.C.671 
+R.C.71 ,	B.C.672 
+R.C.72 ,	B.G.673 
+R.U.73 ,	B.C.674 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.G. 2 -R.C.71 ,	B.G.601 -B.C.672 
+R.C. 3 -R.G.70 ,	B.G.602 -B.C.671 
+R.G. 4 -R.C.69 ,	B.A.603 -B.U.670 
+R.C. 5 -R.G.68 ,	B.G.604 -B.U.669 
+R.G. 6 -R.C.67 ,	B.C.605 -B.G.668 
+R.U. 7 -R.A.66 ,	B.G.606 -B.C.667 
+R.C.50 -R.G.64 ,	B.G.649 -B.U.665 
+R.C.51 -R.G.63 ,	B.C.650 -B.G.664 
+R.G.52 -R.C.62 ,	B.G.651 -B.C.663 
+R.G.53 -R.C.61 ,	B.G.652 -B.C.662 
+
+Alignment No. : 4
+*** Score = 49.00
+*** Core Size = 29
+*** Number of Matched Base Pairs = 10
+*** RMSD = 1.32
+*** Number Of Identical Core Residues = 9
+*** Structural Identity = 0.39
+*** Core Sequence Identity = 0.31
+*** Sequential Match Score = 24
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: -2.70 -0.64 0.72 -16.61 15.04 53.27
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 2 ,	B.G.601 
+R.C. 3 ,	B.G.602 
+R.G. 4 ,	B.A.603 
+R.C. 5 ,	B.G.604 
+R.G. 6 ,	B.C.605 
+R.U. 7 ,	B.G.606 
+R.U. 8 ,	B.G.607 
+R.G.29 ,	B.C.640 
+R.G.30 ,	B.A.641 
+R.C.50 ,	B.G.649 
+R.C.51 ,	B.C.650 
+R.G.52 ,	B.G.651 
+R.G.53 ,	B.G.652 
+R.U.54 ,	B.G.653 
+R.C.59 ,	B.G.659 
+R.U.60 ,	B.U.660 
+R.C.61 ,	B.C.662 
+R.C.62 ,	B.C.663 
+R.G.63 ,	B.G.664 
+R.G.64 ,	B.U.665 
+R.A.65 ,	B.C.666 
+R.A.66 ,	B.C.667 
+R.C.67 ,	B.G.668 
+R.G.68 ,	B.U.669 
+R.C.69 ,	B.U.670 
+R.G.70 ,	B.C.671 
+R.C.71 ,	B.C.672 
+R.C.72 ,	B.G.673 
+R.U.73 ,	B.C.674 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.G. 2 -R.C.71 ,	B.G.601 -B.C.672 
+R.C. 3 -R.G.70 ,	B.G.602 -B.C.671 
+R.G. 4 -R.C.69 ,	B.A.603 -B.U.670 
+R.C. 5 -R.G.68 ,	B.G.604 -B.U.669 
+R.G. 6 -R.C.67 ,	B.C.605 -B.G.668 
+R.U. 7 -R.A.66 ,	B.G.606 -B.C.667 
+R.C.50 -R.G.64 ,	B.G.649 -B.U.665 
+R.C.51 -R.G.63 ,	B.C.650 -B.G.664 
+R.G.52 -R.C.62 ,	B.G.651 -B.C.663 
+R.G.53 -R.C.61 ,	B.G.652 -B.C.662 
+
+Alignment No. : 5
+*** Score = 49.00
+*** Core Size = 29
+*** Number of Matched Base Pairs = 10
+*** RMSD = 1.32
+*** Number Of Identical Core Residues = 9
+*** Structural Identity = 0.39
+*** Core Sequence Identity = 0.31
+*** Sequential Match Score = 24
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: -2.70 -0.64 0.72 -16.61 15.04 53.27
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 2 ,	B.G.601 
+R.C. 3 ,	B.G.602 
+R.G. 4 ,	B.A.603 
+R.C. 5 ,	B.G.604 
+R.G. 6 ,	B.C.605 
+R.U. 7 ,	B.G.606 
+R.U. 8 ,	B.G.607 
+R.G.29 ,	B.C.640 
+R.G.30 ,	B.A.641 
+R.C.50 ,	B.G.649 
+R.C.51 ,	B.C.650 
+R.G.52 ,	B.G.651 
+R.G.53 ,	B.G.652 
+R.U.54 ,	B.G.653 
+R.C.59 ,	B.G.659 
+R.U.60 ,	B.U.660 
+R.C.61 ,	B.C.662 
+R.C.62 ,	B.C.663 
+R.G.63 ,	B.G.664 
+R.G.64 ,	B.U.665 
+R.A.65 ,	B.C.666 
+R.A.66 ,	B.C.667 
+R.C.67 ,	B.G.668 
+R.G.68 ,	B.U.669 
+R.C.69 ,	B.U.670 
+R.G.70 ,	B.C.671 
+R.C.71 ,	B.C.672 
+R.C.72 ,	B.G.673 
+R.U.73 ,	B.C.674 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.G. 2 -R.C.71 ,	B.G.601 -B.C.672 
+R.C. 3 -R.G.70 ,	B.G.602 -B.C.671 
+R.G. 4 -R.C.69 ,	B.A.603 -B.U.670 
+R.C. 5 -R.G.68 ,	B.G.604 -B.U.669 
+R.G. 6 -R.C.67 ,	B.C.605 -B.G.668 
+R.U. 7 -R.A.66 ,	B.G.606 -B.C.667 
+R.C.50 -R.G.64 ,	B.G.649 -B.U.665 
+R.C.51 -R.G.63 ,	B.C.650 -B.G.664 
+R.G.52 -R.C.62 ,	B.G.651 -B.C.663 
+R.G.53 -R.C.61 ,	B.G.652 -B.C.662 
+
+Alignment No. : 6
+*** Score = 49.00
+*** Core Size = 37
+*** Number of Matched Base Pairs = 6
+*** RMSD = 1.78
+*** Number Of Identical Core Residues = 19
+*** Structural Identity = 0.50
+*** Core Sequence Identity = 0.51
+*** Sequential Match Score = 31
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: -2.68 -0.19 1.10 -12.51 -7.84 34.07
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 1 ,	B.G.601 
+R.C. 3 ,	B.G.602 
+R.G. 4 ,	B.A.603 
+R.U. 7 ,	B.G.607 
+R.U. 8 ,	B.U.608 
+R.A. 9 ,	B.A.609 
+R.A.10 ,	B.G.610 
+R.C.11 ,	B.U.611 
+R.A.14 ,	B.A.614 
+R.G.15 ,	B.G.615 
+R.C.28 ,	B.C.628 
+R.G.29 ,	B.U.629 
+R.U.39 ,	B.C.640 
+R.C.40 ,	B.A.641 
+R.C.41 ,	B.G.642 
+R.G.42 ,	B.G.643 
+R.U.43 ,	B.G.644 
+R.A.46 ,	B.U.647 
+R.G.48 ,	B.C.648 
+R.U.49 ,	B.G.649 
+R.C.50 ,	B.C.650 
+R.C.51 ,	B.G.651 
+R.G.52 ,	B.G.652 
+R.G.53 ,	B.G.653 
+R.U.54 ,	B.U.654 
+R.U.55 ,	B.U.655 
+R.C.56 ,	B.C.656 
+R.G.57 ,	B.G.657 
+R.A.58 ,	B.A.658 
+R.C.59 ,	B.G.659 
+R.U.60 ,	B.U.660 
+R.C.61 ,	B.C.661 
+R.C.62 ,	B.C.662 
+R.G.63 ,	B.C.663 
+R.G.64 ,	B.G.664 
+R.A.65 ,	B.U.665 
+R.A.66 ,	B.C.666 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.U. 7 -R.A.66 ,	B.G.607 -B.C.666 
+R.U.49 -R.A.65 ,	B.G.649 -B.U.665 
+R.C.50 -R.G.64 ,	B.C.650 -B.G.664 
+R.C.51 -R.G.63 ,	B.G.651 -B.C.663 
+R.G.52 -R.C.62 ,	B.G.652 -B.C.662 
+R.G.53 -R.C.61 ,	B.G.653 -B.C.661 
+
+Alignment No. : 7
+*** Score = 46.00
+*** Core Size = 32
+*** Number of Matched Base Pairs = 7
+*** RMSD = 1.29
+*** Number Of Identical Core Residues = 18
+*** Structural Identity = 0.43
+*** Core Sequence Identity = 0.56
+*** Sequential Match Score = 29
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: -2.66 -0.14 1.13 -10.66 -9.38 31.40
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.U. 8 ,	B.U.608 
+R.A. 9 ,	B.A.609 
+R.A.10 ,	B.G.610 
+R.C.11 ,	B.U.611 
+R.A.12 ,	B.U.612 
+R.A.13 ,	B.C.613 
+R.A.14 ,	B.A.614 
+R.G.15 ,	B.G.615 
+R.U.23 ,	B.A.623 
+R.G.24 ,	B.A.624 
+R.U.25 ,	B.U.625 
+R.A.26 ,	B.A.626 
+R.G.27 ,	B.C.627 
+R.A.46 ,	B.U.647 
+R.G.48 ,	B.C.648 
+R.U.49 ,	B.G.649 
+R.C.50 ,	B.C.650 
+R.C.51 ,	B.G.651 
+R.G.52 ,	B.G.652 
+R.G.53 ,	B.G.653 
+R.U.54 ,	B.U.654 
+R.U.55 ,	B.U.655 
+R.C.56 ,	B.C.656 
+R.G.57 ,	B.G.657 
+R.A.58 ,	B.A.658 
+R.C.59 ,	B.G.659 
+R.U.60 ,	B.U.660 
+R.C.61 ,	B.C.661 
+R.C.62 ,	B.C.662 
+R.G.63 ,	B.C.663 
+R.G.64 ,	B.G.664 
+R.A.65 ,	B.U.665 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.C.11 -R.G.24 ,	B.U.611 -B.A.624 
+R.A.12 -R.U.23 ,	B.U.612 -B.A.623 
+R.U.49 -R.A.65 ,	B.G.649 -B.U.665 
+R.C.50 -R.G.64 ,	B.C.650 -B.G.664 
+R.C.51 -R.G.63 ,	B.G.651 -B.C.663 
+R.G.52 -R.C.62 ,	B.G.652 -B.C.662 
+R.G.53 -R.C.61 ,	B.G.653 -B.C.661 
+
+Alignment No. : 8
+*** Score = 32.00
+*** Core Size = 22
+*** Number of Matched Base Pairs = 5
+*** RMSD = 1.30
+*** Number Of Identical Core Residues = 5
+*** Structural Identity = 0.30
+*** Core Sequence Identity = 0.23
+*** Sequential Match Score = 19
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: -2.86 0.37 1.11 -13.01 -14.27 2.71
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 1 ,	B.G.602 
+R.G. 2 ,	B.A.603 
+R.C. 3 ,	B.G.604 
+R.G. 4 ,	B.C.605 
+R.C. 5 ,	B.G.606 
+R.G. 6 ,	B.G.607 
+R.G.57 ,	B.C.656 
+R.A.58 ,	B.G.657 
+R.C.59 ,	B.A.658 
+R.G.63 ,	B.C.662 
+R.G.64 ,	B.C.663 
+R.A.65 ,	B.G.664 
+R.A.66 ,	B.U.665 
+R.C.67 ,	B.C.666 
+R.G.68 ,	B.C.667 
+R.C.69 ,	B.G.668 
+R.G.70 ,	B.U.669 
+R.C.71 ,	B.U.670 
+R.C.72 ,	B.C.671 
+R.U.73 ,	B.C.672 
+R.C.74 ,	B.G.673 
+R.C.75 ,	B.C.674 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.G. 2 -R.C.71 ,	B.A.603 -B.U.670 
+R.C. 3 -R.G.70 ,	B.G.604 -B.U.669 
+R.G. 4 -R.C.69 ,	B.C.605 -B.G.668 
+R.C. 5 -R.G.68 ,	B.G.606 -B.C.667 
+R.G. 6 -R.C.67 ,	B.G.607 -B.C.666 
+
+Alignment No. : 9
+*** Score = 31.00
+*** Core Size = 19
+*** Number of Matched Base Pairs = 6
+*** RMSD = 1.15
+*** Number Of Identical Core Residues = 9
+*** Structural Identity = 0.26
+*** Core Sequence Identity = 0.47
+*** Sequential Match Score = 16
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: 1.39 0.80 -2.87 52.77 28.02 -31.48
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 1 ,	B.C.605 
+R.G. 2 ,	B.G.606 
+R.C. 3 ,	B.G.607 
+R.G. 4 ,	B.G.649 
+R.C. 5 ,	B.C.650 
+R.G. 6 ,	B.G.651 
+R.U. 7 ,	B.G.652 
+R.U. 8 ,	B.G.653 
+R.A.65 ,	B.C.661 
+R.A.66 ,	B.C.662 
+R.C.67 ,	B.C.663 
+R.G.68 ,	B.G.664 
+R.C.69 ,	B.U.665 
+R.G.70 ,	B.C.666 
+R.C.71 ,	B.C.667 
+R.C.72 ,	B.G.668 
+R.U.73 ,	B.U.669 
+R.C.74 ,	B.U.670 
+R.C.75 ,	B.C.671 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.G. 2 -R.C.71 ,	B.G.606 -B.C.667 
+R.C. 3 -R.G.70 ,	B.G.607 -B.C.666 
+R.G. 4 -R.C.69 ,	B.G.649 -B.U.665 
+R.C. 5 -R.G.68 ,	B.C.650 -B.G.664 
+R.G. 6 -R.C.67 ,	B.G.651 -B.C.663 
+R.U. 7 -R.A.66 ,	B.G.652 -B.C.662 
+
+Alignment No. : 10
+*** Score = 31.00
+*** Core Size = 19
+*** Number of Matched Base Pairs = 6
+*** RMSD = 1.15
+*** Number Of Identical Core Residues = 9
+*** Structural Identity = 0.26
+*** Core Sequence Identity = 0.47
+*** Sequential Match Score = 16
+*** Molecules: ../tRNA_dataset/1b23_chain_R.pdb	../tRNA_dataset/1c0a_chain_B.pdb
+*** Transformation: 1.39 0.80 -2.87 52.77 28.02 -31.48
+*** Matched Nucleotides:
+../tRNA_dataset/1b23_chain_R.pdb,	../tRNA_dataset/1c0a_chain_B.pdb
+R.G. 1 ,	B.C.605 
+R.G. 2 ,	B.G.606 
+R.C. 3 ,	B.G.607 
+R.G. 4 ,	B.G.649 
+R.C. 5 ,	B.C.650 
+R.G. 6 ,	B.G.651 
+R.U. 7 ,	B.G.652 
+R.U. 8 ,	B.G.653 
+R.A.65 ,	B.C.661 
+R.A.66 ,	B.C.662 
+R.C.67 ,	B.C.663 
+R.G.68 ,	B.G.664 
+R.C.69 ,	B.U.665 
+R.G.70 ,	B.C.666 
+R.C.71 ,	B.C.667 
+R.C.72 ,	B.G.668 
+R.U.73 ,	B.U.669 
+R.C.74 ,	B.U.670 
+R.C.75 ,	B.C.671 
+*** Matched Base Pairs:
+../tRNA_dataset/1b23_chain_R.pdb,		../tRNA_dataset/1b23_chain_R.pdb
+R.G. 2 -R.C.71 ,	B.G.606 -B.C.667 
+R.C. 3 -R.G.70 ,	B.G.607 -B.C.666 
+R.G. 4 -R.C.69 ,	B.G.649 -B.U.665 
+R.C. 5 -R.G.68 ,	B.C.650 -B.G.664 
+R.G. 6 -R.C.67 ,	B.G.651 -B.C.663 
+R.U. 7 -R.A.66 ,	B.G.652 -B.C.662 

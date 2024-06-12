@@ -1,8 +1,3 @@
-# Performs an all-to-all alignment on a given dataset.
-# The alignment outputs are written on the text file 'all_to_all_outputs.txt'.
-#
-# Usage: python3 RMalign_all_to_all.py <dataset path>
-
 import sys
 import os
 import subprocess
