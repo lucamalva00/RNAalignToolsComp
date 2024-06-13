@@ -65,8 +65,9 @@ def exec_ARTS():
     arts_path = "./arts/arts"
 
     outputs = []
-
+    print(len(pairs))
     for pair in pairs:
+        print(pairs.index(pair))
         alignment_list = []
 
         first_elem = pair[0]
@@ -76,7 +77,8 @@ def exec_ARTS():
         alignment_list.append(second_elem[0:4])
 
         result = subprocess.run([arts_path, "./tRNA_dataset/" + first_elem, "./tRNA_dataset/" + second_elem], capture_output=True)
-
+        if(result.returncode==255):
+            continue
 
         arts_out = []
 
@@ -93,9 +95,10 @@ def exec_ARTS():
             if (line.startswith("*** RMSD")):
                 print(line)
                 splitted_line = line.split(" ")
-                alignment_list.append(splitted_line[3])
+                alignment_list.append(splitted_line[3].strip())
                 break
-            
+
+        print(alignment_list)    
 
         
         outputs.append(alignment_list)
