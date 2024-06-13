@@ -1,0 +1,9 @@
+BEGIN_base-pair
+     7_29, D:     7 A-U    29 D: -/- cis         XX
+     8_28, D:     8 U-G    28 D: W/W cis         XXVIII
+    16_27, D:    16 U-A    27 D: W/W cis         n/a
+    18_25, D:    18 G-C    25 D: +/+ cis         XIX
+    18_25,-
+7_29_8_28_16_27_18_25_0, click this line to see above pattern
+0_0,---------
+END_base-pair

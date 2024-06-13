@@ -1,0 +1,9 @@
+BEGIN_base-pair
+     7_65, B:     7 G-C    66 B: +/+ cis         XIX
+    10_24, B:    10 G-C    25 B: W/W cis         n/a
+    12_22, B:    12 G-C    23 B: W/W cis         n/a
+    13_21, B:    13 C-G    22 B: +/+ cis         XIX
+    13_21,-
+7_65_10_24_12_22_13_21_0, click this line to see above pattern
+0_0,---------
+END_base-pair

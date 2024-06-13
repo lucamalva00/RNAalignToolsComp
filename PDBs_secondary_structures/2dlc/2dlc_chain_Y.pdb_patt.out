@@ -1,0 +1,12 @@
+BEGIN_base-pair
+    12_20, Y:   512 C-G   523 Y: +/+ cis         XIX
+    14_18, Y:   514 A-A   521 Y: W/S cis         n/a
+    15_38, Y:   515 G-c   548 Y: W/W tran        XXII
+    16_45, Y:   518 g-P   555 Y: W/S tran        n/a
+    17_46, Y:   519 G-C   556 Y: W/W cis    syn    n/a
+    23_35, Y:   526 g-A   544 Y: W/W cis         VIII
+    24_34, Y:   527 C-G   543 Y: +/+ cis         XIX
+    24_34,-
+12_20_14_18_15_38_16_45_17_46_23_35_24_34_0, click this line to see above pattern
+0_0,---------
+END_base-pair

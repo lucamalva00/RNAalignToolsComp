@@ -1,0 +1,80 @@
+PDB data file name: tRNA_dataset/2azx_chain_D.pdb_new
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+    30_38, D:   531 A-U   539 D: -/- cis         XX
+     4_68, D:   504 C-G   569 D: +/+ cis         XIX
+     6_66, D:   506 C-G   567 D: +/+ cis         XIX
+    11_23, D:   511 C-G   524 D: +/+ cis         XIX
+    13_21, D:   513 C-G   522 D: +/+ cis         XIX
+    27_41, D:   528 C-G   542 D: +/+ cis         XIX
+    49_63, D:   550 C-G   564 D: +/+ cis         XIX
+     7_65, D:   507 G-C   566 D: +/+ cis         XIX
+    10_24, D:   510 G-C   525 D: +/+ cis         XIX
+    12_22, D:   512 G-C   523 D: +/+ cis         XIX
+    18_55, D:   519 G-C   556 D: +/+ cis         XIX
+    29_39, D:   530 G-C   540 D: +/+ cis         XIX
+    50_62, D:   551 G-C   563 D: +/+ cis         XIX
+    52_60, D:   553 G-C   561 D: +/+ cis         XIX
+    26_42, D:   527 U-A   543 D: -/- cis         XX
+    28_40, D:   529 U-A   541 D: -/- cis         XX
+    51_61, D:   552 U-A   562 D: -/- cis         XX
+    31_37, D:   532 C-A   538 D: W/W cis         n/a
+     3_69, D:   503 C-G   570 D: W/W cis         n/a
+    25_43, D:   526 G-A   544 D: W/W cis         VIII
+    48_64, D:   549 G-U   565 D: W/W cis         XXVIII
+     5_67, D:   505 U-G   568 D: W/W cis         XXVIII
+    15_47, D:   515 A-U   548 D: W/W tran        XXI
+     8_14, D:   508 U-A   514 D: W/H tran        XXIV
+    53_57, D:   554 U-A   558 D: W/H tran        XXIV
+    14_20, D:   514 A-A   521 D: W/S cis         n/a
+    17_54, D:   518 G-U   555 D: W/S tran        n/a
+    21_45, D:   522 G-G   546 D: H/W tran        VII
+    10_44, D:   510 G-G   545 D: H/S cis         n/a
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+8_14_20_| [1 3]  D: 508 U  +  D: 514 A  +  D: 521 A
+10_24_44_| [2 3]  D: 510 G  +  D: 525 C  +  D: 545 G
+13_21_45_| [3 3]  D: 513 C  +  D: 522 G  +  D: 546 G
+END_multiplets
+
+  The total base pairs =  29 (from   72 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       17        5        1        0        0        0        0
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        0        3        1        1        1        0
+------------------------------------------------

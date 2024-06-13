@@ -1,0 +1,9 @@
+BEGIN_base-pair
+    16_21, J:    15 C-G    20 J: +/+ cis         XIX
+    17_77, J:    16 U-U    59 J: W/W tran        XII,XIII
+    18_73, J:    18 G-U    55 J: W/S tran        n/a
+    19_74, J:    19 G-C    56 J: +/+ cis    syn    XIX
+    19_74,-
+16_21_17_77_18_73_19_74_0, click this line to see above pattern
+0_0,---------
+END_base-pair

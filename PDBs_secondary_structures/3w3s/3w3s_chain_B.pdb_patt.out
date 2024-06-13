@@ -1,0 +1,10 @@
+BEGIN_base-pair
+    17_22, B:    15 C-G    20 B: +/+ cis         XIX
+    18_81, B:    16 U-U    59 B: W/W tran        XII,XIII
+    19_77, B:    18 G-U    55 B: W/S tran        n/a
+    20_21, B:    19 G-U    20 B: S/H cis         n/a
+    20_78, B:    19 G-C    56 B: +/+ cis         XIX
+    20_78,-
+17_22_18_81_19_77_20_21_20_78_0, click this line to see above pattern
+0_0,---------
+END_base-pair

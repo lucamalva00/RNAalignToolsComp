@@ -1,0 +1,18 @@
+BEGIN_base-pair
+     7_64, H:     7 G-C    66 H: +/+ cis         XIX
+     8_14, H:     8 U-A    14 H: W/H tran        XXIV
+     8_45, H:     8 U-G    46 H: s/S cis         n/a
+    10_24, H:    10 G-C    25 H: +/+ cis         XIX
+    10_24,-
+7_64_8_14_8_45_10_24_0, click this line to see above pattern
+0_0,---------
+    12_22, H:    12 C-G    23 H: +/+ cis         XIX
+    13_21, H:    13 U-G    22 H: W/W cis         XXVIII
+    14_20, H:    14 A-A    21 H: W/S cis         n/a
+    15_46, H:    15 A-U    48 H: W/W tran        XXI
+    21_45, H:    22 G-G    46 H: H/W tran        VII
+    26_42, H:    27 G-C    43 H: +/+ cis         XIX
+    26_42,-
+12_22_13_21_14_20_15_46_21_45_26_42_0, click this line to see above pattern
+0_0,---------
+END_base-pair

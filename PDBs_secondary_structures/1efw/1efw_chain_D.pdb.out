@@ -1,0 +1,119 @@
+PDB data file name: tRNA_dataset/1efw_chain_D.pdb_new
+uncommon residue 4SU    8  on chain D [#8] assigned to: u
+uncommon residue H2U   16  on chain D [#16] assigned to: u
+uncommon residue H2U   20  on chain D [#20] assigned to: u
+uncommon residue H2U   20A on chain D [#21] assigned to: u
+uncommon residue QUO   34  on chain D [#35] assigned to: g
+uncommon residue 2MA   37  on chain D [#38] assigned to: a
+uncommon residue G7M   46  on chain D [#47] assigned to: g
+uncommon residue 5MU   54  on chain D [#55] assigned to: u
+uncommon residue PSU   55  on chain D [#56] assigned to: P
+uncommon residue PSU   65  on chain D [#66] assigned to: P
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+     1_73, D:     1 G-C    72 D: W/W cis         n/a
+      2_3, D:     2 G-A     3 D:      stacked
+     2_72, D:     2 G-C    71 D: W/W cis         n/a
+     2_73, D:     2 G-C    72 D:      stacked
+     3_70, D:     3 A-U    69 D: W/W cis         n/a
+     3_71, D:     3 A-U    70 D: -/- cis         XX
+     3_72, D:     3 A-C    71 D:      stacked
+      4_5, D:     4 G-C     5 D:      stacked
+     4_70, D:     4 G-U    69 D: W/W cis         XXVIII
+     5_69, D:     5 C-G    68 D: +/+ cis         XIX
+      6_7, D:     6 G-G     7 D:      stacked
+     6_68, D:     6 G-C    67 D: +/+ cis         XIX
+     7_67, D:     7 G-C    66 D: +/+ cis         XIX
+     8_14, D:     8 u-A    14 D: W/H tran        XXIV
+     9_24, D:     9 A-A    23 D: H/H tran        II
+    10_26, D:    10 G-U    25 D: W/W cis         XXVIII
+    10_46, D:    10 G-G    45 D: H/S cis         n/a
+    11_25, D:    11 U-A    24 D: -/- cis         XX
+    12_13, D:    12 U-C    13 D:      stacked
+    12_24, D:    12 U-A    23 D: -/- cis         XX
+    13_23, D:    13 C-G    22 D: +/+ cis         XIX
+    14_22, D:    14 A-A    21 D: W/S cis         n/a
+    15_49, D:    15 G-C    48 D: W/W tran        XXII
+    18_56, D:    18 G-P    55 D: W/S tran        n/a
+    19_57, D:    19 G-C    56 D: +/+ cis    syn    XIX
+    23_47, D:    22 G-g    46 D: H/W tran     syn  VII
+    27_45, D:    26 A-G    44 D: W/W cis         VIII
+    28_44, D:    27 C-G    43 D: +/+ cis         XIX
+    29_43, D:    28 C-G    42 D: +/+ cis         XIX
+    30_31, D:    29 U-G    30 D:      stacked
+    30_42, D:    29 U-A    41 D: -/- cis         XX
+    31_41, D:    30 G-C    40 D: +/+ cis         XIX
+    32_40, D:    31 C-G    39 D: +/+ cis         XIX
+    33_39, D:    32 C-C    38 D: W/W cis         n/a
+    50_66, D:    49 G-P    65 D: W/W cis         n/a
+    51_65, D:    50 C-G    64 D: +/+ cis         XIX
+    52_64, D:    51 G-C    63 D: +/+ cis         XIX
+    53_63, D:    52 G-C    62 D: +/+ cis         XIX
+    53_64, D:    52 G-C    63 D:      stacked
+    54_62, D:    53 G-C    61 D: +/+ cis         XIX
+    55_56, D:    54 u-P    55 D:      stacked
+    55_59, D:    54 u-A    58 D: W/H tran     syn  XXIV
+    68_69, D:    67 C-G    68 D:      stacked
+    70_71, D:    69 U-U    70 D:      stacked
+    71_72, D:    70 U-C    71 D: S/H cis         n/a
+    11_26, D:    11 U-U    25 D: W/W cis         !1H(b_b)
+     8_22, D:     8 u-A    21 D: S/W tran        !(b_s)
+     8_50, D:     8 u-G    49 D: S/? cis         !(b_s)
+      7_8, D:     7 G-u     8 D: S/H cis         !(s_s)
+    16_60, D:    16 u-G    59 D: ?/W cis    syn    !(s_s)
+    16_61, D:    16 u-U    60 D: ?/S cis    syn    !(s_s)
+    22_23, D:    21 A-G    22 D: S/S cis         !(s_s)
+    34_35, D:    33 U-g    34 D: S/S cis         !(s_s)
+    48_49, D:    47 U-C    48 D: S/H tran   syn    !(s_s)
+    61_62, D:    60 U-C    61 D: S/H cis         !(s_s)
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+2_71_72_| [1 3]  D: 2 G  +  D: 70 U  +  D: 71 C
+3_71_72_| [2 3]  D: 3 A  +  D: 70 U  +  D: 71 C
+8_14_22_| [3 3]  D: 8 u  +  D: 14 A  +  D: 21 A
+9_12_24_| [4 3]  D: 9 A  +  D: 12 U  +  D: 23 A
+10_26_46_| [5 3]  D: 10 G  +  D: 25 U  +  D: 45 G
+13_23_47_| [6 3]  D: 13 C  +  D: 22 G  +  D: 46 g
+END_multiplets
+
+  The total base pairs =  34 (from   73 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       17        8        1        0        1        0        0
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        0        3        1        1        2        0
+------------------------------------------------

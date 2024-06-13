@@ -1,0 +1,19 @@
+BEGIN_base-pair
+     3_63, F:     7 A-U    66 F: -/- cis         XX
+     4_17, F:     8 U-A    20 F: S/W tran        n/a
+     5_20, F:     9 G-C    23 F: W/W tran        XXII
+     6_22, F:    10 G-C    25 F: +/+ cis         XIX
+     6_22,-
+3_63_4_17_5_20_6_22_0, click this line to see above pattern
+0_0,---------
+     8_20, F:    12 G-C    23 F: +/+ cis         XIX
+     9_19, F:    13 G-A    22 F: S/H tran        XI
+    10_17, F:    14 A-A    20 F: W/S cis         n/a
+    11_46, F:    15 A-U    48 F: W/W tran        XXI
+    14_53, F:    18 G-U    55 F: W/S tran        n/a
+    23_36, F:    26 A-C    44 F: W/W cis         n/a
+    24_35, F:    27 A-U    43 F: -/- cis         XX
+    24_35,-
+8_20_9_19_10_17_11_46_14_53_23_36_24_35_0, click this line to see above pattern
+0_0,---------
+END_base-pair

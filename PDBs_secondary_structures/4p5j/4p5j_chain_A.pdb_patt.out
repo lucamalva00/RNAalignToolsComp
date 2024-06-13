@@ -1,0 +1,10 @@
+BEGIN_base-pair
+     7_14, A:     7 C-G    14 A: +/+ cis         XIX
+     8_52, A:     8 C-C    52 A: W/W tran        XIV,XV
+     9_48, A:     9 A-G    48 A: H/S tran   syn    XI
+    10_11, A:    10 G-U    11 A: S/H cis         n/a
+    10_49, A:    10 G-C    49 A: +/+ cis         XIX
+    10_49,-
+7_14_8_52_9_48_10_11_10_49_0, click this line to see above pattern
+0_0,---------
+END_base-pair

@@ -1,0 +1,9 @@
+BEGIN_base-pair
+     7_29, A:     7 A-U    29 A: -/- cis         XX
+     8_27, A:     8 U-A    27 A: W/H tran        XXIV
+     9_26, A:     9 A-G    26 A: H/S tran        XI
+    10_25, A:    10 G-C    25 A: +/+ cis         XIX
+    10_25,-
+7_29_8_27_9_26_10_25_0, click this line to see above pattern
+0_0,---------
+END_base-pair

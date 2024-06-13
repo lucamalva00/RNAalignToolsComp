@@ -1,0 +1,28 @@
+BEGIN_base-pair
+    17_54, D:  1918 G-C  1956 D: +/+ cis    syn    XIX
+    21_45, D:  1922 G-A  1946 D: H/W tran        n/a
+    24_44, D:  1925 U-G  1945 D: W/W cis         XXVIII
+    25_43, D:  1926 G-A  1944 D: W/W cis         VIII
+    26_42, D:  1927 G-C  1943 D: +/+ cis         XIX
+    26_42,-
+17_54_21_45_24_44_25_43_26_42_0, click this line to see above pattern
+0_0,---------
+     6_64, D:  1907 A-U  1966 D: -/- cis         XX
+     7_13, D:  1908 U-A  1914 D: W/H tran        XXIV
+     8_22, D:  1909 A-A  1923 D: H/H tran        II
+     9_24, D:  1910 G-U  1925 D: W/W cis         XXVIII
+    10_23, D:  1911 U-A  1924 D: -/- cis         XX
+    10_23,-
+6_64_7_13_8_22_9_24_10_23_0, click this line to see above pattern
+0_0,---------
+    11_22, D:  1912 U-A  1923 D: -/- cis         XX
+    12_21, D:  1913 P-G  1922 D: W/W cis         n/a
+    13_20, D:  1914 A-A  1921 D: W/S cis         n/a
+    14_46, D:  1915 A-U  1948 D: W/W tran        XXI
+    15_57, D:  1916 u-U  1959 D: W/W tran        XII,XIII
+    16_53, D:  1917 G-P  1955 D: W/S tran        n/a
+    17_54, D:  1918 G-C  1956 D: +/+ cis    syn    XIX
+    17_54,-
+11_22_12_21_13_20_14_46_15_57_16_53_17_54_0, click this line to see above pattern
+0_0,---------
+END_base-pair

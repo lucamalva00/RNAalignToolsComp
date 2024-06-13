@@ -1,0 +1,31 @@
+BEGIN_base-pair
+    37_71, F:    37 U-A    71 F: -/- cis         XX
+    38_70, F:    38 G-G    70 F: H/W cis    syn    VI
+    43_62, F:    43 G-A    62 F: S/W tran        X
+    44_63, F:    44 C-G    63 F: +/+ cis      syn  XIX
+    44_63,-
+37_71_38_70_43_62_44_63_0, click this line to see above pattern
+0_0,---------
+    44_63, F:    44 C-G    63 F: +/+ cis      syn  XIX
+    45_57, F:    45 G-G    57 F: W/W tran        III
+    46_59, F:    46 A-G    59 F: W/S tran   syn    X
+    47_69, F:    47 C-G    69 F: +/+ cis         XIX
+    47_69,-
+44_63_45_57_46_59_47_69_0, click this line to see above pattern
+0_0,---------
+    51_65, F:    51 A-U    65 F: -/- cis         XX
+    52_64, F:    52 G-C    64 F: W/W cis         n/a
+    53_64, F:    53 G-C    64 F: S/W cis         n/a
+    58_62, F:    58 U-A    62 F: W/H tran        XXIV
+    58_62,-
+51_65_52_64_53_64_58_62_0, click this line to see above pattern
+0_0,---------
+    15_91, F:    15 G-C    91 F: +/+ cis         XIX
+    19_86, F:    19 A-A    86 F: H/H tran        II
+    21_85, F:    21 U-A    85 F: W/H tran        XXIV
+    22_84, F:    22 A-G    84 F: H/S tran        XI
+    23_83, F:    23 U-A    83 F: -/- cis         XX
+    23_83,-
+15_91_19_86_21_85_22_84_23_83_0, click this line to see above pattern
+0_0,---------
+END_base-pair

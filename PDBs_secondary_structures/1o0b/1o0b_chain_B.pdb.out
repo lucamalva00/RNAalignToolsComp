@@ -1,0 +1,90 @@
+PDB data file name: tRNA_dataset/1o0b_chain_B.pdb_new
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+     1_69, B:   902 G-C   971 B: +/+ cis         XIX
+     2_68, B:   903 G-C   970 B: +/+ cis         XIX
+      3_4, B:   904 G-G   905 B:      stacked
+     3_67, B:   904 G-C   969 B: +/+ cis         XIX
+     4_66, B:   905 G-C   968 B: +/+ cis         XIX
+      5_6, B:   906 U-A   907 B:      stacked
+     5_65, B:   906 U-A   967 B: -/- cis         XX
+     6_64, B:   907 A-U   966 B: -/- cis         XX
+     7_13, B:   908 U-A   914 B: W/H tran        XXIV
+     8_21, B:   909 C-G   923 B: H/H tran        n/a
+     9_23, B:   910 G-C   925 B: +/+ cis         XIX
+    10_22, B:   911 C-G   924 B: +/+ cis         XIX
+    11_21, B:   912 C-G   923 B: +/+ cis         XIX
+    12_20, B:   913 A-A   922 B: S/H tran        n/a
+    13_19, B:   914 A-A   921 B: W/S cis         n/a
+    14_46, B:   915 G-C   948 B: W/W tran        XXII
+    16_53, B:   918 G-U   955 B: W/S tran        n/a
+    17_54, B:   919 G-C   956 B: +/+ cis         XIX
+    24_42, B:   926 A-C   944 B: W/W cis         n/a
+    25_41, B:   927 C-G   943 B: +/+ cis         XIX
+    26_40, B:   928 C-G   942 B: +/+ cis         XIX
+    27_39, B:   929 G-C   941 B: +/+ cis         XIX
+    28_38, B:   930 G-C   940 B: +/+ cis         XIX
+    29_37, B:   931 A-U   939 B: -/- cis         XX
+    41_42, B:   943 G-C   944 B:      stacked
+    47_63, B:   949 C-G   965 B: +/+ cis         XIX
+    48_62, B:   950 G-C   964 B: +/+ cis         XIX
+    49_61, B:   951 A-U   963 B: -/- cis         XX
+    49_62, B:   951 A-C   964 B:      stacked
+    50_60, B:   952 G-C   962 B: +/+ cis         XIX
+    51_59, B:   953 G-C   961 B: +/+ cis         XIX
+    52_56, B:   954 U-A   958 B: W/H tran        XXIV
+    57_58, B:   959 A-U   960 B:      stacked
+    30_36, B:   932 U-U   938 B: W/W cis         !1H(b_b)
+     7_19, B:   908 U-A   921 B: S/W tran        !(b_s)
+    14_19, B:   915 G-A   921 B: W/S cis         !(s_s)
+    34_35, B:   936 G-A   937 B: S/H tran        !(s_s)
+    58_59, B:   960 U-C   961 B: S/H cis         !(s_s)
+    70_71, B:   972 A-G   973 B: S/S cis      syn  !(s_s)
+    72_73, B:   974 C-C   975 B: S/? cis         !(s_s)
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+7_13_19_| [1 3]  B: 908 U  +  B: 914 A  +  B: 921 A
+8_11_21_| [2 3]  B: 909 C  +  B: 912 C  +  B: 923 G
+END_multiplets
+
+  The total base pairs =  28 (from   74 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       20        1        1        0        1        0        0
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        0        2        1        1        0        1
+------------------------------------------------
