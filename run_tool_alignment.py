@@ -3,8 +3,7 @@ import subprocess
 import os
 import csv
 import time
-#import secondary_structure_formatter
-#import secondary_structure_generator
+
 
 # Constructs the list consisting of all pdb pairs from the given dataset and returns it
 def construct_pairs(dataset_path):
@@ -65,9 +64,8 @@ def exec_ARTS():
     arts_path = "./arts/arts"
 
     outputs = []
-    print(len(pairs))
+
     for pair in pairs:
-        print(pairs.index(pair))
         alignment_list = []
 
         first_elem = pair[0]
@@ -107,6 +105,56 @@ def exec_ARTS():
         writer = csv.writer(file)
         writer.writerows(outputs)
 
+def exec_CLICK():
+    data_base_path = "./data/tRNA_dataset/"
+
+    os.system("chmod +rwx ./Click/Parameters.inp")
+    
+
+    outputs = []
+
+    for pair in pairs:
+        print(pairs.index(pair))
+        alignment_list = []
+
+        first_elem = pair[0]
+        second_elem = pair[1]
+
+        alignment_list.append(first_elem[0:4])
+        alignment_list.append(second_elem[0:4])
+
+        process = subprocess.Popen(["./click", data_base_path + first_elem, data_base_path + second_elem, "-s 0"], stdout=subprocess.PIPE, cwd="./Click")
+        process.wait()
+
+        result_list = process.stdout.read().decode().splitlines()
+
+        rmsd = result_list[1].split("=")[1]
+        
+        alignment_list.append(rmsd)
+        outputs.append(alignment_list)
+
+        dataset_dir = os.listdir("./Click/data/tRNA_dataset")
+
+        for pdb in dataset_dir:
+            if(pdb.endswith(".clique") or ("-" in pdb)):
+                os.remove("./Click/data/tRNA_dataset/" + pdb)
+    
+    with open("CLICK_output.csv", "w", newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(outputs)
+
+
+
+        
+
+
+
+
+
+
+
+
+
 
 
     
@@ -117,3 +165,5 @@ match tool_name:
         exec_RMalign()
     case "ARTS":
         exec_ARTS()
+    case "CLICK":
+        exec_CLICK()
