@@ -1,0 +1,65 @@
+SARA (Structural Alignment of Ribonucleic Acids) v1.0
+Emidio Capriotti & Marc A. Marti-Renom
+http://structure.biofold.org/sara
+
+SETUP
+Requirements: python, numpy, biopython and X3DNA
+
+1) Uncompress the sara.tar.gz file
+2) Download and uncompress X3DNA from
+   http://x3dna.org/
+3) Go in the SARA directory and type "python setup.py"
+   or edit Tools/ENVIRON file typing the correct find_pair path
+4) Test the program running 
+   "python runsara.py Test/pdb1q96.ent A Test/pdb1u6b.ent B -b -s"
+
+
+The SARA program calculates RNA structural alignment between two RNA chains.
+It is a python script that needs the istallation of numpy and biopython and
+also X3DNA (Lu and Olson 2003).
+The runsara.py program is called as follows
+
+	python runsara.py pdbfile1 chain1 pdbfile2 chain2 -b -s 
+
+Optional parameters include
+
+	-a Atom type. The default is C3* but also P atom can be used.
+	   In the new PDB format * has been sustituted with '
+	   (for exaple C3* have to be substituted with C3\');
+        -o Alignment output file name;
+	-p PDB output file name (without .pdb extension);
+        -g Gap open penalty. Default value 7.00 
+	-e Gap extension penalty. Default value 0.60;
+	-l Number of unit-vectors. Default values 3 or 7 for the use or
+	   not of seconadary structure, respectively;
+        -b Evaluates secondary structure base alignment;
+	-c Cut-off distance for alignment evaluation. Default 4.0Ang;
+	-s optimize superimposition between two structures
+
+GENERAL INFORMATION:
+
+SARA (Structure Alignment of Ribonucleic Acids) is a fully automated 
+method for aligning two RNA structures. SARA computes a unit-vector 
+root mean square (URMS) distance between all pairs of four successive 
+base pairs. Once an all-against-all matrix is computed, a Dynamic Programming 
+algorithm identifies the common similar regions between the two 
+structures. Finally, a statistical significance of the alignment is 
+calculated based on a background distibution of random alignments.
+
+SARA is an implementation for RNA structure of the methods described in 
+the following papers:
+
+1. Capriotti E, Marti-Renom MA. (2008) RNA structure alignment by a unit-vector 
+   approach. Bioinformatics, 24; i112-i116. 
+2. Capriotti E, Marti-Renom MA. (2009). SARA: a server for function annotation 
+   of RNA structures. Nucleic Acids Res. 37(Web Server issue); W260-W265. 
+3. Ortiz, A.R., Strauss, C.E. and Olmea, O. (2002) MAMMOTH (matching molecular 
+   models obtained from theory): an automated method for model comparison, Pro- 
+   tein Sci, 11, 2606-2621. 
+4. Kedem, K., Chew, L.P. and Elber, R. (1999) Unit-vector RMS (URMS) as a tool to 
+   analyze molecular dynamics trajectories, Proteins, 37, 554-564. 
+5. Chew, L., Huttlenlocher, D., Kedem, K. and Kleinberg, J. (1999) Fast detection of 
+   common geometric substructure in proteins. J. Comput. Biol. 6, 313-325. 
+6. Siew, N., Elofsson, A., Rychlewski, L. and Fischer, D. (2000) MaxSub: an automated 
+   measure for the assessment of protein structure prediction quality, Bioinformatics, 
+   16, 776-785. 

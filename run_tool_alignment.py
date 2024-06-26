@@ -34,7 +34,7 @@ def exec_RMalign():
     outputs = []
 
     for pair in pairs:
-        alignment_list = []
+        alignment_data = []
 
         first_elem = pair[0]
         second_elem = pair[1]
@@ -45,16 +45,16 @@ def exec_RMalign():
         
         stdout_lines = result.stdout.read().decode().splitlines()
 
-        alignment_list.append(first_elem[0]+first_elem[1]+first_elem[2]+first_elem[3])
-        alignment_list.append(second_elem[0]+second_elem[1]+second_elem[2]+second_elem[3])
+        alignment_data.append(first_elem[0]+first_elem[1]+first_elem[2]+first_elem[3])
+        alignment_data.append(second_elem[0]+second_elem[1]+second_elem[2]+second_elem[3])
         
         for line in stdout_lines:
             if(line.startswith("Aligned length=")):
                 splitted_line = line.split(",")
                 splitted_splitted_line = splitted_line[1].split("=")
-                alignment_list.append(splitted_splitted_line[1].strip())
+                alignment_data.append(splitted_splitted_line[1].strip())
 
-        outputs.append(alignment_list)        
+        outputs.append(alignment_data)        
 
     with open("RMalign_output.csv", "w", newline='') as file:
         writer = csv.writer(file)
@@ -66,13 +66,13 @@ def exec_ARTS():
     outputs = []
 
     for pair in pairs:
-        alignment_list = []
+        alignment_data = []
 
         first_elem = pair[0]
         second_elem = pair[1]
 
-        alignment_list.append(first_elem[0:4])
-        alignment_list.append(second_elem[0:4])
+        alignment_data.append(first_elem[0:4])
+        alignment_data.append(second_elem[0:4])
 
         result = subprocess.run([arts_path, "./tRNA_dataset/" + first_elem, "./tRNA_dataset/" + second_elem], capture_output=True)
         if(result.returncode==255):
@@ -93,13 +93,13 @@ def exec_ARTS():
             if (line.startswith("*** RMSD")):
                 print(line)
                 splitted_line = line.split(" ")
-                alignment_list.append(splitted_line[3].strip())
+                alignment_data.append(splitted_line[3].strip())
                 break
 
-        print(alignment_list)    
+        print(alignment_data)    
 
         
-        outputs.append(alignment_list)
+        outputs.append(alignment_data)
     
     with open("ARTS_output.csv", "w", newline="") as file:
         writer = csv.writer(file)
@@ -114,14 +114,13 @@ def exec_CLICK():
     outputs = []
 
     for pair in pairs:
-        print(pairs.index(pair))
-        alignment_list = []
+        alignment_data = []
 
         first_elem = pair[0]
         second_elem = pair[1]
 
-        alignment_list.append(first_elem[0:4])
-        alignment_list.append(second_elem[0:4])
+        alignment_data.append(first_elem[0:4])
+        alignment_data.append(second_elem[0:4])
 
         process = subprocess.Popen(["./click", data_base_path + first_elem, data_base_path + second_elem, "-s 0"], stdout=subprocess.PIPE, cwd="./Click")
         process.wait()
@@ -130,8 +129,8 @@ def exec_CLICK():
 
         rmsd = result_list[1].split("=")[1]
         
-        alignment_list.append(rmsd)
-        outputs.append(alignment_list)
+        alignment_data.append(rmsd)
+        outputs.append(alignment_data)
 
         dataset_dir = os.listdir("./Click/data/tRNA_dataset")
 
@@ -143,21 +142,61 @@ def exec_CLICK():
         writer = csv.writer(file)
         writer.writerows(outputs)
 
+def exec_SARA():
+    output = []
 
+    for pair in pairs:
+        print(pairs.index(pair))
+        error = False
+        alignment_data = []
 
+        first_chain = pair[0]
+        second_chain = pair[1]
+
+        first_chain_id = first_chain[len(first_chain) - 5]
+        second_chain_id = second_chain[len(second_chain) - 5]
+
+        alignment_data.append(first_chain[0:4])
+        alignment_data.append(second_chain[0:4])
+
+        sara_command = ["python", "runsara.py", "./tRNA_dataset/" + first_chain, first_chain_id, "./tRNA_dataset/" + second_chain, second_chain_id, "-s", "-o output.txt"]
+
+        result = subprocess.Popen(sara_command, cwd="./SARA", stdout=subprocess.PIPE, text=True)
+        result_list = result.stdout.readlines()
+        
+        for elem in result_list:
+            if(elem.startswith("Error")):
+                error = True
+
+        if error:
+            continue
+
+        out_lines = []
+
+        while not os.path.exists("./SARA/output.txt"):
+            time.sleep(1)
+
+        with open("./SARA/output.txt", "r") as f:
+            out_lines = f.readlines()
+        
+        for line in out_lines:
+            if line.startswith("REMARK SARARMS"):
+                line_elems = line.split(" ")
+                alignment_data.append(line_elems[len(line_elems) - 1].strip())
+
+        output.append(alignment_data)
+
+        os.remove("./SARA/output.txt")
+
+        print(alignment_data)
+
+    with open("SARA_output.csv", "w", newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(output)
         
 
 
-
-
-
-
-
-
-
-
-
-    
+        
 
 
 match tool_name:
@@ -167,3 +206,5 @@ match tool_name:
         exec_ARTS()
     case "CLICK":
         exec_CLICK()
+    case "SARA":
+        exec_SARA()
