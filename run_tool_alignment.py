@@ -21,6 +21,9 @@ def construct_pairs(dataset_path):
             pairs.append((pdb_list[i],pdb_list[j]))
     return pairs
 
+def print_alignment(index, first_elem, second_elem):
+    print(str(index) + ": Performing alignment between " + first_elem + " and " + second_elem)
+
 tool_name = sys.argv[1]
 dataset_path = sys.argv[2]
 
@@ -29,7 +32,7 @@ pairs = construct_pairs(dataset_path)
 def exec_RMalign():
     rna_align_path = "RMalign/RMalign"
 
-    rmalign_to_dataset_path="tRNA_dataset/"
+    prefix_elem_path = "Dataset/"
 
     outputs = []
 
@@ -38,15 +41,15 @@ def exec_RMalign():
 
         first_elem = pair[0]
         second_elem = pair[1]
-        first_elem_chain = first_elem[len(first_elem)-5]
-        second_elem_chain = second_elem[len(second_elem)-5]
 
-        result = subprocess.Popen([rna_align_path,"-A",rmalign_to_dataset_path + first_elem,"-Ac", first_elem_chain,"-B",rmalign_to_dataset_path + second_elem,"-Bc",second_elem_chain ],stdout=subprocess.PIPE)
+        print(str(pairs.index(pair)) + ": Performing alignment between " + first_elem + " and " + second_elem)
+
+        result = subprocess.Popen([rna_align_path, "-A", prefix_elem_path + first_elem, "-B", prefix_elem_path + second_elem, "-t", "CA"], stdout=subprocess.PIPE)
         
         stdout_lines = result.stdout.read().decode().splitlines()
 
-        alignment_data.append(first_elem[0]+first_elem[1]+first_elem[2]+first_elem[3])
-        alignment_data.append(second_elem[0]+second_elem[1]+second_elem[2]+second_elem[3])
+        alignment_data.append(first_elem[0:4])
+        alignment_data.append(second_elem[0:4])
         
         for line in stdout_lines:
             if(line.startswith("Aligned length=")):
@@ -106,7 +109,7 @@ def exec_ARTS():
         writer.writerows(outputs)
 
 def exec_CLICK():
-    data_base_path = "./data/tRNA_dataset/"
+    data_base_path = "./data/Dataset/"
 
     os.system("chmod +rwx ./Click/Parameters.inp")
     
@@ -122,7 +125,9 @@ def exec_CLICK():
         alignment_data.append(first_elem[0:4])
         alignment_data.append(second_elem[0:4])
 
-        process = subprocess.Popen(["./click", data_base_path + first_elem, data_base_path + second_elem, "-s 0"], stdout=subprocess.PIPE, cwd="./Click")
+        print_alignment(pairs.index(pair), first_elem, second_elem)
+
+        process = subprocess.Popen(["./click", data_base_path + first_elem, data_base_path + second_elem, "-s", "0"], stdout=subprocess.PIPE, cwd="./Click")
         process.wait()
 
         result_list = process.stdout.read().decode().splitlines()
@@ -132,11 +137,11 @@ def exec_CLICK():
         alignment_data.append(rmsd)
         outputs.append(alignment_data)
 
-        dataset_dir = os.listdir("./Click/data/tRNA_dataset")
+        dataset_dir = os.listdir("./Click/data/Dataset")
 
         for pdb in dataset_dir:
             if(pdb.endswith(".clique") or ("-" in pdb)):
-                os.remove("./Click/data/tRNA_dataset/" + pdb)
+                os.remove("./Click/data/Dataset/" + pdb)
     
     with open("CLICK_output.csv", "w", newline='') as file:
         writer = csv.writer(file)
@@ -146,20 +151,21 @@ def exec_SARA():
     output = []
 
     for pair in pairs:
-        print(pairs.index(pair))
         error = False
         alignment_data = []
 
-        first_chain = pair[0]
-        second_chain = pair[1]
+        first_elem = pair[0]
+        second_elem = pair[1]
 
-        first_chain_id = first_chain[len(first_chain) - 5]
-        second_chain_id = second_chain[len(second_chain) - 5]
+        print_alignment(pairs.index(pair), first_elem, second_elem)
 
-        alignment_data.append(first_chain[0:4])
-        alignment_data.append(second_chain[0:4])
+        first_chain_id = first_elem[len(first_elem) - 5]
+        second_chain_id = second_elem[len(second_elem) - 5]
 
-        sara_command = ["python", "runsara.py", "./tRNA_dataset/" + first_chain, first_chain_id, "./tRNA_dataset/" + second_chain, second_chain_id, "-s", "-o output.txt"]
+        alignment_data.append(first_elem[0:4])
+        alignment_data.append(second_elem[0:4])
+
+        sara_command = ["python", "runsara.py", "./Dataset/" + first_elem, first_chain_id, "./tRNA_dataset/" + second_elem, second_chain_id, "-s", "-o output.txt"]
 
         result = subprocess.Popen(sara_command, cwd="./SARA", stdout=subprocess.PIPE, text=True)
         result_list = result.stdout.readlines()
