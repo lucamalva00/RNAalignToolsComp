@@ -1,0 +1,155 @@
+PDB data file name: dataset/2byt.pdb_new
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+      1_2, B:     1 G-C     2 B:      stacked
+     1_74, B:     1 G-C    72 B: +/+ cis         XIX
+     2_73, B:     2 C-G    71 B: +/+ cis         XIX
+     3_72, B:     3 C-G    70 B: +/+ cis         XIX
+     4_71, B:     4 G-C    69 B: +/+ cis         XIX
+     5_70, B:     5 G-C    68 B: +/+ cis         XIX
+     6_69, B:     6 G-C    67 B: +/+ cis         XIX
+     7_68, B:     7 G-C    66 B: +/+ cis         XIX
+     8_14, B:     8 U-A    14 B: W/H tran        XXIV
+     9_12, B:     9 G-G    12 B: W/H cis    syn    VI
+    10_26, B:    10 G-C    25 B: +/+ cis         XIX
+    11_25, B:    11 C-G    24 B: +/+ cis         XIX
+    12_24, B:    12 G-C    23 B: +/+ cis         XIX
+    13_22, B:    13 G-G    21 B: W/S cis         n/a
+    13_23, B:    13 G-A    22 B: S/H tran        XI
+    14_21, B:    14 A-A    20 B: W/S cis         n/a
+    15_50, B:    15 A-U    48 B: W/W tran        XXI
+    18_57, B:    18 G-U    55 B: W/S tran        n/a
+    19_58, B:    19 G-C    56 B: +/+ cis    syn    XIX
+    22_49, B:    21 G-G    47 B: H/S tran        n/a
+    27_40, B:    26 G-U    44 B: W/W cis         XXVIII
+    28_39, B:    27 C-G    43 B: +/+ cis         XIX
+    29_38, B:    28 A-U    42 B: -/- cis         XX
+    30_37, B:    29 U-A    41 B: -/- cis         XX
+    31_36, B:    30 G-C    40 B: W/W cis         n/a
+    32_35, B:    31 A-U    39 B: W/W cis         n/a
+    33_34, B:    32 C-A    38 B: W/W cis         n/a
+    41_48, B:    45 G-C    47 B: +/+ cis         XIX
+    42_47, B:    46 C-G    47 B: +/+ cis         XIX
+    44_45, B:    47 C-A    47 B:      stacked
+    51_67, B:    49 G-C    65 B: +/+ cis         XIX
+   51_124, B:    49 G-A    47 E: S/S tran        n/a
+    52_66, B:    50 C-G    64 B: +/+ cis         XIX
+    52_67, B:    50 C-C    65 B:      stacked
+    53_65, B:    51 G-C    63 B: +/+ cis         XIX
+    54_64, B:    52 G-C    62 B: +/+ cis         XIX
+    54_65, B:    52 G-C    63 B:      stacked
+    55_63, B:    53 G-C    61 B: +/+ cis         XIX
+    56_60, B:    54 U-A    58 B: W/H tran     syn  XXIV
+    61_62, B:    59 G-U    60 B:      stacked
+   79_152, E:     1 G-C    72 E: +/+ cis         XIX
+   80_151, E:     2 C-G    71 E: +/+ cis         XIX
+   81_150, E:     3 C-G    70 E: +/+ cis         XIX
+   82_149, E:     4 G-C    69 E: +/+ cis         XIX
+   83_148, E:     5 G-C    68 E: +/+ cis         XIX
+   84_147, E:     6 G-C    67 E: +/+ cis         XIX
+   85_146, E:     7 G-C    66 E: +/+ cis         XIX
+    86_92, E:     8 U-A    14 E: W/H tran        XXIV
+    87_90, E:     9 G-G    12 E: W/H cis    syn    VI
+   88_104, E:    10 G-C    25 E: +/+ cis         XIX
+   89_103, E:    11 C-G    24 E: +/+ cis         XIX
+   90_102, E:    12 G-C    23 E: +/+ cis         XIX
+   91_100, E:    13 G-G    21 E: W/S cis         n/a
+   91_101, E:    13 G-A    22 E: S/H tran        XI
+    92_99, E:    14 A-A    20 E: W/S cis         n/a
+   93_128, E:    15 A-U    48 E: W/W tran        XXI
+   96_135, E:    18 G-U    55 E: W/S tran        n/a
+   97_136, E:    19 G-C    56 E: +/+ cis    syn    XIX
+  100_127, E:    21 G-G    47 E: H/S tran        n/a
+  105_118, E:    26 G-U    44 E: W/W cis         XXVIII
+  106_117, E:    27 C-G    43 E: +/+ cis         XIX
+  107_116, E:    28 A-U    42 E: -/- cis         XX
+  108_115, E:    29 U-A    41 E: -/- cis         XX
+  109_114, E:    30 G-C    40 E: W/W cis         n/a
+  110_113, E:    31 A-U    39 E: W/W cis         n/a
+  111_112, E:    32 C-A    38 E: W/W cis         n/a
+  119_126, E:    45 G-C    47 E: +/+ cis         XIX
+  120_125, E:    46 C-G    47 E: +/+ cis         XIX
+  121_124, E:    47 G-A    47 E: W/H tran        n/a
+  129_145, E:    49 G-C    65 E: +/+ cis         XIX
+  130_144, E:    50 C-G    64 E: +/+ cis         XIX
+  130_145, E:    50 C-C    65 E:      stacked
+  131_143, E:    51 G-C    63 E: +/+ cis         XIX
+  132_142, E:    52 G-C    62 E: +/+ cis         XIX
+  132_143, E:    52 G-C    63 E:      stacked
+  133_141, E:    53 G-C    61 E: +/+ cis         XIX
+  134_138, E:    54 U-A    58 E: W/H tran     syn  XXIV
+  139_140, E:    59 G-U    60 E:      stacked
+     9_24, B:     9 G-C    23 B: W/. cis    syn    !1H(b_b)
+   87_102, E:     9 G-C    23 E: W/W cis    syn    !1H(b_b)
+     8_21, B:     8 U-A    20 B: S/W tran        !(b_s)
+    16_62, B:    16 U-U    60 B: s/S tran        !(b_s)
+   46_146, B:    47 A-C    66 E: S/S cis         !(b_s)
+    60_62, B:    58 A-U    60 B: S/S tran   syn    !(b_s)
+   69_122, B:    67 C-C    47 E: S/W cis         !(b_s)
+    86_99, E:     8 U-A    20 E: S/W tran        !(b_s)
+   94_140, E:    16 U-U    60 E: s/S tran        !(b_s)
+  138_140, E:    58 A-U    60 E: S/S tran   syn    !(b_s)
+    19_20, B:    19 G-U    20 B: S/. cis    syn    !(s_s)
+    22_23, B:    21 G-A    22 B: S/S cis         !(s_s)
+    43_45, B:    47 G-A    47 B: S/S tran        !(s_s)
+    43_46, B:    47 G-A    47 B: S/H tran        !(s_s)
+   45_146, B:    47 A-C    66 E: S/s cis         !(s_s)
+    46_47, B:    47 A-G    47 B: S/S tran        !(s_s)
+   47_130, B:    47 G-C    50 E: S/S cis         !(s_s)
+   52_125, B:    50 C-G    47 E: S/S cis         !(s_s)
+   67_124, B:    65 C-A    47 E: S/s cis         !(s_s)
+   68_123, B:    66 C-A    47 E: s/S cis         !(s_s)
+    97_98, E:    19 G-U    20 E: S/? cis    syn    !(s_s)
+  100_101, E:    21 G-A    22 E: S/S cis         !(s_s)
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+8_14_21_| [1 3]  B: 8 U  +  B: 14 A  +  B: 20 A
+9_12_24_| [2 3]  B: 9 G  +  B: 12 G  +  B: 23 C
+13_22_23_49_| [3 4]  B: 13 G  +  B: 21 G  +  B: 22 A  +  B: 47 G
+51_67_121_124_| [4 4]  B: 49 G  +  B: 65 C  +  E: 47 G  +  E: 47 A
+86_92_99_| [5 3]  E: 8 U  +  E: 14 A  +  E: 20 A
+87_90_102_| [6 3]  E: 9 G  +  E: 12 G  +  E: 23 C
+91_100_101_127_| [7 4]  E: 13 G  +  E: 21 G  +  E: 22 A  +  E: 47 G
+END_multiplets
+
+  The total base pairs =  70 (from  156 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       42        8        2        0        0        0        1
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        2        5        4        2        0        4
+------------------------------------------------

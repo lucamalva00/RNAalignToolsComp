@@ -77,7 +77,7 @@ def exec_ARTS():
         alignment_data.append(first_elem[0:4])
         alignment_data.append(second_elem[0:4])
 
-        result = subprocess.run([arts_path, "./tRNA_dataset/" + first_elem, "./tRNA_dataset/" + second_elem], capture_output=True)
+        result = subprocess.run([arts_path, "./dataset/" + first_elem, "./dataset/" + second_elem], capture_output=True)
         if(result.returncode==255):
             continue
 
@@ -109,7 +109,7 @@ def exec_ARTS():
         writer.writerows(outputs)
 
 def exec_CLICK():
-    data_base_path = "./data/Dataset/"
+    data_base_path = "./data/dataset/"
 
     os.system("chmod +rwx ./Click/Parameters.inp")
     
@@ -136,7 +136,6 @@ def exec_CLICK():
         
         alignment_data.append(rmsd)
         outputs.append(alignment_data)
-
         dataset_dir = os.listdir("./Click/data/Dataset")
 
         for pdb in dataset_dir:
