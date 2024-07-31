@@ -77,7 +77,7 @@ def exec_ARTS():
         alignment_data.append(first_elem[0:4])
         alignment_data.append(second_elem[0:4])
 
-        result = subprocess.run([arts_path, "./dataset/" + first_elem, "./dataset/" + second_elem], capture_output=True)
+        result = subprocess.run([arts_path, "./Dataset/" + first_elem, "./Dataset/" + second_elem], capture_output=True)
         if(result.returncode==255):
             continue
 
@@ -109,7 +109,7 @@ def exec_ARTS():
         writer.writerows(outputs)
 
 def exec_CLICK():
-    data_base_path = "./data/dataset/"
+    data_base_path = "./data/Dataset/"
 
     os.system("chmod +rwx ./Click/Parameters.inp")
     
@@ -164,7 +164,7 @@ def exec_SARA():
         alignment_data.append(first_elem[0:4])
         alignment_data.append(second_elem[0:4])
 
-        sara_command = ["python", "runsara.py", "./Dataset/" + first_elem, first_chain_id, "./tRNA_dataset/" + second_elem, second_chain_id, "-s", "-o output.txt"]
+        sara_command = ["python", "runsara.py", "./Dataset/" + first_elem, first_chain_id, "./Dataset/" + second_elem, second_chain_id, "-s", "-o output.txt"]
 
         result = subprocess.Popen(sara_command, cwd="./SARA", stdout=subprocess.PIPE, text=True)
         result_list = result.stdout.readlines()
