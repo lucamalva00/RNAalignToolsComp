@@ -1,0 +1,40 @@
+REMARK SARAPROG  version 1.0 - Structural Alignment of Ribonucleic Acids
+REMARK SARAPARAM Atom: C3' CutOff: 4.0 GapExt: 0.45 GapOpen: 7.0 LenUV: 6 SecStructure: False 
+REMARK SARATIME    1.64e+00
+REMARK SARALENA          66
+REMARK SARALENB          68
+REMARK SARAPSSA        NONE
+REMARK SARAPSSB        NONE
+REMARK SARAFILA  1b23_chain_R.pdb R
+REMARK SARAFILB  1c0a_chain_B.pdb B
+REMARK SARANALI          49
+REMARK SARAID            25
+REMARK SARANORM          66
+REMARK SARALALI          73
+REMARK SARANASS        NONE
+REMARK SARASSID        NONE
+REMARK SARANSS         NONE
+REMARK SARARMS         2.43
+REMARK SARASCORE      79.15
+REMARK SARASID         37.9
+REMARK SARAPSI         74.2
+REMARK SARAZSID       5.629
+REMARK SARAESID   3.367e-03
+REMARK SARALNSID      5.694
+REMARK SARAZPSS        NONE
+REMARK SARAEPSS        NONE
+REMARK SARALNPSS       NONE
+REMARK SARAZPSI       4.728
+REMARK SARAEPSI   7.815e-03
+REMARK SARALNPSI      4.852
+REMARK SARAEQVA         1       2       3       4       5       6       7       9      10      11      13      14      15      18      19      22      24      25      26      27      28      38      40      42      43      44      46      48      49      50      51      52      53      56      57      58      59      60      61      62      63      64      66      67      68      69      70      71      72
+REMARK SARAEQVB       601     602     603     604     605     606     607     609     610     611     613     614     615     618     619     622     623     624     625     627     628     640     642     643     644     645     647     648     649     650     651     652     653     656     657     658     659     660     661     662     663     664     666     667     668     669     670     671     673
+REMARK SARASSEA   NONE
+REMARK SARASSEB   NONE
+REMARK SARAALI   >P1;1b23_chain_R.pdb R
+REMARK SARAALI   structureX:output.txt:1:R:76:R::::
+REMARK SARAALI   ggcgcguaacaaagcgg-augua-gcggaugca---a-ccgucuaguccggcgacuccggaacgcgc-cucca*
+REMARK SARAALI   >P1;1c0a_chain_B.pdb B
+REMARK SARAALI   structureX:output.txt:601:B:676:B::::
+REMARK SARAALI   ggagcggaguucagcggag-aauaccugccuucacgcag-ggg-ucgcgggcgagucccg-ccguuccgcca-*
+REMARK SARAEAL   ::::::::::-:::-::-:-:::-::----------:-:-:::-::::::::::::::::-::::::-:----*
