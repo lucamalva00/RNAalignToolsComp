@@ -148,6 +148,7 @@ def exec_CLICK():
 
 def exec_SARA():
     output = []
+    errors_log = []
 
     for pair in pairs:
         error = False
@@ -156,21 +157,36 @@ def exec_SARA():
         first_elem = pair[0]
         second_elem = pair[1]
 
-        print_alignment(pairs.index(pair), first_elem, second_elem)
+        print_alignment(pairs.index(pair), first_elem[0:len(first_elem) - 4], second_elem[0:len(second_elem) - 4])
 
-        first_chain_id = first_elem[len(first_elem) - 5]
-        second_chain_id = second_elem[len(second_elem) - 5]
+        first_chain_id = first_elem[5]
+        second_chain_id = second_elem[5]
 
-        alignment_data.append(first_elem[0:4])
-        alignment_data.append(second_elem[0:4])
+        # only for tests
+        if first_chain_id == "i" or second_chain_id == "i":
+            continue
 
-        sara_command = ["python", "runsara.py", "./Dataset/" + first_elem, first_chain_id, "./Dataset/" + second_elem, second_chain_id, "-s", "-o output.txt"]
+        alignment_data.append(first_elem[0:len(first_elem) - 4])
+        alignment_data.append(second_elem[0:len(second_elem) - 4])
 
-        result = subprocess.Popen(sara_command, cwd="./SARA", stdout=subprocess.PIPE, text=True)
-        result_list = result.stdout.readlines()
+        sara_command = ["python", "runsara.py", "./Dataset/" + first_elem, first_chain_id, "./Dataset/" + second_elem, second_chain_id, "-a", "C3\'", "-s", "-o output.txt"]
+        
+        process = subprocess.Popen(sara_command, cwd="./SARA", stdout=subprocess.PIPE, text=True, stderr=subprocess.PIPE)
+        out, err = process.communicate()
+
+        if err:
+            errors_log.append(err)
+            alignment_data.append('')
+            output.append(alignment_data)
+            continue
+
+        result_list = out.split("\n")
         
         for elem in result_list:
             if(elem.startswith("Error")):
+                errors_log.append(elem)
+                alignment_data.append('')
+                output.append(alignment_data)
                 error = True
 
         if error:
@@ -198,6 +214,10 @@ def exec_SARA():
     with open("SARA_output.csv", "w", newline='') as file:
         writer = csv.writer(file)
         writer.writerows(output)
+    
+    with open("SARA_errors_log.txt", "w") as errors_f:
+        for log in errors_log:
+            errors_f.write(str(errors_log.index(log)) + ") " + log + "\n")
         
 
 

@@ -1,0 +1,1869 @@
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+0) Error: Chain A not found in ./Dataset/2z9q_A.pdb
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+1) Error: Structure ./Dataset/4v4w_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+2) Error: Structure ./Dataset/4ujc_A.pdb longer than 500 nucleotides
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+3) Error: Chain 1 not found in ./Dataset/5lzy_1_SA.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+4) Error: Chain Y not found in ./Dataset/3ep2_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+5) Error: Chain Y not found in ./Dataset/3eq3_Y.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+6) Error: Chain I not found in ./Dataset/5j4d_I_IA.pdb
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+8) Error: Chain Y not found in ./Dataset/3eq4_Y.pdb
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+7) Traceback (most recent call last):
+  File "runsara.py", line 336, in <module>
+    atoms2=checkpdb(pdbfile2,chain2,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
+726) Traceback (most recent call last):
+  File "runsara.py", line 335, in <module>
+    atoms1=checkpdb(pdbfile1,chain1,atom)
+  File "runsara.py", line 174, in checkpdb
+    pdb=readPDBNucleicAcid(pdbfile,chain,atoms)
+  File "Tools/NucleicAcidTools.py", line 1145, in readPDBNucleicAcid
+UnboundLocalError: local variable 'rchainold' referenced before assignment
+
