@@ -1,0 +1,30 @@
+BEGIN_base-pair
+    50_62, N:    50 U-A    62 N: -/- cis         XX
+    51_61, N:    51 G-C    61 N: W/W cis         n/a
+    52_60, N:    52 G-C    60 N: W/W cis         n/a
+    53_57, N:    53 A-A    57 N: W/H tran        V
+    71_73, N:    71 U-C    73 N: W/H cis         n/a
+    71_73,-
+50_62_51_61_52_60_53_57_71_73_0, click this line to see above pattern
+0_0,---------
+     7_65, N:     7 G-C    65 N: +/+ cis         XIX
+     7_66, N:     7 G-U    66 N: W/W cis         XXVIII
+     8_14, N:     8 U-A    14 N: W/H tran        XXIV
+     9_22, N:     9 G-C    22 N: H/H tran   syn    n/a
+    10_24, N:    10 G-U    24 N: W/W cis         XXVIII
+    11_23, N:    11 C-G    23 N: W/W cis         n/a
+    12_22, N:    12 G-C    22 N: +/+ cis         XIX
+    12_22,-
+7_65_7_66_8_14_9_22_10_24_11_23_12_22_0, click this line to see above pattern
+0_0,---------
+    12_22, N:    12 G-C    22 N: +/+ cis         XIX
+    15_47, N:    15 G-C    47 N: W/W tran        XXII
+    15_58, N:    15 G-A    58 N: S/S tran        n/a
+    21_45, N:    21 G-G    45 N: H/W tran     syn  VII
+    25_43, N:    25 G-A    43 N: W/W cis         VIII
+    26_42, N:    26 C-G    42 N: W/W cis         n/a
+    27_41, N:    27 U-A    41 N: -/- cis         XX
+    27_41,-
+12_22_15_47_15_58_21_45_25_43_26_42_27_41_0, click this line to see above pattern
+0_0,---------
+END_base-pair

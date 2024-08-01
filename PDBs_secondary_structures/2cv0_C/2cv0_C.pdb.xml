@@ -1,0 +1,1776 @@
+<?xml version="1.0"?>
+<!DOCTYPE rnaml SYSTEM "rnaml.dtd">
+
+<rnaml version="1.0">
+
+   <molecule id="1">
+      <sequence>
+         <numbering-system id="1" used-in-file="false">
+            <numbering-range>
+               <start>1</start>
+               <end>75</end>
+            </numbering-range>
+         </numbering-system>
+         <numbering-table length="75" comment="sequence number in pdb file">
+          501  502  503  504  505  506  507  508  509  510 
+          511  512  513  514  515  516  518  519  520  520 
+          521  522  523  524  525  526  527  528  529  530 
+          531  532  533  534  535  536  537  538  539  540 
+          541  542  543  544  545  546  548  549  550  551 
+          552  553  554  555  556  557  558  559  560  561 
+          562  563  564  565  566  567  568  569  570  571 
+          572  573  574  575  576 
+         </numbering-table>
+         <seq-data>
+            GGCCCCAUCG UCUAGCGGUU AGGACGCGGC CCUCUCAAGG CCGAAACGGG GGUUCGAUUC 
+            CCCCUGGGGU CACCA
+         </seq-data>
+         <seq-annotation comment="?">
+            <segment>
+               <seg-name>LOOP1</seg-name>
+               <base-id-5p><base-id><position>53</position></base-id></base-id-5p>
+               <base-id-3p><base-id><position>59</position></base-id></base-id-3p>
+            </segment>
+            <segment>
+               <seg-name>LOOP2</seg-name>
+               <base-id-5p><base-id><position>14</position></base-id></base-id-5p>
+               <base-id-3p><base-id><position>21</position></base-id></base-id-3p>
+            </segment>
+            <segment>
+               <seg-name>LOOP3</seg-name>
+               <base-id-5p><base-id><position>33</position></base-id></base-id-5p>
+               <base-id-3p><base-id><position>37</position></base-id></base-id-3p>
+            </segment>
+         </seq-annotation>
+      </sequence>
+      <structure>
+         <model id="?">
+            <model-info>
+               <method>Crystallography ?</method>
+               <resolution>? Angstroms</resolution>
+            </model-info>
+            <base>
+               <position>1</position>
+               <base-type>G</base-type>
+               <atom serial="2">
+                  <atom-type> P  </atom-type>
+                     <coordinates>40.456 92.036 55.405</coordinates>
+               </atom>
+               <atom serial="10">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>39.830 96.881 53.610</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>2</position>
+               <base-type>G</base-type>
+               <atom serial="25">
+                  <atom-type> P  </atom-type>
+                     <coordinates>38.761 96.612 52.469</coordinates>
+               </atom>
+               <atom serial="33">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>38.245 99.106 48.068</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>3</position>
+               <base-type>C</base-type>
+               <atom serial="48">
+                  <atom-type> P  </atom-type>
+                     <coordinates>37.027 98.266 47.459</coordinates>
+               </atom>
+               <atom serial="56">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>37.008 97.078 42.455</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>4</position>
+               <base-type>C</base-type>
+               <atom serial="68">
+                  <atom-type> P  </atom-type>
+                     <coordinates>35.744 96.109 42.263</coordinates>
+               </atom>
+               <atom serial="76">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>35.858 92.144 38.854</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>5</position>
+               <base-type>C</base-type>
+               <atom serial="88">
+                  <atom-type> P  </atom-type>
+                     <coordinates>34.524 91.267 39.004</coordinates>
+               </atom>
+               <atom serial="96">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>34.511 86.240 37.682</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>6</position>
+               <base-type>C</base-type>
+               <atom serial="108">
+                  <atom-type> P  </atom-type>
+                     <coordinates>33.065 85.659 38.048</coordinates>
+               </atom>
+               <atom serial="116">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>32.533 80.619 39.723</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>7</position>
+               <base-type>A</base-type>
+               <atom serial="128">
+                  <atom-type> P  </atom-type>
+                     <coordinates>31.015 80.165 39.961</coordinates>
+               </atom>
+               <atom serial="136">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>29.579 76.239 43.275</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>8</position>
+               <base-type>U</base-type>
+               <atom serial="150">
+                  <atom-type> P  </atom-type>
+                     <coordinates>30.529 75.094 43.930</coordinates>
+               </atom>
+               <atom serial="158">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>28.442 71.576 46.642</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>9</position>
+               <base-type>C</base-type>
+               <atom serial="170">
+                  <atom-type> P  </atom-type>
+                     <coordinates>29.867 70.987 47.087</coordinates>
+               </atom>
+               <atom serial="178">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>30.589 66.203 50.206</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>10</position>
+               <base-type>G</base-type>
+               <atom serial="190">
+                  <atom-type> P  </atom-type>
+                     <coordinates>31.237 67.228 51.242</coordinates>
+               </atom>
+               <atom serial="198">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>35.950 68.866 49.917</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>11</position>
+               <base-type>U</base-type>
+               <atom serial="213">
+                  <atom-type> P  </atom-type>
+                     <coordinates>35.661 69.637 48.543</coordinates>
+               </atom>
+               <atom serial="221">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>38.480 69.536 44.391</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>12</position>
+               <base-type>C</base-type>
+               <atom serial="233">
+                  <atom-type> P  </atom-type>
+                     <coordinates>37.682 70.417 43.296</coordinates>
+               </atom>
+               <atom serial="241">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>37.712 70.140 38.429</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>13</position>
+               <base-type>U</base-type>
+               <atom serial="253">
+                  <atom-type> P  </atom-type>
+                     <coordinates>36.611 71.256 38.053</coordinates>
+               </atom>
+               <atom serial="261">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>31.775 70.417 35.194</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>14</position>
+               <base-type>A</base-type>
+               <atom serial="273">
+                  <atom-type> P  </atom-type>
+                     <coordinates>30.530 71.369 34.889</coordinates>
+               </atom>
+               <atom serial="281">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>26.792 69.743 32.095</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>15</position>
+               <base-type>G</base-type>
+               <atom serial="295">
+                  <atom-type> P  </atom-type>
+                     <coordinates>26.153 71.198 31.890</coordinates>
+               </atom>
+               <atom serial="303">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>20.457 70.872 32.992</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>16</position>
+               <base-type>C</base-type>
+               <atom serial="318">
+                  <atom-type> P  </atom-type>
+                     <coordinates>19.603 71.771 31.988</coordinates>
+               </atom>
+               <atom serial="326">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>18.259 77.335 32.435</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>17</position>
+               <base-type>G</base-type>
+               <atom serial="338">
+                  <atom-type> P  </atom-type>
+                     <coordinates>16.759 77.491 31.885</coordinates>
+               </atom>
+               <atom serial="346">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>13.665 74.374 34.090</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>18</position>
+               <base-type>G</base-type>
+               <atom serial="361">
+                  <atom-type> P  </atom-type>
+                     <coordinates>13.825 73.293 35.288</coordinates>
+               </atom>
+               <atom serial="369">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>12.545 69.863 38.343</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>19</position>
+               <base-type>U</base-type>
+               <atom serial="384">
+                  <atom-type> P  </atom-type>
+                     <coordinates>11.587 69.070 39.364</coordinates>
+               </atom>
+               <atom serial="392">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>12.266 64.110 38.688</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>20</position>
+               <base-type>U</base-type>
+               <atom serial="404">
+                  <atom-type> P  </atom-type>
+                     <coordinates>11.349 63.798 39.981</coordinates>
+               </atom>
+               <atom serial="412">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>15.072 63.714 43.816</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>21</position>
+               <base-type>A</base-type>
+               <atom serial="424">
+                  <atom-type> P  </atom-type>
+                     <coordinates>15.688 65.092 43.282</coordinates>
+               </atom>
+               <atom serial="432">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>20.496 63.224 40.881</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>22</position>
+               <base-type>G</base-type>
+               <atom serial="446">
+                  <atom-type> P  </atom-type>
+                     <coordinates>20.956 61.893 41.667</coordinates>
+               </atom>
+               <atom serial="454">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>23.702 58.984 38.327</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>23</position>
+               <base-type>G</base-type>
+               <atom serial="469">
+                  <atom-type> P  </atom-type>
+                     <coordinates>24.834 58.340 39.271</coordinates>
+               </atom>
+               <atom serial="477">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>29.134 57.117 36.696</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>24</position>
+               <base-type>A</base-type>
+               <atom serial="492">
+                  <atom-type> P  </atom-type>
+                     <coordinates>30.022 56.282 37.748</coordinates>
+               </atom>
+               <atom serial="500">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>35.148 56.564 37.985</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>25</position>
+               <base-type>C</base-type>
+               <atom serial="514">
+                  <atom-type> P  </atom-type>
+                     <coordinates>35.599 55.679 39.248</coordinates>
+               </atom>
+               <atom serial="522">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>39.930 56.455 41.840</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>26</position>
+               <base-type>G</base-type>
+               <atom serial="534">
+                  <atom-type> P  </atom-type>
+                     <coordinates>39.924 55.191 42.822</coordinates>
+               </atom>
+               <atom serial="542">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>40.520 55.613 47.905</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>27</position>
+               <base-type>C</base-type>
+               <atom serial="557">
+                  <atom-type> P  </atom-type>
+                     <coordinates>40.153 54.137 48.435</coordinates>
+               </atom>
+               <atom serial="565">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>37.647 53.121 52.645</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>28</position>
+               <base-type>G</base-type>
+               <atom serial="577">
+                  <atom-type> P  </atom-type>
+                     <coordinates>37.770 51.518 52.516</coordinates>
+               </atom>
+               <atom serial="585">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>34.078 48.515 54.396</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>29</position>
+               <base-type>G</base-type>
+               <atom serial="600">
+                  <atom-type> P  </atom-type>
+                     <coordinates>34.431 47.021 53.898</coordinates>
+               </atom>
+               <atom serial="608">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>30.841 43.423 53.184</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>30</position>
+               <base-type>C</base-type>
+               <atom serial="623">
+                  <atom-type> P  </atom-type>
+                     <coordinates>31.615 42.139 52.597</coordinates>
+               </atom>
+               <atom serial="631">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>29.105 38.766 49.291</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>31</position>
+               <base-type>C</base-type>
+               <atom serial="643">
+                  <atom-type> P  </atom-type>
+                     <coordinates>30.096 37.571 48.832</coordinates>
+               </atom>
+               <atom serial="651">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>29.909 35.403 44.108</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>32</position>
+               <base-type>C</base-type>
+               <atom serial="663">
+                  <atom-type> P  </atom-type>
+                     <coordinates>31.044 34.277 44.306</coordinates>
+               </atom>
+               <atom serial="671">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>34.292 33.244 40.360</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>33</position>
+               <base-type>U</base-type>
+               <atom serial="683">
+                  <atom-type> P  </atom-type>
+                     <coordinates>34.537 31.807 41.044</coordinates>
+               </atom>
+               <atom serial="691">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>39.706 30.722 42.188</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>34</position>
+               <base-type>C</base-type>
+               <atom serial="703">
+                  <atom-type> P  </atom-type>
+                     <coordinates>39.955 29.529 43.235</coordinates>
+               </atom>
+               <atom serial="711">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>42.654 32.029 46.669</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>35</position>
+               <base-type>U</base-type>
+               <atom serial="723">
+                  <atom-type> P  </atom-type>
+                     <coordinates>42.136 33.539 46.533</coordinates>
+               </atom>
+               <atom serial="731">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>44.693 37.291 49.192</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>36</position>
+               <base-type>C</base-type>
+               <atom serial="743">
+                  <atom-type> P  </atom-type>
+                     <coordinates>43.614 38.457 48.994</coordinates>
+               </atom>
+               <atom serial="751">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>45.229 43.200 47.685</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>37</position>
+               <base-type>A</base-type>
+               <atom serial="763">
+                  <atom-type> P  </atom-type>
+                     <coordinates>44.021 44.175 47.282</coordinates>
+               </atom>
+               <atom serial="771">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>43.446 46.802 42.205</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>38</position>
+               <base-type>A</base-type>
+               <atom serial="785">
+                  <atom-type> P  </atom-type>
+                     <coordinates>42.051 47.483 41.800</coordinates>
+               </atom>
+               <atom serial="793">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>40.599 47.681 36.878</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>39</position>
+               <base-type>G</base-type>
+               <atom serial="807">
+                  <atom-type> P  </atom-type>
+                     <coordinates>39.166 48.398 37.016</coordinates>
+               </atom>
+               <atom serial="815">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>34.729 46.726 34.952</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>40</position>
+               <base-type>G</base-type>
+               <atom serial="830">
+                  <atom-type> P  </atom-type>
+                     <coordinates>33.569 47.689 35.507</coordinates>
+               </atom>
+               <atom serial="838">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>28.738 46.217 36.181</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>41</position>
+               <base-type>C</base-type>
+               <atom serial="853">
+                  <atom-type> P  </atom-type>
+                     <coordinates>28.075 47.580 36.715</coordinates>
+               </atom>
+               <atom serial="861">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>24.158 47.199 40.129</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>42</position>
+               <base-type>C</base-type>
+               <atom serial="873">
+                  <atom-type> P  </atom-type>
+                     <coordinates>23.751 48.707 40.516</coordinates>
+               </atom>
+               <atom serial="881">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>22.045 49.889 45.366</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>43</position>
+               <base-type>G</base-type>
+               <atom serial="893">
+                  <atom-type> P  </atom-type>
+                     <coordinates>21.851 51.493 45.478</coordinates>
+               </atom>
+               <atom serial="901">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>22.719 53.644 50.130</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>44</position>
+               <base-type>A</base-type>
+               <atom serial="916">
+                  <atom-type> P  </atom-type>
+                     <coordinates>22.373 55.211 50.002</coordinates>
+               </atom>
+               <atom serial="924">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>24.327 58.517 53.394</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>45</position>
+               <base-type>A</base-type>
+               <atom serial="938">
+                  <atom-type> P  </atom-type>
+                     <coordinates>23.592 59.793 52.762</coordinates>
+               </atom>
+               <atom serial="946">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>26.157 64.074 51.824</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>46</position>
+               <base-type>A</base-type>
+               <atom serial="960">
+                  <atom-type> P  </atom-type>
+                     <coordinates>24.749 64.751 51.466</coordinates>
+               </atom>
+               <atom serial="968">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>24.894 70.015 50.545</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>47</position>
+               <base-type>C</base-type>
+               <atom serial="982">
+                  <atom-type> P  </atom-type>
+                     <coordinates>23.393 70.329 51.031</coordinates>
+               </atom>
+               <atom serial="990">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>25.260 74.340 47.624</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>48</position>
+               <base-type>G</base-type>
+               <atom serial="1002">
+                  <atom-type> P  </atom-type>
+                     <coordinates>25.631 75.860 47.953</coordinates>
+               </atom>
+               <atom serial="1010">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>23.705 76.280 52.719</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>49</position>
+               <base-type>G</base-type>
+               <atom serial="1025">
+                  <atom-type> P  </atom-type>
+                     <coordinates>22.226 76.859 52.488</coordinates>
+               </atom>
+               <atom serial="1033">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>19.943 80.093 55.414</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>50</position>
+               <base-type>G</base-type>
+               <atom serial="1048">
+                  <atom-type> P  </atom-type>
+                     <coordinates>18.500 80.337 54.746</coordinates>
+               </atom>
+               <atom serial="1056">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>15.939 84.633 55.169</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>51</position>
+               <base-type>G</base-type>
+               <atom serial="1071">
+                  <atom-type> P  </atom-type>
+                     <coordinates>14.654 84.693 54.215</coordinates>
+               </atom>
+               <atom serial="1079">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>12.398 88.854 50.912</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>52</position>
+               <base-type>G</base-type>
+               <atom serial="1094">
+                  <atom-type> P  </atom-type>
+                     <coordinates>11.098 88.005 50.504</coordinates>
+               </atom>
+               <atom serial="1102">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>10.114 90.107 45.408</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>53</position>
+               <base-type>U</base-type>
+               <atom serial="1117">
+                  <atom-type> P  </atom-type>
+                     <coordinates>8.806 89.402 44.807</coordinates>
+               </atom>
+               <atom serial="1125">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>8.547 89.025 39.914</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>54</position>
+               <base-type>U</base-type>
+               <atom serial="1137">
+                  <atom-type> P  </atom-type>
+                     <coordinates>7.020 88.754 40.335</coordinates>
+               </atom>
+               <atom serial="1145">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>5.009 84.397 38.121</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>55</position>
+               <base-type>C</base-type>
+               <atom serial="1157">
+                  <atom-type> P  </atom-type>
+                     <coordinates>3.530 84.366 38.755</coordinates>
+               </atom>
+               <atom serial="1165">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>3.935 80.879 42.662</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>56</position>
+               <base-type>G</base-type>
+               <atom serial="1177">
+                  <atom-type> P  </atom-type>
+                     <coordinates>5.393 81.356 43.121</coordinates>
+               </atom>
+               <atom serial="1185">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>9.203 78.003 44.008</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>57</position>
+               <base-type>A</base-type>
+               <atom serial="1200">
+                  <atom-type> P  </atom-type>
+                     <coordinates>10.341 79.094 44.236</coordinates>
+               </atom>
+               <atom serial="1208">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>15.585 76.686 45.690</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>58</position>
+               <base-type>U</base-type>
+               <atom serial="1222">
+                  <atom-type> P  </atom-type>
+                     <coordinates>15.992 75.218 45.196</coordinates>
+               </atom>
+               <atom serial="1230">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>20.096 77.847 43.397</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>59</position>
+               <base-type>U</base-type>
+               <atom serial="1242">
+                  <atom-type> P  </atom-type>
+                     <coordinates>19.482 79.113 42.623</coordinates>
+               </atom>
+               <atom serial="1250">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>20.926 79.873 37.018</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>60</position>
+               <base-type>C</base-type>
+               <atom serial="1262">
+                  <atom-type> P  </atom-type>
+                     <coordinates>21.830 81.194 37.016</coordinates>
+               </atom>
+               <atom serial="1270">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>21.009 85.981 36.482</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>61</position>
+               <base-type>C</base-type>
+               <atom serial="1282">
+                  <atom-type> P  </atom-type>
+                     <coordinates>22.030 86.596 37.562</coordinates>
+               </atom>
+               <atom serial="1290">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>21.975 91.012 39.795</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>62</position>
+               <base-type>C</base-type>
+               <atom serial="1302">
+                  <atom-type> P  </atom-type>
+                     <coordinates>23.270 91.087 40.745</coordinates>
+               </atom>
+               <atom serial="1310">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>23.872 93.714 44.920</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>63</position>
+               <base-type>C</base-type>
+               <atom serial="1322">
+                  <atom-type> P  </atom-type>
+                     <coordinates>25.340 93.356 45.469</coordinates>
+               </atom>
+               <atom serial="1330">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>26.053 93.567 50.646</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>64</position>
+               <base-type>C</base-type>
+               <atom serial="1342">
+                  <atom-type> P  </atom-type>
+                     <coordinates>27.583 93.118 50.792</coordinates>
+               </atom>
+               <atom serial="1350">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>28.675 90.305 55.170</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>65</position>
+               <base-type>U</base-type>
+               <atom serial="1362">
+                  <atom-type> P  </atom-type>
+                     <coordinates>30.258 89.959 55.233</coordinates>
+               </atom>
+               <atom serial="1370">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>31.988 85.415 56.740</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>66</position>
+               <base-type>G</base-type>
+               <atom serial="1382">
+                  <atom-type> P  </atom-type>
+                     <coordinates>33.572 85.419 56.515</coordinates>
+               </atom>
+               <atom serial="1390">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>35.901 81.392 54.629</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>67</position>
+               <base-type>G</base-type>
+               <atom serial="1405">
+                  <atom-type> P  </atom-type>
+                     <coordinates>37.371 81.965 54.400</coordinates>
+               </atom>
+               <atom serial="1413">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>40.319 79.965 50.695</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>68</position>
+               <base-type>G</base-type>
+               <atom serial="1428">
+                  <atom-type> P  </atom-type>
+                     <coordinates>41.649 80.859 50.753</coordinates>
+               </atom>
+               <atom serial="1436">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>44.161 81.379 46.144</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>69</position>
+               <base-type>G</base-type>
+               <atom serial="1451">
+                  <atom-type> P  </atom-type>
+                     <coordinates>45.444 82.321 46.293</coordinates>
+               </atom>
+               <atom serial="1459">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>47.049 85.068 42.163</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>70</position>
+               <base-type>U</base-type>
+               <atom serial="1474">
+                  <atom-type> P  </atom-type>
+                     <coordinates>48.430 85.802 42.569</coordinates>
+               </atom>
+               <atom serial="1482">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>49.380 90.593 40.968</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>71</position>
+               <base-type>C</base-type>
+               <atom serial="1494">
+                  <atom-type> P  </atom-type>
+                     <coordinates>50.637 91.389 41.566</coordinates>
+               </atom>
+               <atom serial="1502">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>51.789 96.509 43.684</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>72</position>
+               <base-type>A</base-type>
+               <atom serial="1514">
+                  <atom-type> P  </atom-type>
+                     <coordinates>53.281 96.331 44.264</coordinates>
+               </atom>
+               <atom serial="1522">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>57.448 97.610 40.141</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>73</position>
+               <base-type>C</base-type>
+               <atom serial="1536">
+                  <atom-type> P  </atom-type>
+                     <coordinates>58.772 98.226 40.815</coordinates>
+               </atom>
+               <atom serial="1544">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>61.349 94.845 38.476</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>74</position>
+               <base-type>C</base-type>
+               <atom serial="1556">
+                  <atom-type> P  </atom-type>
+                     <coordinates>62.577 93.999 37.883</coordinates>
+               </atom>
+               <atom serial="1564">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>60.313 90.896 35.706</coordinates>
+               </atom>
+            </base>
+            <base>
+               <position>75</position>
+               <base-type>A</base-type>
+               <atom serial="1576">
+                  <atom-type> P  </atom-type>
+                     <coordinates>59.654 90.708 34.241</coordinates>
+               </atom>
+               <atom serial="1584">
+                  <atom-type> O3'</atom-type>
+                     <coordinates>57.185 86.641 31.647</coordinates>
+               </atom>
+            </base>
+            <str-annotation>
+               <base-conformation>
+                  <base-id><position>18</position></base-id>
+                  <glycosyl>syn</glycosyl>
+               </base-conformation>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>1</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>71</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>2</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>70</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>W</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>3</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>69</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>4</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>68</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>5</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>67</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>6</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>66</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>7</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>65</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>-</edge-5p>
+                  <edge-3p>-</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>8</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>14</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>H</edge-3p>
+                  <bond-orientation>t</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>9</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>23</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>H</edge-5p>
+                  <edge-3p>H</edge-3p>
+                  <bond-orientation>t</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>10</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>25</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>11</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>24</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>-</edge-5p>
+                  <edge-3p>-</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>12</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>23</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>13</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>22</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>W</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>14</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>21</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>S</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>15</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>47</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>W</edge-3p>
+                  <bond-orientation>t</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>17</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>54</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>S</edge-3p>
+                  <bond-orientation>t</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>18</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>55</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>W</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>22</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>46</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>H</edge-5p>
+                  <edge-3p>W</edge-3p>
+                  <bond-orientation>t</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>26</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>44</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>W</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>27</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>43</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>28</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>42</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>29</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>41</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>30</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>40</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>31</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>39</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>48</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>64</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>49</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>63</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>50</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>62</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>51</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>61</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>52</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>60</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>+</edge-5p>
+                  <edge-3p>+</edge-3p>
+                  <bond-orientation>c</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>53</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>57</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>W</edge-5p>
+                  <edge-3p>H</edge-3p>
+                  <bond-orientation>t</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>15</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>19</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>19</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>47</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>32</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>38</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>8</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>21</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>7</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>8</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>8</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>46</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>59</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>60</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>71</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>72</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <base-pair comment="?">
+                  <base-id-5p>
+                     <base-id><position>73</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>74</position></base-id>
+                  </base-id-3p>
+                  <edge-5p>!</edge-5p>
+                  <edge-3p>!</edge-3p>
+                  <bond-orientation>!</bond-orientation>
+               </base-pair>
+               <helix id="H1">
+                  <base-id-5p>
+                     <base-id><position>1</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>71</position></base-id>
+                  </base-id-3p>
+                  <length>7</length>
+               </helix>
+               <helix id="H2">
+                  <base-id-5p>
+                     <base-id><position>48</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>64</position></base-id>
+                  </base-id-3p>
+                  <length>5</length>
+               </helix>
+               <helix id="H3">
+                  <base-id-5p>
+                     <base-id><position>10</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>25</position></base-id>
+                  </base-id-3p>
+                  <length>4</length>
+               </helix>
+               <helix id="H4">
+                  <base-id-5p>
+                     <base-id><position>26</position></base-id>
+                  </base-id-5p>
+                  <base-id-3p>
+                     <base-id><position>44</position></base-id>
+                  </base-id-3p>
+                  <length>7</length>
+               </helix>
+               <single-strand>
+                  <segment>
+                     <seg-name>SG1</seg-name>
+                     <base-id-5p><base-id><position>8</position></base-id></base-id-5p>
+                     <base-id-3p><base-id><position>9</position></base-id></base-id-3p>
+                  </segment>
+               </single-strand>
+               <single-strand>
+                  <segment>
+                     <seg-name>SG2</seg-name>
+                     <base-id-5p><base-id><position>14</position></base-id></base-id-5p>
+                     <base-id-3p><base-id><position>21</position></base-id></base-id-3p>
+                  </segment>
+               </single-strand>
+               <single-strand>
+                  <segment>
+                     <seg-name>SG3</seg-name>
+                     <base-id-5p><base-id><position>33</position></base-id></base-id-5p>
+                     <base-id-3p><base-id><position>37</position></base-id></base-id-3p>
+                  </segment>
+               </single-strand>
+               <single-strand>
+                  <segment>
+                     <seg-name>SG4</seg-name>
+                     <base-id-5p><base-id><position>45</position></base-id></base-id-5p>
+                     <base-id-3p><base-id><position>47</position></base-id></base-id-3p>
+                  </segment>
+               </single-strand>
+               <single-strand>
+                  <segment>
+                     <seg-name>SG5</seg-name>
+                     <base-id-5p><base-id><position>53</position></base-id></base-id-5p>
+                     <base-id-3p><base-id><position>59</position></base-id></base-id-3p>
+                  </segment>
+               </single-strand>
+               <single-strand>
+                  <segment>
+                     <seg-name>SG6</seg-name>
+                     <base-id-5p><base-id><position>72</position></base-id></base-id-5p>
+                     <base-id-3p><base-id><position>75</position></base-id></base-id-3p>
+                  </segment>
+               </single-strand>
+            </str-annotation>
+            <secondary-structure-display comment="x,y coodinates">
+               <ss-base-coord>
+                  <base-id><position>1</position></base-id>
+                  <coordinates>475.235 61.873</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>2</position></base-id>
+                  <coordinates>475.235 87.653</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>3</position></base-id>
+                  <coordinates>475.235 113.433</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>4</position></base-id>
+                  <coordinates>475.235 139.214</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>5</position></base-id>
+                  <coordinates>475.235 164.994</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>6</position></base-id>
+                  <coordinates>475.235 190.774</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>7</position></base-id>
+                  <coordinates>475.235 216.555</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>8</position></base-id>
+                  <coordinates>459.767 216.555</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>9</position></base-id>
+                  <coordinates>444.299 216.555</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>10</position></base-id>
+                  <coordinates>244.315 293.847</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>11</position></base-id>
+                  <coordinates>268.753 302.055</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>12</position></base-id>
+                  <coordinates>293.192 310.263</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>13</position></base-id>
+                  <coordinates>317.631 318.471</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>14</position></base-id>
+                  <coordinates>333.184 339.248</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>15</position></base-id>
+                  <coordinates>357.243 348.982</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>16</position></base-id>
+                  <coordinates>382.868 344.865</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>17</position></base-id>
+                  <coordinates>402.668 328.085</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>18</position></base-id>
+                  <coordinates>410.931 303.482</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>19</position></base-id>
+                  <coordinates>405.274 278.152</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>20</position></base-id>
+                  <coordinates>387.329 259.402</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>21</position></base-id>
+                  <coordinates>362.272 252.641</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>22</position></base-id>
+                  <coordinates>337.330 259.817</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>23</position></base-id>
+                  <coordinates>312.891 251.609</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>24</position></base-id>
+                  <coordinates>288.452 243.402</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>25</position></base-id>
+                  <coordinates>264.013 235.194</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>26</position></base-id>
+                  <coordinates>215.136 218.778</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>27</position></base-id>
+                  <coordinates>190.697 210.570</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>28</position></base-id>
+                  <coordinates>166.258 202.362</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>29</position></base-id>
+                  <coordinates>141.819 194.155</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>30</position></base-id>
+                  <coordinates>117.380 185.947</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>31</position></base-id>
+                  <coordinates>92.941 177.739</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>32</position></base-id>
+                  <coordinates>68.503 169.531</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>33</position></base-id>
+                  <coordinates>45.452 153.813</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>34</position></base-id>
+                  <coordinates>17.825 157.696</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>35</position></base-id>
+                  <coordinates>0.000 179.159</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>36</position></base-id>
+                  <coordinates>1.256 207.030</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>37</position></base-id>
+                  <coordinates>20.939 226.802</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>38</position></base-id>
+                  <coordinates>48.804 228.184</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>39</position></base-id>
+                  <coordinates>73.243 236.392</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>40</position></base-id>
+                  <coordinates>97.682 244.600</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>41</position></base-id>
+                  <coordinates>122.120 252.808</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>42</position></base-id>
+                  <coordinates>146.559 261.016</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>43</position></base-id>
+                  <coordinates>170.998 269.224</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>44</position></base-id>
+                  <coordinates>195.437 277.431</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>45</position></base-id>
+                  <coordinates>428.831 268.116</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>46</position></base-id>
+                  <coordinates>444.299 268.116</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>47</position></base-id>
+                  <coordinates>459.767 268.116</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>48</position></base-id>
+                  <coordinates>475.235 268.116</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>49</position></base-id>
+                  <coordinates>475.235 293.896</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>50</position></base-id>
+                  <coordinates>475.235 319.676</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>51</position></base-id>
+                  <coordinates>475.235 345.457</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>52</position></base-id>
+                  <coordinates>475.235 371.237</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>53</position></base-id>
+                  <coordinates>462.343 394.166</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>54</position></base-id>
+                  <coordinates>464.522 420.380</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>55</position></base-id>
+                  <coordinates>481.023 440.865</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>56</position></base-id>
+                  <coordinates>506.172 448.578</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>57</position></base-id>
+                  <coordinates>531.320 440.865</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>58</position></base-id>
+                  <coordinates>547.821 420.380</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>59</position></base-id>
+                  <coordinates>550.000 394.166</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>60</position></base-id>
+                  <coordinates>537.108 371.237</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>61</position></base-id>
+                  <coordinates>537.108 345.457</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>62</position></base-id>
+                  <coordinates>537.108 319.676</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>63</position></base-id>
+                  <coordinates>537.108 293.896</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>64</position></base-id>
+                  <coordinates>537.108 268.116</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>65</position></base-id>
+                  <coordinates>537.108 216.555</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>66</position></base-id>
+                  <coordinates>537.108 190.774</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>67</position></base-id>
+                  <coordinates>537.108 164.994</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>68</position></base-id>
+                  <coordinates>537.108 139.214</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>69</position></base-id>
+                  <coordinates>537.108 113.433</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>70</position></base-id>
+                  <coordinates>537.108 87.653</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>71</position></base-id>
+                  <coordinates>537.108 61.873</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>72</position></base-id>
+                  <coordinates>537.108 46.405</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>73</position></base-id>
+                  <coordinates>537.108 30.936</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>74</position></base-id>
+                  <coordinates>537.108 15.468</coordinates>
+               </ss-base-coord>
+               <ss-base-coord>
+                  <base-id><position>75</position></base-id>
+                  <coordinates>537.108 0.000</coordinates>
+               </ss-base-coord>
+            </secondary-structure-display>
+         </model>
+      </structure>
+   </molecule>
+
+
+   <interactions>
+            <str-annotation>
+            </str-annotation>
+   </interactions>
+</rnaml>

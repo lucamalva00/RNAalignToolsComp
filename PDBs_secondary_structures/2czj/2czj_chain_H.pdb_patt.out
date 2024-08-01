@@ -1,9 +1,0 @@
-BEGIN_base-pair
-    21_34, H:    21 A-U    34 H: -/- cis         XX
-    22_33, H:    22 G-U    33 H: W/W cis         XXVIII
-    23_32, H:    23 G-U    32 H: W/W cis         XXVIII
-    24_31, H:    24 G-C    31 H: +/+ cis         XIX
-    24_31,-
-21_34_22_33_23_32_24_31_0, click this line to see above pattern
-0_0,---------
-END_base-pair

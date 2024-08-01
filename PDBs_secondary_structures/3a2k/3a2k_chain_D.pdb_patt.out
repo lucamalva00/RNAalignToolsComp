@@ -1,9 +1,0 @@
-BEGIN_base-pair
-    13_23, D:    13 C-G    23 D: +/+ cis         XIX
-    14_22, D:    14 A-A    22 D: W/S cis         n/a
-    18_56, D:    18 G-U    56 D: W/S tran        n/a
-    19_57, D:    19 G-C    57 D: +/+ cis         XIX
-    19_57,-
-13_23_14_22_18_56_19_57_0, click this line to see above pattern
-0_0,---------
-END_base-pair

@@ -1,9 +1,0 @@
-BEGIN_base-pair
-    14_19, E:    15 G-C    20 E: +/+ cis         XIX
-    16_55, E:    18 G-U    55 E: W/S tran        n/a
-    17_18, E:    19 G-U    20 E: S/H cis         n/a
-    17_56, E:    19 G-C    56 E: +/+ cis         XIX
-    17_56,-
-14_19_16_55_17_18_17_56_0, click this line to see above pattern
-0_0,---------
-END_base-pair

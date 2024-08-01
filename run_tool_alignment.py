@@ -42,9 +42,11 @@ def exec_RMalign():
         first_elem = pair[0]
         second_elem = pair[1]
 
-        print(str(pairs.index(pair)) + ": Performing alignment between " + first_elem + " and " + second_elem)
+        first_elem_chain = first_elem[5]
+        second_elem_chain = second_elem[5]
+        print_alignment(pairs.index(pair), first_elem, second_elem)
 
-        result = subprocess.Popen([rna_align_path, "-A", prefix_elem_path + first_elem, "-B", prefix_elem_path + second_elem, "-t", "CA"], stdout=subprocess.PIPE)
+        result = subprocess.Popen([rna_align_path, "-A", prefix_elem_path + first_elem, "-Ac", first_elem_chain, "-B", prefix_elem_path + second_elem, "-Bc", second_elem_chain], stdout=subprocess.PIPE)
         
         stdout_lines = result.stdout.read().decode().splitlines()
 
@@ -74,9 +76,9 @@ def exec_ARTS():
         first_elem = pair[0]
         second_elem = pair[1]
 
-        alignment_data.append(first_elem[0:4])
-        alignment_data.append(second_elem[0:4])
-
+        alignment_data.append(first_elem[0:len(first_elem)-4])
+        alignment_data.append(second_elem[0:len(second_elem)-4])
+        print_alignment(pairs.index(pair), first_elem, second_elem)
         result = subprocess.run([arts_path, "./Dataset/" + first_elem, "./Dataset/" + second_elem], capture_output=True)
         if(result.returncode==255):
             continue
@@ -100,8 +102,6 @@ def exec_ARTS():
                 break
 
         print(alignment_data)    
-
-        
         outputs.append(alignment_data)
     
     with open("ARTS_output.csv", "w", newline="") as file:
