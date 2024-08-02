@@ -175,7 +175,7 @@ def exec_SARA():
         out, err = process.communicate()
 
         if err:
-            errors_log.append(err)
+            errors_log.append((pairs.index(pair), err))
             alignment_data.append('')
             output.append(alignment_data)
             continue
@@ -184,7 +184,7 @@ def exec_SARA():
         
         for elem in result_list:
             if(elem.startswith("Error")):
-                errors_log.append(elem)
+                errors_log.append((pairs.index(pair), elem))
                 alignment_data.append('')
                 output.append(alignment_data)
                 error = True
@@ -217,8 +217,42 @@ def exec_SARA():
     
     with open("SARA_errors_log.txt", "w") as errors_f:
         for log in errors_log:
-            errors_f.write(str(errors_log.index(log)) + ") " + log + "\n")
+            errors_f.write("On alignment n." + str(log[0]) + ": " + log[1] + "\n")
         
+
+def exec_USalign():
+    output = []
+
+    for pair in pairs:
+        alignment_data = []
+
+        first_elem = pair[0]
+        second_elem = pair[1]
+
+        alignment_data.append(first_elem[0:len(first_elem) - 4])
+        alignment_data.append(second_elem[0:len(second_elem) - 4])
+
+        print_alignment(pairs.index(pair), first_elem[0:len(first_elem) - 4], second_elem[0:len(second_elem) - 4])
+
+
+        process = subprocess.Popen(["./USalign/USalign", "./Dataset/" + first_elem, "./Dataset/" + second_elem, "-mol", "RNA"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process.wait()
+
+        out_lines = process.stdout.read().decode().splitlines()
+
+        for line in out_lines:
+            if line.startswith("Aligned length"):
+                rmsd_string = line.split(",")[1]
+                rmsd = rmsd_string.split("=")[1].strip()
+                alignment_data.append(rmsd)
+
+        output.append(alignment_data)
+    
+    with open("USalign_output.csv", "w", newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(output)
+
+
 
 
         
@@ -233,3 +267,5 @@ match tool_name:
         exec_CLICK()
     case "SARA":
         exec_SARA()
+    case "USalign":
+        exec_USalign()
