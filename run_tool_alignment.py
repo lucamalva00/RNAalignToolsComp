@@ -13,9 +13,9 @@ def construct_pairs(dataset_path):
     
 
     for pdb_elem in files_list:
-        if(not pdb_elem.endswith(".pairs")):
+        if(not pdb_elem.endswith(".pairs") and not pdb_elem.endswith(".pdb_new")):
             pdb_list.append(pdb_elem)
-            
+    
     for i in range(len(pdb_list)-1):
         for j in range(i+1,len(pdb_list)):
             pairs.append((pdb_list[i],pdb_list[j]))
@@ -27,14 +27,14 @@ def print_alignment(index, first_elem, second_elem):
     print(str(index) + ": Performing alignment between " + first_elem + " and " + second_elem)
 
 tool_name = sys.argv[1]
-dataset_path = sys.argv[2]
+dataset_name = sys.argv[2]
+
+dataset_path = "./Datasets/" + dataset_name
 
 pairs = construct_pairs(dataset_path)
 
 def exec_RMalign():
     rna_align_path = "RMalign/RMalign"
-
-    prefix_elem_path = "Dataset/"
 
     outputs = []
 
@@ -46,11 +46,16 @@ def exec_RMalign():
 
         first_elem_chain = first_elem[5]
         second_elem_chain = second_elem[5]
+
         print_alignment(pairs.index(pair), first_elem, second_elem)
 
-        result = subprocess.Popen([rna_align_path, "-A", prefix_elem_path + first_elem, "-Ac", first_elem_chain, "-B", prefix_elem_path + second_elem, "-Bc", second_elem_chain], stdout=subprocess.PIPE)
+        result = subprocess.Popen([rna_align_path, "-A", dataset_path + "/" + first_elem, "-Ac", first_elem_chain, "-B", dataset_path + "/" + second_elem, "-Bc", second_elem_chain], stdout=subprocess.PIPE)
         
         stdout_lines = result.stdout.read().decode().splitlines()
+
+
+
+        print()
 
         alignment_data.append(first_elem[0:4])
         alignment_data.append(second_elem[0:4])
@@ -63,7 +68,7 @@ def exec_RMalign():
 
         outputs.append(alignment_data)        
 
-    with open("RMalign_output.csv", "w", newline='') as file:
+    with open(dataset_name + "_RMalign_output.csv", "w", newline='') as file:
         writer = csv.writer(file)
         writer.writerows(outputs)
 
@@ -78,11 +83,16 @@ def exec_ARTS():
         first_elem = pair[0]
         second_elem = pair[1]
 
-        alignment_data.append(first_elem[0:len(first_elem)-4])
-        alignment_data.append(second_elem[0:len(second_elem)-4])
+        alignment_data.append(first_elem[0:len(first_elem) - 4])
+        alignment_data.append(second_elem[0:len(second_elem) - 4])
+
         print_alignment(pairs.index(pair), first_elem, second_elem)
-        result = subprocess.run([arts_path, "./Dataset/" + first_elem, "./Dataset/" + second_elem], capture_output=True)
-        if(result.returncode==255):
+
+        result = subprocess.run([arts_path, dataset_path + "/" + first_elem, dataset_path + "/" + second_elem], capture_output=True)
+
+        print("Return code: " + str(result.returncode) + "\n")
+
+        if(result.returncode != 0):
             continue
 
         arts_out = []
@@ -92,13 +102,13 @@ def exec_ARTS():
         
         with open("arts.out", "r") as f:
             arts_out = f.readlines()
-            print("opened")
+            print("arts.out opened\n")
 
         os.remove("arts.out")
 
         for line in arts_out:
             if (line.startswith("*** RMSD")):
-                print(line)
+                print(line + "\n")
                 splitted_line = line.split(" ")
                 alignment_data.append(splitted_line[3].strip())
                 break
@@ -106,7 +116,7 @@ def exec_ARTS():
         print(alignment_data)    
         outputs.append(alignment_data)
     
-    with open("ARTS_output.csv", "w", newline="") as file:
+    with open(dataset_name + "_ARTS_alignments.csv", "w", newline="") as file:
         writer = csv.writer(file)
         writer.writerows(outputs)
 
@@ -237,8 +247,10 @@ def exec_USalign():
         print_alignment(pairs.index(pair), first_elem[0:len(first_elem) - 4], second_elem[0:len(second_elem) - 4])
 
 
-        process = subprocess.Popen(["./USalign/USalign", "./Dataset/" + first_elem, "./Dataset/" + second_elem, "-mol", "RNA"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(["./USalign/USalign", dataset_path + "/" + first_elem, dataset_path + "/" + second_elem, "-mol", "RNA"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         process.wait()
+
+        print("Return code: " + str(process.returncode) + "\n")
 
         out_lines = process.stdout.read().decode().splitlines()
 
@@ -250,7 +262,7 @@ def exec_USalign():
 
         output.append(alignment_data)
     
-    with open("USalign_output.csv", "w", newline='') as file:
+    with open(dataset_name + "_USalign_alignments.csv", "w", newline='') as file:
         writer = csv.writer(file)
         writer.writerows(output)
 
