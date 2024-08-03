@@ -1,0 +1,7 @@
+FileName1,NumberOfNucleotides1,NumberOfWeakBonds1,IsPseudoknotted1,TimeToGenerateStructuralRNATree1[ns],FileName2,NumberOfNucleotides2,NumberOfWeakBonds2,IsPseudoknotted2,TimeToGenerateStructuralRNATree2[ns],MaxNumberOfNucleotides1-2,ASPRADistance,TimeToCalculateASPRADistance[ns]
+"1O0B-SS.txt",75,20,Yes,476916,"1O0C-SS.txt",75,20,Yes,74625,75,0.0,5483917
+"1O0B-SS.txt",75,20,Yes,476916,"1ZJW-SS.txt",75,20,Yes,65292,75,0.0,3005083
+"1O0B-SS.txt",75,20,Yes,476916,"2RE8-SS.txt",75,20,Yes,62291,75,0.0,2427916
+"1O0C-SS.txt",75,20,Yes,74625,"1ZJW-SS.txt",75,20,Yes,65292,75,0.0,2402792
+"1O0C-SS.txt",75,20,Yes,74625,"2RE8-SS.txt",75,20,Yes,62291,75,0.0,2713042
+"1ZJW-SS.txt",75,20,Yes,65292,"2RE8-SS.txt",75,20,Yes,62291,75,0.0,2378166

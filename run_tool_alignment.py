@@ -3,6 +3,7 @@ import subprocess
 import os
 import csv
 import time
+import shutil
 
 
 # Constructs the list consisting of all pdb pairs from the given dataset and returns it
@@ -121,8 +122,10 @@ def exec_ARTS():
         writer.writerows(outputs)
 
 def exec_CLICK():
-    data_base_path = "./data/Dataset/"
-
+    command_dataset_path = "./data/" + dataset_name
+    data_base_path = "./Click/data/" + dataset_name 
+    if(not os.path.exists(data_base_path)):
+        shutil.copytree(dataset_path,data_base_path + "/")
     os.system("chmod +rwx ./Click/Parameters.inp")
     
 
@@ -139,7 +142,7 @@ def exec_CLICK():
 
         print_alignment(pairs.index(pair), first_elem, second_elem)
 
-        process = subprocess.Popen(["./click", data_base_path + first_elem, data_base_path + second_elem, "-s", "0"], stdout=subprocess.PIPE, cwd="./Click")
+        process = subprocess.Popen(["./click", command_dataset_path + "/" + first_elem, command_dataset_path + "/" + second_elem, "-s", "0"], stdout=subprocess.PIPE, cwd="./Click")
         process.wait()
 
         result_list = process.stdout.read().decode().splitlines()
@@ -148,19 +151,27 @@ def exec_CLICK():
         
         alignment_data.append(rmsd)
         outputs.append(alignment_data)
-        dataset_dir = os.listdir("./Click/data/Dataset")
+        dataset_dir = os.listdir("./Click/data/" + dataset_name)
 
         for pdb in dataset_dir:
             if(pdb.endswith(".clique") or ("-" in pdb)):
-                os.remove("./Click/data/Dataset/" + pdb)
+                os.remove("./Click/data/" + dataset_name + "/" + pdb)
     
-    with open("CLICK_output.csv", "w", newline='') as file:
+    with open(dataset_name + "_CLICK_alignments.csv", "w", newline='') as file:
         writer = csv.writer(file)
         writer.writerows(outputs)
 
 def exec_SARA():
+
     output = []
     errors_log = []
+    command_dataset_path = "./" + dataset_name + "/"
+    sara_dataset_path = "./SARA/" + dataset_name
+    #if(not os.path.exists(sara_datasets_path)):
+     #   os.mkdir(sara_datasets_path)
+    if(not os.path.exists(sara_dataset_path)):
+        shutil.copytree(dataset_path,sara_dataset_path + "/")
+
 
     for pair in pairs:
         error = False
@@ -175,18 +186,19 @@ def exec_SARA():
         second_chain_id = second_elem[5]
 
         # only for tests
-        if first_chain_id == "i" or second_chain_id == "i":
-            continue
+       # if first_chain_id == "i" or second_chain_id == "i":
+        #    continue
 
         alignment_data.append(first_elem[0:len(first_elem) - 4])
         alignment_data.append(second_elem[0:len(second_elem) - 4])
 
-        sara_command = ["python", "runsara.py", "./Dataset/" + first_elem, first_chain_id, "./Dataset/" + second_elem, second_chain_id, "-a", "C3\'", "-s", "-o output.txt"]
+        sara_command = ["python", "runsara.py", command_dataset_path + first_elem, first_chain_id, command_dataset_path + second_elem, second_chain_id, "-a", "C3\'", "-s", "-o output.txt"]
         
         process = subprocess.Popen(sara_command, cwd="./SARA", stdout=subprocess.PIPE, text=True, stderr=subprocess.PIPE)
         out, err = process.communicate()
 
         if err:
+            print(err)
             errors_log.append((pairs.index(pair), err))
             alignment_data.append('')
             output.append(alignment_data)
@@ -196,6 +208,7 @@ def exec_SARA():
         
         for elem in result_list:
             if(elem.startswith("Error")):
+                print(elem)
                 errors_log.append((pairs.index(pair), elem))
                 alignment_data.append('')
                 output.append(alignment_data)
@@ -223,7 +236,7 @@ def exec_SARA():
 
         print(alignment_data)
 
-    with open("SARA_output.csv", "w", newline='') as file:
+    with open(dataset_name + "_SARA_alignments.csv", "w", newline='') as file:
         writer = csv.writer(file)
         writer.writerows(output)
     

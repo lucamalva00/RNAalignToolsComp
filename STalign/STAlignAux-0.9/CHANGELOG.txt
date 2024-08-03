@@ -1,0 +1,6 @@
+# STAlign Changelog
+All notable changes to this project will be documented in this file.
+
+## [0.9] - 2023-01-18
+### Added
+- all files from preliminary project TERSAlign

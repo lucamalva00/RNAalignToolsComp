@@ -1,0 +1,5 @@
+Num,FileName,NumberOfNucleotides,NumberOfWeakBonds,IsPseudoknotted,TimeToGenerateStructuralRNATree[ns]
+1,"1O0B-SS.txt",75,20,Yes,476916
+2,"1O0C-SS.txt",75,20,Yes,74625
+3,"1ZJW-SS.txt",75,20,Yes,65292
+4,"2RE8-SS.txt",75,20,Yes,62291
