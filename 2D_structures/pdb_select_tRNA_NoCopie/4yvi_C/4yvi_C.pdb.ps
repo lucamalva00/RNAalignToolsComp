@@ -1,0 +1,361 @@
+%!PS-Adobe-2.0
+%%Title: A postscript generated from a RNAML file.
+%%CreationDate: Sat Aug  3 12:43:21 2024
+%%Orientation: Portrait
+%%BoundingBox:     11   180   601   612
+
+/Times-Bold findfont 12  scalefont setfont
+
+
+/Times-Bold findfont 13  scalefont setfont    %%set font for (A U G C T)
+
+%% stacking diagram widths for base-pairs 1 & 2
+/W1 {1 setlinewidth} bind def
+/W2 {1.5 setlinewidth} bind def
+/W3 {2 setlinewidth} bind def
+/W4 {3 setlinewidth} bind def
+
+%% minor and major grooves filling color saturation
+/MINOR_SAT 0.9 def
+/MAJOR_SAT 0.1 def
+/OTHER_SIDES {0 0 1 sethsbcolor fill} bind def
+
+%% defineing geometry shapes
+/NP {newpath} bind def
+/CIRCLE {0 360 arc closepath} bind def                        %% circle 
+/TRIANGLE {moveto lineto lineto closepath} bind def           %% triangle
+/SQUARE {moveto lineto lineto lineto closepath} bind def      %% square
+/LINE {moveto lineto stroke} bind def                         %% line
+/DASHLINE { moveto lineto [2 4] 0 setdash stroke } bind def %% dashline
+/DOTLINE  {1 0 1 setrgbcolor} bind def                        %% dotline
+/Dw {1 setlinewidth} bind def
+/FB {setgray fill} bind def
+/R6 {moveto lineto lineto lineto lineto lineto closepath} bind def
+/R9 {moveto lineto lineto lineto lineto lineto
+     lineto lineto lineto closepath} bind def
+
+%% line drawing colors for ACGITU & others
+/Al {0.0000 1.00 1.00 sethsbcolor} bind def
+/Cl {0.1667 1.00 1.00 sethsbcolor} bind def
+/Gl {0.3333 1.00 1.00 sethsbcolor} bind def
+/Il {0.3333 1.00 0.57 sethsbcolor} bind def
+/Tl {0.6667 1.00 1.00 sethsbcolor} bind def
+/Ul {0.5000 1.00 1.00 sethsbcolor} bind def
+/Xl {0.0000 0.00 0.00 sethsbcolor} bind def
+/XX {0.2000 0.20 0.20 sethsbcolor} bind def
+/FILLBLACK {0.0000 0.00 0.00 sethsbcolor fill} bind def
+
+%% minor groove filling colors for ACGITU & others
+/Am {0.0000 MINOR_SAT 1.00      sethsbcolor fill} bind def
+/Cm {0.1667 MINOR_SAT 1.00      sethsbcolor fill} bind def
+/Gm {0.3333 MINOR_SAT 1.00      sethsbcolor fill} bind def
+/Im {0.3333 MINOR_SAT 0.57      sethsbcolor fill} bind def
+/Tm {0.6667 MINOR_SAT 1.00      sethsbcolor fill} bind def
+/Um {0.5000 MINOR_SAT 1.00      sethsbcolor fill} bind def
+/Xm {0.0000 0.00      MAJOR_SAT sethsbcolor fill} bind def
+
+%% major groove filling colors for ACGITU & others
+/AM {0.0000 MAJOR_SAT 1.00      sethsbcolor fill} bind def
+/CM {0.1667 MAJOR_SAT 1.00      sethsbcolor fill} bind def
+/GM {0.3333 MAJOR_SAT 1.00      sethsbcolor fill} bind def
+/IM {0.3333 MAJOR_SAT 0.57      sethsbcolor fill} bind def
+/TM {0.6667 MAJOR_SAT 1.00      sethsbcolor fill} bind def
+/UM {0.5000 MAJOR_SAT 1.00      sethsbcolor fill} bind def
+/XM {0.0000 0.00      MINOR_SAT sethsbcolor fill} bind def
+
+%% define line width, line join style & cap style (1 means round)
+1 setlinewidth 1 setlinejoin 1 setlinecap
+    31   200 translate
+
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+74.72 372.15  moveto (U) center show 
+74.72 356.70  moveto (G) center show 
+74.72 330.93  moveto (G) center show 
+74.72 305.17  moveto (G) center show 
+74.72 279.40  moveto (A) center show 
+74.72 253.64  moveto (G) center show 
+74.72 227.88  moveto (G) center show 
+90.18 227.88  moveto (U) center show 
+105.63 227.88  moveto (C) center show 
+302.13 123.48  moveto (G) center show 
+277.45 116.10  moveto (U) center show 
+252.76 108.72  moveto (C) center show 
+228.08 101.34  moveto (U) center show 
+209.82 82.43  moveto (A) center show 
+184.09 77.02  moveto (A) center show 
+159.75 86.95  moveto (C) center show 
+145.17 108.83  moveto (G) center show 
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+gsave Al 145.36 135.11  moveto (G) center show grestore
+160.25 156.78  moveto (U) center show 
+184.73 166.37  moveto (A) center show 
+210.37 160.58  moveto (G) center show 
+235.06 167.96  moveto (G) center show 
+259.74 175.34  moveto (A) center show 
+284.43 182.72  moveto (C) center show 
+333.79 197.48  moveto (G) center show 
+358.48 204.86  moveto (G) center show 
+383.16 212.24  moveto (C) center show 
+407.85 219.61  moveto (G) center show 
+432.53 226.99  moveto (G) center show 
+457.22 234.37  moveto (A) center show 
+481.90 241.75  moveto (C) center show 
+505.45 256.68  moveto (U) center show 
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+gsave Al 532.92 251.87  moveto (C) center show grestore
+550.00 229.84  moveto (U) center show 
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+gsave Al 547.81 202.04  moveto (G) center show grestore
+527.49 182.95  moveto (G) center show 
+499.61 182.51  moveto (A) center show 
+474.93 175.13  moveto (U) center show 
+450.24 167.75  moveto (C) center show 
+425.56 160.37  moveto (C) center show 
+400.87 152.99  moveto (G) center show 
+376.19 145.61  moveto (C) center show 
+351.50 138.23  moveto (U) center show 
+121.09 176.35  moveto (G) center show 
+105.63 176.35  moveto (G) center show 
+90.18 176.35  moveto (U) center show 
+74.72 176.35  moveto (G) center show 
+74.72 150.58  moveto (G) center show 
+74.72 124.82  moveto (A) center show 
+74.72 99.06  moveto (G) center show 
+74.72 73.29  moveto (G) center show 
+87.60 50.38  moveto (U) center show 
+85.42 24.18  moveto (U) center show 
+68.93 3.71  moveto (C) center show 
+43.80 -4.00  moveto (G) center show 
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+gsave Al 18.67 3.71  moveto (A) center show grestore
+2.18 24.18  moveto (G) center show 
+0.00 50.38  moveto (U) center show 
+12.88 73.29  moveto (C) center show 
+12.88 99.06  moveto (C) center show 
+12.88 124.82  moveto (U) center show 
+12.88 150.58  moveto (C) center show 
+12.88 176.35  moveto (C) center show 
+12.88 227.88  moveto (C) center show 
+12.88 253.64  moveto (C) center show 
+12.88 279.40  moveto (U) center show 
+12.88 305.17  moveto (C) center show 
+12.88 330.93  moveto (C) center show 
+12.88 356.70  moveto (C) center show 
+12.88 372.15  moveto (A) center show 
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+gsave Al 12.88 387.61  moveto (G) center show grestore
+0.005 setlinewidth 1 setlinejoin 1 setlinecap
+/Times findfont 11 scalefont setfont
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+gsave Al 74.72 382.15 moveto (5') center show grestore
+/Times findfont 11 scalefont setfont
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+gsave Al 12.88 397.61 moveto (3') center show grestore
+Il 74.72 376.15 74.72 360.70 LINE
+ Il 74.72 360.70 74.72 334.93 LINE
+ Il 74.72 334.93 74.72 309.17 LINE
+ Il 74.72 309.17 74.72 283.40 LINE
+ Il 74.72 283.40 74.72 257.64 LINE
+ Il 74.72 257.64 74.72 231.88 LINE
+ Il 74.72 231.88 90.18 231.88 LINE
+ Il 90.18 231.88 105.63 231.88 LINE
+ Il 105.63 231.88 302.13 127.48 LINE
+ Il 302.13 127.48 277.45 120.10 LINE
+ Il 277.45 120.10 252.76 112.72 LINE
+ Il 252.76 112.72 228.08 105.34 LINE
+ Il 228.08 105.34 209.82 86.43 LINE
+ Il 209.82 86.43 184.09 81.02 LINE
+ Il 184.09 81.02 159.75 90.95 LINE
+ Il 159.75 90.95 145.17 112.83 LINE
+ Il 145.17 112.83 145.36 139.11 LINE
+ Il 145.36 139.11 160.25 160.78 LINE
+ Il 160.25 160.78 184.73 170.37 LINE
+ Il 184.73 170.37 210.37 164.58 LINE
+ Il 210.37 164.58 235.06 171.96 LINE
+ Il 235.06 171.96 259.74 179.34 LINE
+ Il 259.74 179.34 284.43 186.72 LINE
+ Il 284.43 186.72 333.79 201.48 LINE
+ Il 333.79 201.48 358.48 208.86 LINE
+ Il 358.48 208.86 383.16 216.24 LINE
+ Il 383.16 216.24 407.85 223.61 LINE
+ Il 407.85 223.61 432.53 230.99 LINE
+ Il 432.53 230.99 457.22 238.37 LINE
+ Il 457.22 238.37 481.90 245.75 LINE
+ Il 481.90 245.75 505.45 260.68 LINE
+ Il 505.45 260.68 532.92 255.87 LINE
+ Il 532.92 255.87 550.00 233.84 LINE
+ Il 550.00 233.84 547.81 206.04 LINE
+ Il 547.81 206.04 527.49 186.95 LINE
+ Il 527.49 186.95 499.61 186.51 LINE
+ Il 499.61 186.51 474.93 179.13 LINE
+ Il 474.93 179.13 450.24 171.75 LINE
+ Il 450.24 171.75 425.56 164.37 LINE
+ Il 425.56 164.37 400.87 156.99 LINE
+ Il 400.87 156.99 376.19 149.61 LINE
+ Il 376.19 149.61 351.50 142.23 LINE
+ Il 351.50 142.23 121.09 180.35 LINE
+ Il 121.09 180.35 105.63 180.35 LINE
+ Il 105.63 180.35 90.18 180.35 LINE
+ Il 90.18 180.35 74.72 180.35 LINE
+ Il 74.72 180.35 74.72 154.58 LINE
+ Il 74.72 154.58 74.72 128.82 LINE
+ Il 74.72 128.82 74.72 103.06 LINE
+ Il 74.72 103.06 74.72 77.29 LINE
+ Il 74.72 77.29 87.60 54.38 LINE
+ Il 87.60 54.38 85.42 28.18 LINE
+ Il 85.42 28.18 68.93 7.71 LINE
+ Il 68.93 7.71 43.80 0.00 LINE
+ Il 43.80 0.00 18.67 7.71 LINE
+ Il 18.67 7.71 2.18 28.18 LINE
+ Il 2.18 28.18 0.00 54.38 LINE
+ Il 0.00 54.38 12.88 77.29 LINE
+ Il 12.88 77.29 12.88 103.06 LINE
+ Il 12.88 103.06 12.88 128.82 LINE
+ Il 12.88 128.82 12.88 154.58 LINE
+ Il 12.88 154.58 12.88 180.35 LINE
+ Il 12.88 180.35 12.88 231.88 LINE
+ Il 12.88 231.88 12.88 257.64 LINE
+ Il 12.88 257.64 12.88 283.40 LINE
+ Il 12.88 283.40 12.88 309.17 LINE
+ Il 12.88 309.17 12.88 334.93 LINE
+ Il 12.88 334.93 12.88 360.70 LINE
+ Il 12.88 360.70 12.88 376.15 LINE
+ Il 12.88 376.15 12.88 391.61 LINE
+ /Times findfont 8 scalefont setfont
+/center{dup stringwidth pop 2 div neg 0 rmoveto } bind def
+gsave Tl 83.72 279.40 moveto (5) center show grestore
+gsave Tl 1.88 253.64 moveto (67) center show grestore
+gsave Tl 85.72 99.06 moveto (52) center show grestore
+gsave Tl 1.88 99.06 moveto (62) center show grestore
+gsave Tl 304.71 114.85 moveto (10) center show grestore
+gsave Tl 330.64 208.02 moveto (26) center show grestore
+gsave Tl 428.71 149.83 moveto (41) center show grestore
+gsave Tl 454.07 244.91 moveto (31) center show grestore
+gsave Tl 183.01 65.07 moveto (15) center show grestore
+gsave Tl 183.82 178.33 moveto (21) center show grestore
+gsave Tl 558.63 196.85 moveto (36) center show grestore
+gsave Tl 105.63 164.35 moveto (46) center show grestore
+gsave Tl 43.80 -16.00 moveto (57) center show grestore
+gsave Tl 24.88 372.15 moveto (72) center show grestore
+NP W1
+ Xl 66.72 358.70 20.88 358.69 LINE
+ Xl 66.72 362.70 20.88 362.69 LINE
+ NP W1
+ Xl 66.72 332.93 20.88 332.93 LINE
+ Xl 66.72 336.93 20.88 336.93 LINE
+ NP W1
+ Xl 66.72 307.17 20.88 307.17 LINE
+ Xl 66.72 311.17 20.88 311.17 LINE
+ NP W1
+ Xl 66.72 283.40 20.88 283.40 LINE
+ NP W1
+ Xl 66.72 255.64 20.88 255.64 LINE
+ Xl 66.72 259.64 20.88 259.64 LINE
+ NP W1
+ Xl 66.72 229.88 20.88 229.88 LINE
+ Xl 66.72 233.88 20.88 233.88 LINE
+ NP W1
+ Xl 95.26 225.70 144.91 165.33 LINE
+ Xl 146.50 163.40 3.00 CIRCLE 
+ gsave  grestore stroke
+ Xl 148.09 161.47 151.90 156.84 LINE
+ Xl 154.22 158.74 157.40 154.88 152.76 151.07 149.58 154.93 SQUARE
+ gsave  grestore stroke
+ Xl 155.08 152.98 204.73 92.61 LINE
+ NP W1
+ NP W1
+ Xl 112.89 228.52 167.62 203.18 LINE
+ Xl 168.88 205.90 174.33 203.38 171.81 197.94 166.36 200.46 SQUARE
+ gsave  grestore stroke
+ Xl 173.07 200.66 227.80 175.32 LINE
+ NP W1
+ Xl 301.76 135.71 288.63 179.63 LINE
+ Xl 297.93 134.57 284.80 178.48 LINE
+ NP W1
+ Xl 275.16 127.76 262.03 171.68 LINE
+ NP W1
+ Xl 252.39 120.96 239.26 164.87 LINE
+ Xl 248.56 119.81 235.43 163.72 LINE
+ NP W1
+ Xl 219.23 134.96 3.00 CIRCLE 
+ gsave  grestore stroke
+ NP W1
+ Xl 207.52 94.10 199.56 120.73 LINE
+ Xl 198.85 123.13 3.00 CIRCLE 
+ gsave FILLBLACK grestore stroke
+ Xl 198.13 125.52 196.41 131.27 LINE
+ Xl 199.29 132.13 193.54 130.41 194.98 136.06 TRIANGLE
+ gsave FILLBLACK grestore stroke
+ Xl 194.98 136.06 187.02 162.70 LINE
+ NP W1
+ Xl 178.60 86.83 139.20 128.50 LINE
+ Xl 137.13 130.68 3.00 CIRCLE 
+ gsave  grestore stroke
+ Xl 135.07 132.86 95.67 174.53 LINE
+ NP W1
+ Xl 140.56 106.29 119.91 77.04 LINE
+ Xl 118.47 75.00 3.00 CIRCLE 
+ gsave  grestore stroke
+ Xl 117.03 72.95 113.57 68.05 LINE
+ Xl 116.02 66.32 111.12 69.78 110.68 63.97 TRIANGLE
+ gsave  grestore stroke
+ Xl 110.68 63.97 90.04 34.72 LINE
+ NP W1
+ Xl 143.06 131.19 74.68 13.62 LINE
+ Xl 139.61 133.20 71.23 15.63 LINE
+ NP W1
+ Xl 202.46 165.77 165.91 171.27 LINE
+ Xl 166.36 174.24 161.42 174.99 160.52 169.05 165.47 168.31 SQUARE
+ gsave  grestore stroke
+ Xl 160.97 172.02 155.04 172.91 LINE
+ Xl 152.56 173.28 3.00 CIRCLE 
+ gsave  grestore stroke
+ Xl 150.09 173.66 113.54 179.16 LINE
+ NP W1
+ Xl 342.65 171.86 3.00 CIRCLE 
+ gsave  grestore stroke
+ NP W1
+ Xl 362.69 201.76 375.81 157.85 LINE
+ Xl 358.85 200.62 371.98 156.71 LINE
+ NP W1
+ Xl 387.37 209.14 400.50 165.23 LINE
+ Xl 383.54 208.00 396.67 164.08 LINE
+ NP W1
+ Xl 412.06 216.52 425.18 172.61 LINE
+ Xl 408.22 215.38 421.35 171.46 LINE
+ NP W1
+ Xl 436.74 223.90 449.87 179.99 LINE
+ Xl 432.91 222.76 446.03 178.84 LINE
+ NP W1
+ Xl 459.51 230.71 472.64 186.79 LINE
+ NP W1
+ Xl 484.19 238.09 489.90 219.00 LINE
+ Xl 490.76 216.13 3.00 CIRCLE 
+ gsave FILLBLACK grestore stroke
+ Xl 491.62 213.25 497.32 194.17 LINE
+ NP W1
+ Xl 66.72 178.35 20.88 178.35 LINE
+ Xl 66.72 182.35 20.88 182.35 LINE
+ NP W1
+ Xl 66.72 152.58 20.88 152.58 LINE
+ Xl 66.72 156.58 20.88 156.58 LINE
+ NP W1
+ Xl 66.72 128.82 20.88 128.82 LINE
+ NP W1
+ Xl 66.72 101.06 20.88 101.06 LINE
+ Xl 66.72 105.06 20.88 105.06 LINE
+ NP W1
+ Xl 66.72 75.29 20.88 75.29 LINE
+ Xl 66.72 79.29 20.88 79.29 LINE
+ NP W1
+ Xl 80.98 49.89 59.76 35.53 LINE
+ Xl 57.69 34.13 3.00 CIRCLE 
+ gsave  grestore stroke
+ Xl 55.62 32.72 50.65 29.36 LINE
+ Xl 52.33 26.88 48.19 24.07 44.83 29.04 48.97 31.85 SQUARE
+ gsave  grestore stroke
+ Xl 46.51 26.56 25.29 12.19 LINE
+ Al W2 179.70 173.64 95.21 228.60 gsave  DASHLINE grestore
+ Al W2 12.88 385.61 12.88 382.15 gsave  DASHLINE grestore
+ 
+ showpage 

@@ -1,0 +1,71 @@
+PDB data file name: ./Datasets/pdb_select_tRNA/4v7c_W.pdb_new
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+    31_39, W:    31 A-U    39 W: -/- cis         XX
+     2_71, W:     2 C-G    71 W: +/+ cis         XIX
+     3_70, W:     3 C-G    70 W: +/+ cis         XIX
+    13_22, W:    13 C-G    22 W: +/+ cis         XIX
+    49_65, W:    49 C-G    65 W: +/+ cis         XIX
+     1_72, W:     1 G-C    72 W: +/+ cis         XIX
+     5_68, W:     5 G-C    68 W: +/+ cis         XIX
+     6_67, W:     6 G-C    67 W: +/+ cis         XIX
+    10_25, W:    10 G-C    25 W: +/+ cis         XIX
+    27_43, W:    27 G-C    43 W: +/+ cis         XIX
+    28_42, W:    28 G-C    42 W: +/+ cis         XIX
+    29_41, W:    29 G-C    41 W: +/+ cis         XIX
+    30_40, W:    30 G-C    40 W: +/+ cis         XIX
+    52_62, W:    52 G-C    62 W: +/+ cis         XIX
+    53_61, W:    53 G-C    61 W: +/+ cis         XIX
+    12_23, W:    12 U-A    23 W: -/- cis         XX
+     4_70, W:     4 C-G    70 W: W/W cis         n/a
+    11_24, W:    11 C-G    24 W: W/W cis         n/a
+    51_63, W:    51 U-G    63 W: W/W cis         XXVIII
+     8_14, W:     8 U-A    14 W: W/H tran        XXIV
+    54_58, W:    54 U-A    58 W: W/H tran        XXIV
+     9_23, W:     9 A-A    23 W: H/H tran        II
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+9_12_23_| [1 3]  W: 9 A  +  W: 12 U  +  W: 23 A
+END_multiplets
+
+  The total base pairs =  22 (from   76 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       16        3        0        0        1        0        0
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        0        2        0        0        0        0
+------------------------------------------------

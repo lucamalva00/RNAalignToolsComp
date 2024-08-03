@@ -1,0 +1,13 @@
+BEGIN_base-pair
+    12_20, F:    13 C-G    22 F: +/+ cis         XIX
+    14_15, F:    15 G-U    16 F: S/H cis         n/a
+    14_46, F:    15 G-C    48 F: W/W tran        XXII
+    15_57, F:    16 U-U    59 F: W/W tran        XII,XIII
+    17_54, F:    19 G-C    56 F: W/W cis         n/a
+    20_44, F:    22 G-G    46 F: H/W tran        VII
+    25_41, F:    27 G-U    43 F: W/W cis         XXVIII
+    26_40, F:    28 C-G    42 F: +/+ cis         XIX
+    26_40,-
+12_20_14_15_14_46_15_57_17_54_20_44_25_41_26_40_0, click this line to see above pattern
+0_0,---------
+END_base-pair

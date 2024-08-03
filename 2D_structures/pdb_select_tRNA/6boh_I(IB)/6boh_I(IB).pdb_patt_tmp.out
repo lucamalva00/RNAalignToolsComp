@@ -1,0 +1,34 @@
+BEGIN_base-pair
+    52_64, I:    51 C-G    63 I: +/+ cis         XIX
+    53_63, I:    52 G-C    62 I: W/W cis         n/a
+    54_62, I:    53 G-C    61 I: W/W cis         n/a
+    56_58, I:    55 P-A    57 I: S/S tran        n/a
+    59_62, I:    58 A-C    61 I: H/H tran        n/a
+52_64_53_63_54_62_56_58_59_62_0,  select this line to see above pattern
+0_0, ------
+    13_23, I:    13 C-G    22 I: +/+ cis         XIX
+    15_49, I:    15 G-C    48 I: W/W tran        XXII
+    20_57, I:    19 G-C    56 I: W/W cis         n/a
+    23_47, I:    22 G-G    46 I: H/W tran     syn  VII
+    27_45, I:    26 G-A    44 I: W/W cis         VIII
+    28_44, I:    27 U-A    43 I: -/- cis         XX
+13_23_15_49_20_57_23_47_27_45_28_44_0,  select this line to see above pattern
+0_0, ------
+    31_41, I:    30 G-C    40 I: +/+ cis         XIX
+    31_42, I:    30 G-C    41 I: W/W cis         n/a
+    32_40, I:    31 G-C    39 I: W/W cis         n/a
+    32_41, I:    31 G-C    40 I: W/S cis         n/a
+    51_66, I:    50 U-C    65 I: W/W cis         XVIII
+    52_64, I:    51 C-G    63 I: +/+ cis         XIX
+31_41_31_42_32_40_32_41_51_66_52_64_0,  select this line to see above pattern
+0_0, ------
+     3_71, I:     3 C-G    70 I: +/+ cis         XIX
+     4_70, I:     4 G-C    69 I: W/W cis         n/a
+     5_69, I:     5 G-C    68 I: W/W cis         n/a
+     6_65, I:     6 G-G    64 I: W/W tran        III
+    11_25, I:    11 A-U    24 I: W/W cis         n/a
+    12_24, I:    12 G-C    23 I: W/W cis         n/a
+    13_23, I:    13 C-G    22 I: +/+ cis         XIX
+3_71_4_70_5_69_6_65_11_25_12_24_13_23_0,  select this line to see above pattern
+0_0, ------
+END_base-pair

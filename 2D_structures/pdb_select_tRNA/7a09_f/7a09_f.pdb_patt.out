@@ -1,0 +1,11 @@
+BEGIN_base-pair
+     7_65, F:     7 G-C    66 F: +/+ cis         XIX
+     8_14, F:     8 U-A    14 F: W/H tran        XXIV
+     9_22, F:     9 A-C    23 F: H/H tran   syn    n/a
+    10_24, F:    10 G-U    25 F: W/W cis         XXVIII
+    10_44, F:    10 G-G    45 F: H/S cis         n/a
+    11_23, F:    11 C-G    24 F: +/+ cis         XIX
+    11_23,-
+7_65_8_14_9_22_10_24_10_44_11_23_0, click this line to see above pattern
+0_0,---------
+END_base-pair

@@ -1,0 +1,10 @@
+BEGIN_base-pair
+    12_23, 2:    12 G-C    23 2: +/+ cis         XIX
+    14_21, 2:    14 A-A    21 2: W/S cis         n/a
+    15_48, 2:    15 G-C    48 2: W/W tran        XXII
+    17_55, 2:    18 G-U    55 2: W/S tran        n/a
+    18_56, 2:    19 G-C    56 2: +/+ cis    syn    XIX
+    18_56,-
+12_23_14_21_15_48_17_55_18_56_0, click this line to see above pattern
+0_0,---------
+END_base-pair

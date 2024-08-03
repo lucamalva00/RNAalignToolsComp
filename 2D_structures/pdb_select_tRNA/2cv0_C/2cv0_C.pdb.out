@@ -1,0 +1,93 @@
+PDB data file name: ./Datasets/pdb_select_tRNA/2cv0_C.pdb_new
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+     1_71, C:   501 G-C   572 C: +/+ cis         XIX
+     2_70, C:   502 G-U   571 C: W/W cis         XXVIII
+     3_69, C:   503 C-G   570 C: +/+ cis         XIX
+     4_68, C:   504 C-G   569 C: +/+ cis         XIX
+     5_67, C:   505 C-G   568 C: +/+ cis         XIX
+     6_66, C:   506 C-G   567 C: +/+ cis         XIX
+     7_65, C:   507 A-U   566 C: -/- cis         XX
+     8_14, C:   508 U-A   514 C: W/H tran        XXIV
+     9_23, C:   509 C-G   523 C: H/H tran        n/a
+    10_25, C:   510 G-C   525 C: +/+ cis         XIX
+    11_24, C:   511 U-A   524 C: -/- cis         XX
+    12_23, C:   512 C-G   523 C: +/+ cis         XIX
+    13_22, C:   513 U-G   522 C: W/W cis         XXVIII
+    14_21, C:   514 A-A   521 C: W/S cis         n/a
+    15_47, C:   515 G-C   548 C: W/W tran        XXII
+    17_54, C:   518 G-U   555 C: W/S tran        n/a
+    18_55, C:   519 G-C   556 C: W/W cis    syn    n/a
+    22_46, C:   522 G-A   546 C: H/W tran        n/a
+    26_44, C:   526 G-A   544 C: W/W cis         VIII
+    27_43, C:   527 C-G   543 C: +/+ cis         XIX
+    28_42, C:   528 G-C   542 C: +/+ cis         XIX
+    29_41, C:   529 G-C   541 C: +/+ cis         XIX
+    30_40, C:   530 C-G   540 C: +/+ cis         XIX
+    31_39, C:   531 C-G   539 C: +/+ cis         XIX
+    48_64, C:   549 G-C   565 C: +/+ cis         XIX
+    49_63, C:   550 G-C   564 C: +/+ cis         XIX
+    50_62, C:   551 G-C   563 C: +/+ cis         XIX
+    51_61, C:   552 G-C   562 C: +/+ cis         XIX
+    52_60, C:   553 G-C   561 C: +/+ cis         XIX
+    53_57, C:   554 U-A   558 C: W/H tran        XXIV
+    57_59, C:   558 A-U   560 C:      stacked
+    60_61, C:   561 C-C   562 C:      stacked
+    70_71, C:   571 U-C   572 C:      stacked
+    15_19, C:   515 G-U   520 C: S/W cis         !1H(b_b)
+    19_47, C:   520 U-C   548 C: W/W tran        !1H(b_b)
+    32_38, C:   532 C-A   538 C: W/W cis         !1H(b_b)
+     8_21, C:   508 U-A   521 C: S/W tran        !(b_s)
+      7_8, C:   507 A-U   508 C: S/H cis         !(s_s)
+     8_46, C:   508 U-A   546 C: s/S cis         !(s_s)
+    59_60, C:   560 U-C   561 C: S/H cis         !(s_s)
+    71_72, C:   572 C-A   573 C: S/H cis         !(s_s)
+    73_74, C:   574 C-C   575 C: S/S cis         !(s_s)
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+8_14_21_| [1 3]  C: 508 U  +  C: 514 A  +  C: 521 A
+9_12_23_| [2 3]  C: 509 C  +  C: 512 C  +  C: 523 G
+13_22_46_| [3 3]  C: 513 U  +  C: 522 G  +  C: 546 A
+END_multiplets
+
+  The total base pairs =  30 (from   75 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       19        4        1        0        1        0        0
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        0        3        1        1        0        0
+------------------------------------------------

@@ -1,0 +1,18 @@
+BEGIN_base-pair
+    32_40, I:    31 G-C    39 I: +/+ cis         XIX
+    50_66, I:    49 G-C    65 I: W/W cis         n/a
+    51_65, I:    50 U-G    64 I: W/W cis         XXVIII
+    52_64, I:    51 C-G    63 I: +/+ cis         XIX
+    52_64,-
+32_40_50_66_51_65_52_64_0, click this line to see above pattern
+0_0,---------
+    13_23, I:    13 C-G    22 I: +/+ cis         XIX
+    15_49, I:    15 G-C    48 I: W/W tran        XXII
+    19_58, I:    18 G-A    57 I: S/W cis         n/a
+    20_57, I:    19 G-C    56 I: W/W cis         n/a
+    27_45, I:    26 G-A    44 I: W/W cis         VIII
+    28_44, I:    27 U-A    43 I: -/- cis         XX
+    28_44,-
+13_23_15_49_19_58_20_57_27_45_28_44_0, click this line to see above pattern
+0_0,---------
+END_base-pair

@@ -1,0 +1,9 @@
+BEGIN_base-pair
+    18_56, U:    18 G-C    56 U: +/+ cis    syn    XIX
+    22_46, U:    22 C-A    46 U: H/W tran        XXV
+    26_44, U:    26 G-A    44 U: W/W cis         VIII
+    27_43, U:    27 U-A    43 U: -/- cis         XX
+    27_43,-
+18_56_22_46_26_44_27_43_0, click this line to see above pattern
+0_0,---------
+END_base-pair

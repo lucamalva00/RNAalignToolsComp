@@ -1,0 +1,81 @@
+PDB data file name: ./Datasets/pdb_select_tRNA/7b7d_S(BC).pdb_new
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+     1_71, S:     1 A-U    72 S: -/- cis         XX
+    27_41, S:    28 A-U    42 S: -/- cis         XX
+     3_69, S:     3 C-G    70 S: +/+ cis         XIX
+     5_67, S:     5 C-G    68 S: +/+ cis         XIX
+     6_66, S:     6 C-G    67 S: +/+ cis         XIX
+    11_23, S:    11 C-G    24 S: +/+ cis         XIX
+    13_21, S:    13 C-G    22 S: +/+ cis         XIX
+    26_42, S:    27 C-G    43 S: +/+ cis         XIX
+    48_64, S:    49 C-G    65 S: +/+ cis         XIX
+    50_62, S:    51 C-G    63 S: +/+ cis         XIX
+     2_70, S:     2 G-C    71 S: +/+ cis         XIX
+     4_68, S:     4 G-C    69 S: +/+ cis         XIX
+     7_65, S:     7 G-C    66 S: +/+ cis         XIX
+    12_22, S:    12 G-C    23 S: +/+ cis         XIX
+    18_55, S:    19 G-C    56 S: +/+ cis         XIX
+    28_40, S:    29 G-C    41 S: +/+ cis         XIX
+    29_39, S:    30 G-C    40 S: +/+ cis         XIX
+    30_38, S:    31 G-C    39 S: +/+ cis         XIX
+    51_61, S:    52 G-C    62 S: +/+ cis         XIX
+    52_60, S:    53 G-C    61 S: +/+ cis         XIX
+    49_63, S:    50 U-A    64 S: -/- cis         XX
+    10_24, S:    10 A-C    25 S: W/W cis         n/a
+    25_43, S:    26 G-A    44 S: W/W cis         VIII
+    15_47, S:    15 G-C    48 S: W/W tran        XXII
+    53_57, S:    54 A-A    58 S: W/H tran        V
+     8_14, S:     8 U-A    14 S: W/H tran        XXIV
+    17_54, S:    18 G-U    55 S: W/S tran        n/a
+    21_45, S:    22 G-G    46 S: H/W tran        VII
+     9_22, S:     9 G-C    23 S: H/H tran        n/a
+     8_20, S:     8 U-A    21 S: S/W tran        n/a
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+8_14_20_| [1 3]  S: 8 U  +  S: 14 A  +  S: 21 A
+9_12_22_| [2 3]  S: 9 G  +  S: 12 G  +  S: 23 C
+13_21_45_| [3 3]  S: 13 C  +  S: 22 G  +  S: 46 G
+END_multiplets
+
+  The total base pairs =  30 (from   75 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       21        2        1        0        1        0        0
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        0        3        0        2        0        0
+------------------------------------------------

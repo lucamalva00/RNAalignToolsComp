@@ -1,0 +1,17 @@
+BEGIN_base-pair
+     6_67, B:     6 G-C    67 B: +/+ cis         XIX
+     9_45, B:     9 A-U    45 B: S/W cis    syn    n/a
+     9_46, B:     9 A-G    46 B: S/W cis    syn syn  n/a
+    10_25, B:    10 G-C    25 B: +/+ cis         XIX
+    10_25,-
+6_67_9_45_9_46_10_25_0, click this line to see above pattern
+0_0,---------
+    13_22, B:    13 C-G    22 B: +/+ cis         XIX
+    13_23, B:    13 C-A    23 B: W/W cis         n/a
+    26_44, B:    26 A-G    44 B: W/W cis         VIII
+    27_43, B:    27 G-C    43 B: W/W cis         n/a
+    50_64, B:    50 U-A    64 B: -/- cis         XX
+    50_64,-
+13_22_13_23_26_44_27_43_50_64_0, click this line to see above pattern
+0_0,---------
+END_base-pair

@@ -1,0 +1,14 @@
+BEGIN_base-pair
+     7_66, S:     7 G-C    66 S: +/+ cis         XIX
+     8_14, S:     8 U-A    14 S: W/H tran        XXIV
+     9_23, S:     9 G-C    23 S: H/H tran   syn    n/a
+    10_25, S:    10 G-C    25 S: +/+ cis         XIX
+7_66_8_14_9_23_10_25_0,  select this line to see above pattern
+0_0, ------
+    12_23, S:    12 G-C    23 S: +/+ cis         XIX
+    13_22, S:    13 U-G    22 S: W/W cis         XXVIII
+    15_48, S:    15 G-C    48 S: W/W tran        XXII
+    18_56, S:    18 G-C    56 S: +/+ cis    syn    XIX
+12_23_13_22_15_48_18_56_0,  select this line to see above pattern
+0_0, ------
+END_base-pair

@@ -1,0 +1,31 @@
+BEGIN_base-pair
+     4_69, 7:     4 U-A    69 7: -/- cis         XX
+     5_68, 7:     5 U-G    68 7: W/W cis         XXVIII
+     6_67, 7:     6 G-U    67 7: W/W cis         XXVIII
+     7_66, 7:     7 U-A    66 7: -/- cis         XX
+     7_66,-
+4_69_5_68_6_67_7_66_0, click this line to see above pattern
+0_0,---------
+     7_66, 7:     7 U-A    66 7: -/- cis         XX
+     8_14, 7:     8 U-A    14 7: W/H tran        XXIV
+    10_25, 7:    10 G-C    25 7: W/W cis         n/a
+    11_24, 7:    11 C-G    24 7: +/+ cis         XIX
+    11_24,-
+7_66_8_14_10_25_11_24_0, click this line to see above pattern
+0_0,---------
+    13_22, 7:    13 C-G    22 7: +/+ cis         XIX
+    15_48, 7:    15 G-C    48 7: W/W tran        XXII
+    17_55, 7:    17 U-U    55 7: W/S tran   syn    n/a
+    18_56, 7:    18 G-C    56 7: +/+ cis    syn    XIX
+    18_56,-
+13_22_15_48_17_55_18_56_0, click this line to see above pattern
+0_0,---------
+    18_56, 7:    18 G-C    56 7: +/+ cis    syn    XIX
+    22_46, 7:    22 G-G    46 7: H/W tran        VII
+    26_44, 7:    26 G-A    44 7: W/W cis         VIII
+    27_43, 7:    27 U-A    43 7: W/W cis         n/a
+    28_42, 7:    28 U-A    42 7: -/- cis         XX
+    28_42,-
+18_56_22_46_26_44_27_43_28_42_0, click this line to see above pattern
+0_0,---------
+END_base-pair

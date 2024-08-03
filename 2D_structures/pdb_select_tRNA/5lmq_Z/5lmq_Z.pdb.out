@@ -1,0 +1,108 @@
+PDB data file name: ./Datasets/pdb_select_tRNA/5lmq_Z.pdb_new
+uncommon residue 4SU    8  on chain Z [#8] assigned to: u
+uncommon residue OMC   32  on chain Z [#33] assigned to: c
+uncommon residue G7M   46  on chain Z [#47] assigned to: g
+uncommon residue 5MU   54  on chain Z [#55] assigned to: u
+uncommon residue PSU   55  on chain Z [#56] assigned to: P
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+      3_4, Z:     3 C-G     4 Z:   syn  stacked
+     3_71, Z:     3 C-G    70 Z: +/+ cis         XIX
+     4_70, Z:     4 G-C    69 Z: +/+ cis    syn    XIX
+      5_6, Z:     5 G-G     6 Z:      stacked
+     5_69, Z:     5 G-C    68 Z: +/+ cis         XIX
+     6_68, Z:     6 G-C    67 Z: +/+ cis         XIX
+     6_69, Z:     6 G-C    68 Z:      stacked
+     7_67, Z:     7 G-C    66 Z: +/+ cis         XIX
+     8_14, Z:     8 u-A    14 Z: W/H tran        XXIV
+     8_15, Z:     8 u-G    15 Z:      stacked
+    10_26, Z:    10 G-C    25 Z: +/+ cis         XIX
+    10_27, Z:    10 G-G    26 Z:      stacked
+    11_25, Z:    11 A-U    24 Z: -/- cis         XX
+    12_13, Z:    12 G-C    13 Z:      stacked
+    12_24, Z:    12 G-C    23 Z: +/+ cis         XIX
+    13_23, Z:    13 C-G    22 Z: +/+ cis         XIX
+    14_22, Z:    14 A-A    21 Z: W/S tran        n/a
+    15_49, Z:    15 G-C    48 Z: W/W tran        XXII
+    20_57, Z:    19 G-C    56 Z: +/+ cis         XIX
+    23_24, Z:    22 G-C    23 Z:      stacked
+    23_47, Z:    22 G-g    46 Z: H/W tran        VII
+    27_45, Z:    26 G-A    44 Z: W/W cis         VIII
+    28_44, Z:    27 U-A    43 Z: -/- cis         XX
+    29_43, Z:    28 C-G    42 Z: +/+ cis         XIX
+    30_42, Z:    29 G-C    41 Z: +/+ cis         XIX
+    31_41, Z:    30 G-C    40 Z: +/+ cis         XIX
+    31_42, Z:    30 G-C    41 Z:      stacked
+    32_40, Z:    31 G-C    39 Z: +/+ cis         XIX
+    32_41, Z:    31 G-C    40 Z:      stacked
+    50_66, Z:    49 G-C    65 Z: +/+ cis         XIX
+    50_67, Z:    49 G-C    66 Z:      stacked
+    51_52, Z:    50 U-C    51 Z:      stacked
+    51_65, Z:    50 U-G    64 Z: W/W cis         XXVIII
+    52_53, Z:    51 C-G    52 Z:      stacked
+    52_64, Z:    51 C-G    63 Z: +/+ cis         XIX
+    53_63, Z:    52 G-C    62 Z: +/+ cis         XIX
+    55_59, Z:    54 u-A    58 Z: W/H tran        XXIV
+    55_62, Z:    54 u-C    61 Z:      stacked
+    66_67, Z:    65 C-C    66 Z:      stacked
+     2_71, Z:     2 G-G    70 Z: W/W cis         !1H(b_b)
+    10_46, Z:    10 G-G    45 Z: H/S cis         !1H(b_b)
+    19_56, Z:    18 G-P    55 Z: W/S tran        !1H(b_b).
+    21_60, Z:    20 U-A    59 Z: H/W cis         !1H(b_b).
+    27_46, Z:    26 G-G    45 Z: W/W cis         !1H(b_b)
+    33_39, Z:    32 c-A    38 Z: S/H tran        !1H(b_b).
+     8_22, Z:     8 u-A    21 Z: S/W tran        !(b_s)
+    15_21, Z:    15 G-U    20 Z: S/H tran        !(b_s)
+     9_11, Z:     9 G-A    11 Z: ./H cis         !(s_s)
+    18_19, Z:    17 U-G    18 Z: S/. tran   syn    !(s_s)
+    21_22, Z:    20 U-A    21 Z: S/? tran        !(s_s)
+    22_23, Z:    21 A-G    22 Z: S/H cis         !(s_s)
+    47_48, Z:    46 g-U    47 Z: S/S tran        !(s_s)
+    56_58, Z:    55 P-A    57 Z: S/S tran        !(s_s)
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+8_14_22_| [1 3]  Z: 8 u  +  Z: 14 A  +  Z: 21 A
+13_23_47_| [2 3]  Z: 13 C  +  Z: 22 G  +  Z: 46 g
+END_multiplets
+
+  The total base pairs =  25 (from   77 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       18        2        1        0        0        0        0
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        0        3        0        1        0        0
+------------------------------------------------

@@ -21,6 +21,8 @@ def construct_pairs(dataset_path):
             pairs.append((pdb_list[i],pdb_list[j]))
     return pairs
 
+
+# Prints the current alignment performed
 def print_alignment(index, first_elem, second_elem):
     print(str(index) + ": Performing alignment between " + first_elem + " and " + second_elem)
 

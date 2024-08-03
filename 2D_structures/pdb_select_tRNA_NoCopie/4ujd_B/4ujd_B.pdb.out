@@ -1,0 +1,206 @@
+PDB data file name: ./Datasets/pdb_select_tRNA_NoCopie/4ujd_B.pdb_new
+uncommon residue GNP 2435  on chain B [#1] assigned to: g
+-----------------------------------------------------------
+CRITERIA USED TO GENERATE BASE-PAIR: 
+  3.40 --> upper H-bond length limits (ON..ON).
+ 26.00 --> max. distance between paired base origins.
+  2.50 --> max. vertical distance between paired base origins.
+ 65.00 --> max. angle between paired bases [0-90].
+  5.40 --> min. distance between RN9/YN1 atoms.
+  8.00 --> max. distance criterion for helix break[0-12]
+-----------------------------------------------------------
+BASE-PAIR INSTRUCTIONS: 
+Column 1 is rnaview assigned base numbers n1_n2, start from 1.
+Column 2 & 3 are chain ID & residue number in input PDB file.
+Column 4 is for base pair. The left & right are the bases as 
+         identified by column 2 & 3 and 5 & 6.
+Column 5 & 6 are residue number & chain ID in input PDB file.
+Column 7 is for base pair annotation. The standard Watson-Crick
+         (W.C.) pairs are annotated as -/- (AU,AT) or +/+ (GC).
+         Other pairs are annotated as Leontis_Westhof Classification.
+         The three edges: W(Watson-Crick); H(Hoogsteen); S(suger).
+         e.g. W/H means the pair is edge of Watson-Crick & Hoogsteen.
+Column 8 is glycosidic bond orientation (either cis or trans).
+         e.g. 'W/H cis' means the pair is interaction on Watson-Crick
+         and Hoogsteen side, glycosidic bond orientation is 'cis'.
+Column 9 corresponds to Saenger Classification.
+
+Other columns: 
+        Syn sugar-base conformations are annotated as (syn).
+        Stacked base pairs are annotated as (stack).
+        Non-identified edges are annotated as (.) or (?)
+        Tertiary interactions are marked by (!) in the line.
+Reference:
+Yang et al (2003) Nucleic Acids Research, Vol31,No13,p3450-3461.
+-----------------------------------------------------------
+BEGIN_base-pair
+     2_73, B:     1 G-C    72 B: +/+ cis         XIX
+     3_72, B:     2 C-G    71 B: +/+ cis         XIX
+     4_71, B:     3 C-G    70 B: +/+ cis         XIX
+     5_70, B:     4 C-G    69 B: +/+ cis         XIX
+      6_7, B:     5 G-G     6 B:      stacked
+     6_69, B:     5 G-C    68 B: W/W cis         n/a
+     7_68, B:     6 G-C    67 B: W/W cis         n/a
+     8_50, B:     7 A-C    49 B:      stacked
+     8_67, B:     7 A-U    66 B: -/- cis         XX
+     9_16, B:     8 U-G    15 B:      stacked
+    10_24, B:     9 A-A    23 B: H/H tran   syn    II
+    11_26, B:    10 G-C    25 B: +/+ cis         XIX
+    12_25, B:    11 C-G    24 B: +/+ cis         XIX
+    13_24, B:    12 U-A    23 B: -/- cis         XX
+    14_23, B:    13 C-G    22 B: +/+ cis         XIX
+    15_22, B:    14 A-A    21 B: W/S cis         n/a
+    16_49, B:    15 G-C    48 B: W/W tran        XXII
+    17_60, B:    16 U-U    59 B: W/W tran        XII,XIII
+    19_56, B:    18 G-U    55 B: W/S tran        n/a
+    20_57, B:    19 G-C    56 B: +/+ cis         XIX
+    23_47, B:    22 G-G    46 B: H/W tran        VII
+    27_45, B:    26 A-G    44 B: W/W cis         VIII
+    28_44, B:    27 G-C    43 B: +/+ cis         XIX
+    29_43, B:    28 G-C    42 B: +/+ cis         XIX
+    30_42, B:    29 G-C    41 B: +/+ cis         XIX
+    31_41, B:    30 G-C    40 B: +/+ cis         XIX
+    32_40, B:    31 A-U    39 B: -/- cis         XX
+    33_39, B:    32 U-A    38 B: W/W cis         n/a
+   35_296, B:    34 G-G   344 B: W/W cis         n/a
+   36_296, B:    35 A-G   344 B:      stacked
+   37_294, B:    36 A-A   342 B: W/W cis         n/a
+   38_294, B:    37 A-A   342 B:      stacked
+    42_43, B:    41 C-C    42 B:      stacked
+    45_46, B:    44 G-U    45 B:      stacked
+    49_60, B:    48 C-U    59 B:      stacked
+    50_66, B:    49 C-G    65 B: +/+ cis         XIX
+    51_65, B:    50 U-A    64 B: -/- cis         XX
+    51_66, B:    50 U-G    65 B:      stacked
+    52_64, B:    51 U-G    63 B: W/W cis         XXVIII
+    53_63, B:    52 G-C    62 B: +/+ cis         XIX
+    54_62, B:    53 G-C    61 B: +/+ cis         XIX
+    55_59, B:    54 U-A    58 B: W/H tran     syn  XXIV
+    64_65, B:    63 G-A    64 B:      stacked
+    68_69, B:    67 C-C    68 B:      stacked
+    78_90, B:    77 G-C    89 B: +/+ cis         XIX
+    79_89, B:    78 U-G    88 B: W/W cis         XXVIII
+    80_88, B:    79 C-G    87 B: +/+ cis         XIX
+    95_96, B:    94 G-U    95 B: S/H cis         n/a
+  103_104, B:   102 G-U   103 B:      stacked
+  119_121, B:   118 G-C   120 B: W/H cis         n/a
+  120_122, B:   119 A-C   121 B: W/H cis         n/a
+  126_275, B:   125 C-G   323 B: +/+ cis         XIX
+  127_274, B:   126 C-G   322 B: +/+ cis         XIX
+  128_273, B:   127 U-A   321 B: -/- cis         XX
+  129_272, B:   128 C-G   320 B: +/+ cis         XIX
+  130_271, B:   129 C-G   319 B: +/+ cis         XIX
+  131_270, B:   130 C-G   318 B: +/+ cis         XIX
+  131_271, B:   130 C-G   319 B:      stacked
+  132_269, B:   131 G-C   317 B: +/+ cis         XIX
+  133_268, B:   132 G-C   316 B: +/+ cis         XIX
+  134_267, B:   133 G-C   315 B: +/+ cis         XIX
+  135_242, B:   134 A-U   290 B: -/- cis         XX
+  136_241, B:   135 G-C   289 B: +/+ cis         XIX
+  138_239, B:   137 G-U   287 B: W/W cis         XXVIII
+  139_238, B:   138 C-G   286 B: +/+ cis         XIX
+  140_237, B:   139 C-G   285 B: +/+ cis         XIX
+  140_238, B:   139 C-G   286 B:      stacked
+  141_236, B:   140 A-U   284 B: -/- cis         XX
+  142_204, B:   141 U-A   252 B: W/W cis         n/a
+  143_203, B:   142 A-U   251 B: -/- cis         XX
+  144_202, B:   143 G-C   250 B: +/+ cis         XIX
+  145_201, B:   144 U-G   249 B: W/W cis         XXVIII
+  146_200, B:   145 G-U   248 B: W/W cis         XXVIII
+  147_199, B:   146 G-C   247 B: +/+ cis         XIX
+  148_198, B:   147 U-A   246 B: -/- cis         XX
+  149_197, B:   148 C-G   245 B: +/+ cis         XIX
+  150_196, B:   149 U-A   244 B: -/- cis         XX
+  151_194, B:   150 G-C   242 B: +/+ cis         XIX
+  152_193, B:   151 C-G   241 B: +/+ cis         XIX
+  153_192, B:   152 G-C   240 B: +/+ cis         XIX
+  154_191, B:   153 G-C   239 B: +/+ cis         XIX
+  156_173, B:   155 A-A   172 B: W/S cis         n/a
+  156_180, B:   155 A-U   228 B: H/W cis         XXIII
+  157_172, B:   156 C-G   171 B: +/+ cis         XIX
+  158_171, B:   157 C-G   170 B: W/W cis         n/a
+  158_172, B:   157 C-G   171 B:      stacked
+  159_170, B:   158 G-C   169 B: +/+ cis         XIX
+  160_169, B:   159 G-C   168 B: +/+ cis         XIX
+  161_168, B:   160 U-A   167 B: -/- cis         XX
+  162_167, B:   161 G-C   166 B: +/+ cis         XIX
+  163_166, B:   162 A-A   165 B: S/W cis         n/a
+  166_167, B:   165 A-C   166 B:      stacked
+  173_179, B:   172 A-U   227 B: -/- cis         XX
+  174_178, B:   173 A-U   226 B: -/- cis         XX
+  175_177, B:   174 U-A   225 B: -/- cis         XX
+  181_190, B:   229 G-C   238 B: +/+ cis         XIX
+  182_189, B:   230 G-C   237 B: +/+ cis         XIX
+  183_184, B:   231 G-C   232 B: S/H cis         n/a
+  183_188, B:   231 G-C   236 B: +/+ cis         XIX
+  187_188, B:   235 G-C   236 B:      stacked
+  194_195, B:   242 C-A   243 B:      stacked
+  205_231, B:   253 G-C   279 B: +/+ cis         XIX
+  206_230, B:   254 C-G   278 B: +/+ cis         XIX
+  207_229, B:   255 C-G   277 B: +/+ cis         XIX
+  209_227, B:   257 A-A   275 B: H/H tran        II
+  210_211, B:   258 G-U   259 B: S/H cis    syn    n/a
+  211_226, B:   259 U-A   274 B: W/H tran        XXIV
+  212_225, B:   260 A-G   273 B: H/S tran        XI
+  213_224, B:   261 G-C   272 B: +/+ cis         XIX
+  214_215, B:   262 U-G   263 B:      stacked
+  214_223, B:   262 U-G   271 B: W/W cis         XXVIII
+  215_222, B:   263 G-C   270 B: +/+ cis         XIX
+  216_220, B:   264 U-G   268 B: W/W tran        XXVII
+  243_254, B:   291 G-U   302 B: W/W cis         XXVIII
+  244_253, B:   292 C-G   301 B: +/+ cis         XIX
+  245_252, B:   293 C-G   300 B: +/+ cis         XIX
+  246_247, B:   294 U-G   295 B:      stacked
+  246_251, B:   294 U-G   299 B: W/W cis         XXVIII
+  247_250, B:   295 G-A   298 B: S/H tran        XI
+  255_266, B:   303 G-C   314 B: +/+ cis         XIX
+  256_265, B:   304 C-G   313 B: +/+ cis         XIX
+  259_281, B:   307 G-U   329 B: W/W cis         XXVIII
+  260_280, B:   308 C-G   328 B: +/+ cis         XIX
+  261_279, B:   309 G-C   327 B: +/+ cis         XIX
+  262_278, B:   310 A-U   326 B: -/- cis         XX
+  263_277, B:   311 G-C   325 B: +/+ cis         XIX
+  286_287, B:   334 C-G   335 B:      stacked
+  288_289, B:   336 U-G   337 B:      stacked
+  298_299, B:   346 G-C   347 B:      stacked
+    81_86, B:    80 U-A    85 B: S/H tran        !1H(b_b).
+  184_187, B:   232 C-G   235 B: W/H cis         !1H(b_b)
+  217_220, B:   265 U-G   268 B: S/W tran        !1H(b_b)
+    17_20, B:    16 U-G    19 B: S/? tran        !(b_s)
+  155_174, B:   154 A-A   173 B: W/S cis         !(b_s)
+  163_165, B:   162 A-U   164 B: S/H tran     syn  !(b_s)
+     9_49, B:     8 U-C    48 B: S/S cis         !(s_s)
+    34_36, B:    33 U-A    35 B: S/S tran        !(s_s)
+    34_37, B:    33 U-A    36 B: W/H tran        !(s_s)
+   37_295, B:    36 A-U   343 B: W/W cis         !(s_s)
+    82_83, B:    81 A-G    82 B: S/S tran        !(s_s)
+    83_84, B:    82 G-C    83 B: S/. cis         !(s_s)
+    94_95, B:    93 A-G    94 B: S/S cis         !(s_s)
+  179_180, B:   227 U-U   228 B: S/S cis         !(s_s)
+  204_205, B:   252 A-G   253 B: S/? cis         !(s_s)
+  217_218, B:   265 U-G   266 B: S/. cis         !(s_s)
+  219_220, B:   267 G-G   268 B: S/H cis    syn    !(s_s)
+  221_222, B:   269 U-C   270 B: S/H tran   syn    !(s_s)
+  234_236, B:   282 U-U   284 B: S/S tran        !(s_s)
+  242_243, B:   290 U-G   291 B: S/. cis         !(s_s)
+  276_277, B:   324 U-C   325 B: S/S cis         !(s_s)
+  290_291, B:   338 C-A   339 B: S/S cis    syn    !(s_s)
+  302_303, B:   350 G-A   351 B: S/H cis         !(s_s)
+END_base-pair
+
+Summary of triplets and higher multiplets
+BEGIN_multiplets
+10_13_24_| [1 3]  B: 9 A  +  B: 12 U  +  B: 23 A
+14_23_47_| [2 3]  B: 13 C  +  B: 22 G  +  B: 46 G
+156_173_179_180_| [3 4]  B: 155 A  +  B: 172 A  +  B: 227 U  +  B: 228 U
+183_184_188_| [4 3]  B: 231 G  +  B: 232 C  +  B: 236 C
+210_211_226_| [5 3]  B: 258 G  +  B: 259 U  +  B: 274 A
+END_multiplets
+
+  The total base pairs = 106 (from  305 bases)
+------------------------------------------------
+ Standard  WW--cis  WW-tran  HH--cis  HH-tran  SS--cis  SS-tran
+       69       17        3        0        2        0        0
+  WH--cis  WH-tran  WS--cis  WS-tran  HS--cis  HS-tran
+        3        3        3        1        3        2
+------------------------------------------------

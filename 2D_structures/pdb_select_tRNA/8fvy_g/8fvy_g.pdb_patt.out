@@ -1,0 +1,46 @@
+BEGIN_base-pair
+    47_63, G:    47 C-G    63 G: +/+ cis         XIX
+    48_62, G:    48 U-C    62 G: W/W cis         XVIII
+    49_61, G:    49 C-C    61 G: W/W cis         n/a
+    50_60, G:    50 G-U    60 G: W/W cis         XXVIII
+    51_59, G:    51 U-A    59 G: -/- cis         XX
+    51_59,-
+47_63_48_62_49_61_50_60_51_59_0, click this line to see above pattern
+0_0,---------
+     4_67, G:     4 U-A    67 G: -/- cis         XX
+     5_66, G:     5 A-C    66 G: W/W cis         n/a
+     6_65, G:     6 A-A    65 G: W/W cis         n/a
+     6_66, G:     6 A-C    66 G: W/W cis         n/a
+    10_24, G:    10 G-C    24 G: +/+ cis         XIX
+    10_24,-
+4_67_5_66_6_65_6_66_10_24_0, click this line to see above pattern
+0_0,---------
+    11_23, G:    11 C-G    23 G: +/+ cis         XIX
+    12_22, G:    12 G-A    22 G: W/W cis         VIII
+    13_22, G:    13 C-A    22 G: W/W cis         n/a
+    14_21, G:    14 A-U    21 G: W/S cis         n/a
+    15_46, G:    15 G-G    46 G: W/W tran        III
+    17_53, G:    17 U-A    53 G: W/S tran        n/a
+    21_44, G:    21 U-G    44 G: H/W tran     syn  n/a
+    25_42, G:    25 G-C    42 G: +/+ cis         XIX
+    25_42,-
+11_23_12_22_13_22_14_21_15_46_17_53_21_44_25_42_0, click this line to see above pattern
+0_0,---------
+    25_42, G:    25 G-C    42 G: +/+ cis         XIX
+    26_41, G:    26 C-C    41 G: W/W cis         n/a
+    27_41, G:    27 G-C    41 G: W/S cis         n/a
+    29_38, G:    29 G-A    38 G: W/W cis         VIII
+    30_37, G:    30 G-U    37 G: W/W cis         XXVIII
+    31_35, G:    31 G-C    35 G: W/H tran        n/a
+    47_63, G:    47 C-G    63 G: +/+ cis         XIX
+    47_63,-
+25_42_26_41_27_41_29_38_30_37_31_35_47_63_0, click this line to see above pattern
+0_0,---------
+     1_70, G:     1 G-C    70 G: +/+ cis         XIX
+     2_69, G:     2 G-U    69 G: W/W cis         XXVIII
+     3_68, G:     3 G-U    68 G: W/W cis         XXVIII
+     4_67, G:     4 U-A    67 G: -/- cis         XX
+     4_67,-
+1_70_2_69_3_68_4_67_0, click this line to see above pattern
+0_0,---------
+END_base-pair
