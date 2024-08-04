@@ -1,6 +1,7 @@
 import sys
 import subprocess
 import os
+import signal
 import csv
 import time
 import shutil
@@ -50,16 +51,12 @@ def exec_RMalign():
 
         print_alignment(pairs.index(pair), first_elem, second_elem)
 
-        result = subprocess.Popen([rna_align_path, "-A", dataset_path + "/" + first_elem, "-Ac", first_elem_chain, "-B", dataset_path + "/" + second_elem, "-Bc", second_elem_chain], stdout=subprocess.PIPE)
+        result = subprocess.Popen([rna_align_path, "-A", dataset_path + "/" + first_elem, "-Ac", first_elem_chain, "-B", dataset_path + "/" + second_elem, "-Bc", second_elem_chain], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         
         stdout_lines = result.stdout.read().decode().splitlines()
 
-
-
-        print()
-
-        alignment_data.append(first_elem[0:4])
-        alignment_data.append(second_elem[0:4])
+        alignment_data.append(first_elem[0:len(first_elem) - 4])
+        alignment_data.append(second_elem[0:len(second_elem) - 4])
         
         for line in stdout_lines:
             if(line.startswith("Aligned length=")):
@@ -167,8 +164,7 @@ def exec_SARA():
     errors_log = []
     command_dataset_path = "./" + dataset_name + "/"
     sara_dataset_path = "./SARA/" + dataset_name
-    #if(not os.path.exists(sara_datasets_path)):
-     #   os.mkdir(sara_datasets_path)
+
     if(not os.path.exists(sara_dataset_path)):
         shutil.copytree(dataset_path,sara_dataset_path + "/")
 
@@ -185,9 +181,7 @@ def exec_SARA():
         first_chain_id = first_elem[5]
         second_chain_id = second_elem[5]
 
-        # only for tests
-       # if first_chain_id == "i" or second_chain_id == "i":
-        #    continue
+        
 
         alignment_data.append(first_elem[0:len(first_elem) - 4])
         alignment_data.append(second_elem[0:len(second_elem) - 4])
