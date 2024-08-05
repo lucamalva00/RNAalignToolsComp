@@ -159,6 +159,8 @@ def exec_CLICK():
         writer.writerows(outputs)
 
 def exec_SARA():
+    # invalid pdb list
+    invalid_pdbs = ["5mre_b.pdb", "5lzs_i.pdb", "5t2c_A.pdb"]
     output = []
     errors_log = []
     command_dataset_path = "./" + dataset_name + "/"
@@ -177,29 +179,33 @@ def exec_SARA():
 
         print_alignment(pairs.index(pair), first_elem[0:len(first_elem) - 4], second_elem[0:len(second_elem) - 4])
 
+        if (first_elem in invalid_pdbs) or (second_elem in invalid_pdbs):
+            output.append(alignment_data)
+            continue
+
         first_chain_id = first_elem[5]
         second_chain_id = second_elem[5]
+
+        
 
         alignment_data.append(first_elem[0:len(first_elem) - 4])
         alignment_data.append(second_elem[0:len(second_elem) - 4])
 
-        sara_command = ["python", "runsara.py", command_dataset_path + first_elem, first_chain_id, command_dataset_path + second_elem, second_chain_id, "-a", "C3\'", "-s", "-o output.txt"]
+        sara_command = ["python", "runsara.py", command_dataset_path + first_elem, first_chain_id, command_dataset_path + second_elem, second_chain_id, "-a", "C3\'", "-s", "-o", "output.txt"]
         
-        process = subprocess.Popen(sara_command, cwd="./SARA", stdout=subprocess.PIPE, text=True, stderr=subprocess.PIPE)
+        process = subprocess.Popen(sara_command, cwd="./SARA", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         out, err = process.communicate()
 
         if err:
-            print(err)
-            errors_log.append((pairs.index(pair), err))
+            errors_log.append((pairs.index(pair), err.decode()))
             alignment_data.append('')
             output.append(alignment_data)
             continue
 
-        result_list = out.split("\n")
+        result_list = out.decode().splitlines()
         
         for elem in result_list:
             if(elem.startswith("Error")):
-                print(elem)
                 errors_log.append((pairs.index(pair), elem))
                 alignment_data.append('')
                 output.append(alignment_data)
@@ -315,15 +321,6 @@ def exec_STAlign():
     with open(dataset_name + "_STAlign_alignments.csv", "w", newline='') as file:
         writer = csv.writer(file)
         writer.writerows(output)
-
-
-
-
-
-
-
-
-        
 
 
 match tool_name:
