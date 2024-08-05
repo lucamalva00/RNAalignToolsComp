@@ -26,7 +26,7 @@ def construct_pairs(dataset_path):
 
 # Prints the current alignment performed
 def print_alignment(index, first_elem, second_elem):
-    print(str(index) + ": Performing alignment between " + first_elem + " and " + second_elem)
+    print(str(index) + ": Performing alignment between " + first_elem + " and " + second_elem + "\n")
 
 tool_name = sys.argv[1]
 dataset_name = sys.argv[2]
@@ -159,7 +159,6 @@ def exec_CLICK():
         writer.writerows(outputs)
 
 def exec_SARA():
-
     output = []
     errors_log = []
     command_dataset_path = "./" + dataset_name + "/"
@@ -180,8 +179,6 @@ def exec_SARA():
 
         first_chain_id = first_elem[5]
         second_chain_id = second_elem[5]
-
-        
 
         alignment_data.append(first_elem[0:len(first_elem) - 4])
         alignment_data.append(second_elem[0:len(second_elem) - 4])
@@ -273,6 +270,56 @@ def exec_USalign():
         writer = csv.writer(file)
         writer.writerows(output)
 
+def exec_STAlign():
+    output = []
+
+    for pair in pairs:
+        first_elem = pair[0]
+        second_elem = pair[1]
+
+        alignment_data = [first_elem, second_elem]
+
+        threshold = 5 
+
+        print_alignment(pairs.index(pair), first_elem, second_elem)
+
+        cmd = ["java", "-jar", "./STalign/STAlign.jar", "-d", "-af", dataset_path + "/" + first_elem, dataset_path + "/" + second_elem, "-t", str(threshold)]
+
+        process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+        out, err = process.communicate()
+
+        output_lines = out.decode().splitlines()
+
+        while len(output_lines) < 2:
+            threshold += 1
+            if threshold > 15:
+                break
+            print("Using threshold " + str(threshold) + "\n")
+            cmd[len(cmd) - 1] = str(threshold)
+            process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            outs, errs = process.communicate()
+            output_lines = outs.decode().splitlines()
+
+        if len(output_lines) == 1:
+            output.append(alignment_data)
+            continue
+
+        distance = output_lines[1].split("=")[1].strip()
+        
+        alignment_data.append(distance)
+        alignment_data.append(str(threshold))
+
+        output.append(alignment_data)
+
+    with open(dataset_name + "_STAlign_alignments.csv", "w", newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(output)
+
+
+
+
+
 
 
 
@@ -290,3 +337,5 @@ match tool_name:
         exec_SARA()
     case "USalign":
         exec_USalign()
+    case "STAlign":
+        exec_STAlign()
