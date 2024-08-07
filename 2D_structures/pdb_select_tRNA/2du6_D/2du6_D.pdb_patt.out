@@ -1,9 +1,0 @@
-BEGIN_base-pair
-    12_22, D:   912 A-U   922 D: -/- cis         XX
-    18_55, D:   918 G-C   955 D: W/W cis         n/a
-    26_42, D:   926 G-C   942 D: W/W cis         n/a
-    27_41, D:   927 C-G   941 D: +/+ cis         XIX
-    27_41,-
-12_22_18_55_26_42_27_41_0, click this line to see above pattern
-0_0,---------
-END_base-pair

@@ -1,7 +1,6 @@
 import sys
 import subprocess
 import os
-import signal
 import csv
 import time
 import shutil
@@ -51,12 +50,13 @@ def exec_RMalign():
 
         print_alignment(pairs.index(pair), first_elem, second_elem)
 
+        alignment_data.append(first_elem[0:len(first_elem) - 4])
+        alignment_data.append(second_elem[0:len(second_elem) - 4])
+
         result = subprocess.Popen([rna_align_path, "-A", dataset_path + "/" + first_elem, "-Ac", first_elem_chain, "-B", dataset_path + "/" + second_elem, "-Bc", second_elem_chain], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         
         stdout_lines = result.stdout.read().decode().splitlines()
 
-        alignment_data.append(first_elem[0:len(first_elem) - 4])
-        alignment_data.append(second_elem[0:len(second_elem) - 4])
         
         for line in stdout_lines:
             if(line.startswith("Aligned length=")):
@@ -66,7 +66,7 @@ def exec_RMalign():
 
         outputs.append(alignment_data)        
 
-    with open(dataset_name + "_RMalign_output.csv", "w", newline='') as file:
+    with open(dataset_name + "_RMalign_alignments.csv", "w", newline='') as file:
         writer = csv.writer(file)
         writer.writerows(outputs)
 
@@ -91,6 +91,7 @@ def exec_ARTS():
         print("Return code: " + str(result.returncode) + "\n")
 
         if(result.returncode != 0):
+            outputs.append(alignment_data)
             continue
 
         arts_out = []
@@ -159,10 +160,7 @@ def exec_CLICK():
         writer.writerows(outputs)
 
 def exec_SARA():
-    # invalid pdb list
-    invalid_pdbs = ["5mre_b.pdb", "5lzs_i.pdb", "5t2c_A.pdb"]
     output = []
-    errors_log = []
     command_dataset_path = "./" + dataset_name + "/"
     sara_dataset_path = "./SARA/" + dataset_name
 
@@ -179,14 +177,8 @@ def exec_SARA():
 
         print_alignment(pairs.index(pair), first_elem[0:len(first_elem) - 4], second_elem[0:len(second_elem) - 4])
 
-        if (first_elem in invalid_pdbs) or (second_elem in invalid_pdbs):
-            output.append(alignment_data)
-            continue
-
         first_chain_id = first_elem[5]
         second_chain_id = second_elem[5]
-
-        
 
         alignment_data.append(first_elem[0:len(first_elem) - 4])
         alignment_data.append(second_elem[0:len(second_elem) - 4])
@@ -197,8 +189,6 @@ def exec_SARA():
         out, err = process.communicate()
 
         if err:
-            errors_log.append((pairs.index(pair), err.decode()))
-            alignment_data.append('')
             output.append(alignment_data)
             continue
 
@@ -206,8 +196,6 @@ def exec_SARA():
         
         for elem in result_list:
             if(elem.startswith("Error")):
-                errors_log.append((pairs.index(pair), elem))
-                alignment_data.append('')
                 output.append(alignment_data)
                 error = True
 
@@ -231,15 +219,10 @@ def exec_SARA():
 
         os.remove("./SARA/output.txt")
 
-        print(alignment_data)
-
     with open(dataset_name + "_SARA_alignments.csv", "w", newline='') as file:
         writer = csv.writer(file)
         writer.writerows(output)
     
-    with open("SARA_errors_log.txt", "w") as errors_f:
-        for log in errors_log:
-            errors_f.write("On alignment n." + str(log[0]) + ": " + log[1] + "\n")
         
 
 def exec_USalign():
@@ -283,7 +266,7 @@ def exec_STAlign():
         first_elem = pair[0]
         second_elem = pair[1]
 
-        alignment_data = [first_elem, second_elem]
+        alignment_data = [first_elem[0:len(first_elem) - 4], second_elem[0:len(second_elem) - 4]]
 
         threshold = 5 
 

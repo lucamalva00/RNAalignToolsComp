@@ -1,9 +1,0 @@
-BEGIN_base-pair
-     4_68, 2:     4 C-G    69 2: +/+ cis         XIX
-     5_67, 2:     5 G-C    68 2: W/W cis         n/a
-     6_66, 2:     6 G-U    67 2: W/W cis         XXVIII
-     7_65, 2:     7 A-U    66 2: -/- cis         XX
-     7_65,-
-4_68_5_67_6_66_7_65_0, click this line to see above pattern
-0_0,---------
-END_base-pair

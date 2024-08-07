@@ -1,3 +1,8 @@
+# Formats the PDB's 2D structures for all PDBs in the given dataset.
+# Generates .pairs (2D structure file format required by ARTS tool) files for all PDBs in the dataset.
+# 
+# USAGE: python3 basepairs_from_secondary_structures.py <dataset_name> 
+
 import sys
 import os
 import subprocess

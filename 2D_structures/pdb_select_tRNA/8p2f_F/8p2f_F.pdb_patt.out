@@ -1,9 +1,0 @@
-BEGIN_base-pair
-    12_22, F:    13 C-G    22 F: +/+ cis         XIX
-    14_48, F:    15 G-C    48 F: W/W tran        XXII
-    18_55, F:    18 G-U    55 F: W/S tran        n/a
-    19_56, F:    19 G-C    56 F: +/+ cis    syn    XIX
-    19_56,-
-12_22_14_48_18_55_19_56_0, click this line to see above pattern
-0_0,---------
-END_base-pair

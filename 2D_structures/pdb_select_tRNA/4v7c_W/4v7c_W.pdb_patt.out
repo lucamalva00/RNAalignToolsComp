@@ -1,9 +1,0 @@
-BEGIN_base-pair
-     6_67, W:     6 G-C    67 W: +/+ cis         XIX
-     8_14, W:     8 U-A    14 W: W/H tran        XXIV
-     9_23, W:     9 A-A    23 W: H/H tran        II
-    10_25, W:    10 G-C    25 W: +/+ cis         XIX
-    10_25,-
-6_67_8_14_9_23_10_25_0, click this line to see above pattern
-0_0,---------
-END_base-pair
