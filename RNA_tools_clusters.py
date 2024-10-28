@@ -3,21 +3,21 @@ from sklearn.metrics import *
 import pandas as pd
 import numpy as np
 
-# /**
-# * Calculates and prints evaluation metrics for a given clustering model.
-# *
-# * @param model_name The name of the clustering model to use ('KMeans', 'SpectralClustering', 'BisectingKMeans').
-# * @param features The feature matrix (distances between molecules) to apply clustering on.
-# *
-# * Models:
-# * - KMeans: A clustering algorithm that tries to minimize the distance of points from the centroid of each cluster.
-# * - SpectralClustering: A method based on spectral decomposition that identifies non-linear clusters.
-# * - BisectingKMeans: A variant of KMeans that applies iterative splitting of clusters.
-# *
-# * Metrics:
-# * - Silhouette Score: Measures how well each point lies within its cluster compared to other clusters.
-# * - Davies-Bouldin Index: Measures the compactness and separation of clusters. Lower values indicate better-defined clusters.
-# */
+#
+# Calculates and prints evaluation metrics for a given clustering model.
+#
+# @param model_name The name of the clustering model to use ('KMeans', 'SpectralClustering', 'BisectingKMeans').
+# @param features The feature matrix (distances between molecules) to apply clustering on.
+#
+# Models:
+# - KMeans: A clustering algorithm that tries to minimize the distance of points from the centroid of each cluster.
+# - SpectralClustering: A method based on spectral decomposition that identifies non-linear clusters.
+# - BisectingKMeans: A variant of KMeans that applies iterative splitting of clusters.
+#
+# Metrics:
+# - Silhouette Score: Measures how well each point lies within its cluster compared to other clusters.
+# - Davies-Bouldin Index: Measures the compactness and separation of clusters. Lower values indicate better-defined clusters.
+#
 def metrics_calculator(model_name, features):
     model = None
     match model_name:
@@ -46,15 +46,15 @@ def metrics_calculator(model_name, features):
     print(f'Davies-Bouldin Index: {db_index}\n\n\n')
 
 
-# /**
-# * Builds a matrix of feature vectors based on a CSV file containing distances between pairs of molecules.
-# *
-# * @param file_name The name of the CSV file containing molecule distances.
-# * @return A list of vectors where each vector represents the distances of a molecule to other molecules.
-# *
-# * The CSV is composed of three columns: mol1 (first molecule), mol2 (second molecule), and distance (the distance between the two molecules).
-# * A symmetric matrix is built where rows and columns represent molecules, and the values represent the distances between them.
-# */
+#
+# Builds a matrix of feature vectors based on a CSV file containing distances between pairs of molecules.
+#
+# @param file_name The name of the CSV file containing molecule distances.
+# @return A list of vectors where each vector represents the distances of a molecule to other molecules.
+#
+# The CSV is composed of three columns: mol1 (first molecule), mol2 (second molecule), and distance (the distance between the two molecules).
+# A symmetric matrix is built where rows and columns represent molecules, and the values represent the distances between them.
+#
 def vectors_builder(file_name):
     # Read the CSV file and create a DataFrame with three columns: mol1, mol2, and distance
     molecules = pd.read_csv('Pdb_ARTS_alignments.csv', header=None)
