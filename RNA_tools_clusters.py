@@ -1,63 +1,74 @@
-from sklearn.cluster import *
-from sklearn.metrics import *
+from sklearn.cluster import KMeans, BisectingKMeans
+from sklearn.metrics import silhouette_score, davies_bouldin_score
 import pandas as pd
 import numpy as np
+from sklearn.mixture import GaussianMixture
 
 #
-# Calculates and prints evaluation metrics for a given clustering model.
+# Calcola e stampa le metriche di valutazione per un dato modello di clustering.
 #
-# @param model_name The name of the clustering model to use ('KMeans', 'SpectralClustering', 'BisectingKMeans').
-# @param features The feature matrix (distances between molecules) to apply clustering on.
+# @param model_name: Il nome del modello di clustering da utilizzare ('KMeans', 'GaussianMixture', 'BisectingKMeans').
+# @param features: La matrice delle feature (distanze tra le molecole) su cui applicare il clustering.
 #
-# Models:
-# - KMeans: A clustering algorithm that tries to minimize the distance of points from the centroid of each cluster.
-# - SpectralClustering: A method based on spectral decomposition that identifies non-linear clusters.
-# - BisectingKMeans: A variant of KMeans that applies iterative splitting of clusters.
+# Modelli:
+# - KMeans: Algoritmo di clustering che cerca di minimizzare la distanza dei punti dal centroide di ciascun cluster.
+# - GaussianMixture: Un modello statistico che assume che i dati siano generati da una combinazione di distribuzioni gaussiane.
+# - BisectingKMeans: Una variante di KMeans che applica uno split iterativo dei cluster.
 #
-# Metrics:
-# - Silhouette Score: Measures how well each point lies within its cluster compared to other clusters.
-# - Davies-Bouldin Index: Measures the compactness and separation of clusters. Lower values indicate better-defined clusters.
+# Metriche:
+# - Silhouette Score: Misura quanto bene ogni punto si trova all'interno del proprio cluster rispetto agli altri cluster.
+# - Davies-Bouldin Index: Misura la compattezza e la separazione dei cluster. Valori più bassi indicano cluster meglio definiti.
 #
 def metrics_calculator(model_name, features):
     model = None
     match model_name:
         case 'KMeans':
-            # Apply the KMeans algorithm with 20 clusters
+            # Applica l'algoritmo KMeans con 20 cluster
             model = KMeans(n_clusters=20)
-        case 'SpectralClustering':
-            # Apply Spectral Clustering with 20 clusters and a precomputed affinity matrix
-            model = SpectralClustering(n_clusters=20, affinity='precomputed')
+        case 'GaussianMixture':
+            # Applica il modello Gaussian Mixture con 20 componenti
+            model = GaussianMixture(n_components=20)
         case 'BisectingKMeans':
-            # Apply the Bisecting KMeans algorithm with 20 clusters
+            # Applica l'algoritmo Bisecting KMeans con 20 cluster
             model = BisectingKMeans(n_clusters=20)
 
-    # Perform clustering and get the cluster labels for each point
+    # Esegui il clustering e ottieni le etichette dei cluster per ciascun punto
     labels = model.fit_predict(features)
 
-    # Calculate Silhouette Score
+    # Calcola il Silhouette Score
     score = silhouette_score(features, labels)
 
-    # Calculate Davies-Bouldin Index
+    # Calcola l'Indice di Davies-Bouldin
     db_index = davies_bouldin_score(features, labels)
 
-    # Print the results
+    # Stampa i risultati
     print(f'Model: {model_name}')
     print(f'Silhouette Score: {score}')
     print(f'Davies-Bouldin Index: {db_index}\n\n\n')
 
 
 #
-# Builds a matrix of feature vectors based on a CSV file containing distances between pairs of molecules.
+# Costruisce una matrice di vettori di feature basata su un file CSV contenente le distanze tra coppie di molecole.
 #
-# @param file_name The name of the CSV file containing molecule distances.
-# @return A list of vectors where each vector represents the distances of a molecule to other molecules.
+# @param file_name: Il nome del file CSV contenente le distanze delle molecole.
+# @return: Una lista di vettori, dove ciascun vettore rappresenta le distanze di una molecola rispetto ad altre molecole.
 #
-# The CSV is composed of three columns: mol1 (first molecule), mol2 (second molecule), and distance (the distance between the two molecules).
-# A symmetric matrix is built where rows and columns represent molecules, and the values represent the distances between them.
+# Il CSV è composto da tre colonne: mol1 (prima molecola), mol2 (seconda molecola) e distance (distanza tra le due molecole).
+# Viene costruita una matrice simmetrica in cui righe e colonne rappresentano le molecole, e i valori rappresentano le distanze tra di esse.
 #
 def vectors_builder(file_name):
-    # Read the CSV file and create a DataFrame with three columns: mol1, mol2, and distance
-    molecules = pd.read_csv('Pdb_ARTS_alignments.csv', header=None)
+    # Read the CSV file and create a DataFrame
+    molecules = pd.read_csv(file_name, header=None)
+
+    # Print the DataFrame's columns to debug
+    print(f"Columns in {file_name}: {molecules.columns.tolist()}")
+
+    # If there are more than 3 columns, drop the extra columns
+    if molecules.shape[1] > 3:
+        print(f"Warning: Found {molecules.shape[1]} columns, dropping the extra columns.")
+        molecules = molecules.iloc[:, :3]  # Keep only the first three columns
+
+    # Ensure the correct number of columns before assigning names
     molecules.columns = ["mol1", "mol2", "distance"]
 
     # Get a unique list of all molecules
@@ -76,36 +87,33 @@ def vectors_builder(file_name):
         distance_matrix.loc[mol1, mol2] = dist
         distance_matrix.loc[mol2, mol1] = dist
 
-    # Replace NaN values with 0 (assume missing distances are zero)
+    # Replace NaN values with 0 (assuming missing distances are zero)
     distance_matrix.fillna(0, inplace=True)
-
-    # print(distance_matrix)
 
     # Convert each row into a vector, where each row represents a molecule
     features_list = distance_matrix.values  # Each row represents a vector for one molecule
-    # print(vectors)
     return features_list
 
 
-# List of CSV files containing molecular alignment data
+# Lista di file CSV contenenti dati di allineamento molecolare
 csv_list = ['Pdb_ARTS_alignments.csv', 'Pdb_CLICK_alignments.csv', 'Pdb_RMalign_alignments.csv',
             'Pdb_USalign_alignments.csv', 'Pdb_STalign_alignments.csv', 'Pdb_SARA_alignments.csv']
 
-# List of clustering models to be tested
-model_names = ['KMeans', 'SpectralClustering', 'BisectingKMeans']
+# Lista dei modelli di clustering da testare
+model_names = ['KMeans', 'GaussianMixture', 'BisectingKMeans']
 
-# List that will contain feature vectors for each dataset
+# Lista che conterrà i vettori di feature per ciascun dataset
 vectors_list = []
 
-# For each CSV file, build the feature vectors and add them to the list
+# Per ciascun file CSV, costruisci i vettori di feature e aggiungili alla lista
 for csv_name in csv_list:
     vectors_list.append(vectors_builder(csv_name))
 
-# Perform clustering for each CSV file and for each model
+# Esegui il clustering per ciascun file CSV e per ciascun modello
 index = 0
 for vectors in vectors_list:
     print(csv_list[index] + ':\n')
     index += 1
     for name in model_names:
-        # Calculate and print the metrics for the current model on the dataset's feature vectors
+        # Calcola e stampa le metriche per il modello corrente sui vettori di feature del dataset
         metrics_calculator(name, vectors)
